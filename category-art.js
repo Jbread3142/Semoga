@@ -1,0 +1,46 @@
+// Product silhouettes for categories without a catalog photograph yet.
+export function categoryArt(name) {
+  const box = (x,y,w,h,r=4) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="#f9fafc"/>`;
+  const line = d => `<path d="${d}" fill="none"/>`;
+  const circle = (x,y,r) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#e1e7f0"/>`;
+  let shape;
+  if (/로봇청소기/.test(name)) shape = `<ellipse cx="50" cy="62" rx="31" ry="18" fill="#f9fafc"/>${box(41,43,18,9)}${line('M24 65q26 16 52 0')}`;
+  else if (/청소기/.test(name)) shape = line('M50 29v46m-18 6h37')+box(39,17,23,26,8)+box(28,74,45,10)+circle(51,30,7);
+  else if (/커피/.test(name)) shape = box(25,20,50,62)+box(30,28,40,15)+line('M37 47h27M49 47v9M30 75h40')+box(40,57,20,15)+line('M60 60h7v8h-7');
+  else if (/레인지|오븐|에어프라이어/.test(name)) shape = /전기|가스/.test(name)?box(17,34,66,43)+circle(35,47,9)+circle(65,61,9)+circle(66,44,5)+circle(33,64,5):box(18,30,64,48)+box(24,39,43,31)+circle(74,44,3)+circle(74,57,3);
+  else if (/식기/.test(name)) shape = box(25,17,50,67)+line('M25 30h50M34 36h32')+circle(66,24,2)+box(32,43,36,32)+line('M39 47v24m11-24v24m11-24v24');
+  else if (/밥솥/.test(name)) shape = box(21,38,58,40,17)+line('M24 48h52M40 32h20')+box(40,53,20,12);
+  else if (/블렌더/.test(name)) shape = box(37,61,28,21)+line('M33 22h35l-5 36H38ZM68 28h10v20H65M43 17h15')+circle(51,72,4);
+  else if (/후드/.test(name)) shape = box(40,15,20,32)+line('M40 47 18 65h64L60 47Z')+box(18,65,64,9);
+  else if (/냉장|냉동|숙성|쇼케이스|와인/.test(name)) shape = /테이블|반찬|서랍|김밥|토핑/.test(name)?box(12,39,76,40)+line('M10 36h80M37 43v32m26-32v32M21 51h7m16 0h10m16 0h10'):box(28,13,44,73)+line('M28 42h44M35 25v10m0 16v17')+(/쇼케이스|와인/.test(name)?box(40,49,25,28):'');
+  else if (/제빙기/.test(name)) shape = box(24,22,52,60)+box(30,30,40,24)+line('M31 64h38M37 70h26')+box(36,36,9,9,1)+box(50,40,9,9,1);
+  else if (/TV|모니터|전자칠판/.test(name)) shape = box(12,23,76,49)+box(17,28,66,38)+line('M50 73v10M34 84h32');
+  else if (/노트북/.test(name)) shape = box(24,23,52,39)+line('M24 62 14 77h72L76 62ZM39 73h22');
+  else if (/컴퓨터/.test(name)) shape = box(13,26,50,36)+line('M38 63v11M26 76h24')+box(70,21,19,58)+circle(80,31,3);
+  else if (/빔프로젝터|액션캠/.test(name)) shape = box(18,38,64,33,9)+circle(63,54,12)+circle(63,54,7)+line('M26 46h13m-13 7h13m-13 7h13');
+  else if (/프린터/.test(name)) shape = box(30,15,40,30)+box(17,37,66,36)+box(29,59,42,27)+line('M37 69h26m-26 7h26');
+  else if (/사운드바/.test(name)) shape = box(10,49,80,16,7)+circle(23,57,4)+circle(77,57,4)+line('M35 55h30m-30 5h30');
+  else if (/게임기/.test(name)) shape = box(34,15,31,65)+box(20,53,61,25,12)+line('M30 66h13m-6-6v12')+circle(65,62,2)+circle(72,68,2);
+  else if (/자전거|스쿠터/.test(name)) shape = circle(23,71,15)+circle(77,71,15)+line('M23 71 40 41l17 30H23m17-30h26L57 71l20-1-14-40h-9M32 38h16');
+  else if (/피아노/.test(name)) shape = box(12,32,76,30)+line('M18 62v24m64-24v24M20 45h60m-54 0v16m12-16v16m12-16v16m12-16v16m12-16v16');
+  else if (/침대|매트리스|모션베드/.test(name)) shape = box(16,30,68,42)+box(20,41,27,16)+box(53,41,27,16)+box(16,60,68,18)+line('M20 79v7m60-7v7');
+  else if (/소파/.test(name)) shape = box(20,29,60,33,12)+box(15,51,70,26,8)+line('M50 32v24M24 78v7m52-7v7')+box(12,47,13,24)+box(75,47,13,24);
+  else if (/책상|식탁/.test(name)) shape = box(14,40,72,9)+line('M22 50v34m56-34v34')+box(38,20,24,15)+line('M50 35v5');
+  else if (/수납/.test(name)) shape = box(22,18,56,65)+line('M22 40h56M22 62h56M44 30h12M44 51h12M44 73h12');
+  else if (/서큘레이터|환기/.test(name)) shape = circle(50,40,25)+circle(50,40,7)+line('M50 16v17m24 7H57M50 64V47M26 40h17M50 65v15M34 83h32');
+  else if (/가습|향기/.test(name)) shape = box(30,40,40,41,15)+line('M37 40q13-14 26 0M46 28q-8-8 0-15m11 15q-8-8 0-15')+circle(50,65,4);
+  else if (/다리미/.test(name)) shape = line('M19 73q7-27 33-32h22l9 32ZM43 43V30h25l6 12M17 79h69');
+  else if (/드라이기/.test(name)) shape = box(20,26,54,27,12)+line('M74 31h12v17H74M46 53l-5 29h14l6-29')+circle(34,39,8);
+  else if (/도어락/.test(name)) shape = box(39,15,24,70)+box(44,23,14,24)+line('M47 56h30M46 32h10m-10 6h10')+circle(51,72,4);
+  else if (/미싱/.test(name)) shape = line('M23 72V26h48v20H45v26ZM18 77h65M68 47v17')+circle(63,34,5);
+  else if (/캠핑/.test(name)) shape = line('M10 78 50 23 90 78ZM33 78 50 46 67 78M50 23v-9');
+  else if (/헬스/.test(name)) shape = line('M15 48h70')+box(19,31,12,35)+box(69,31,12,35)+box(12,39,7,20)+box(81,39,7,20);
+  else if (/매트/.test(name)) shape = box(17,27,59,48)+line('M26 30v42m10-42v42m10-42v42m10-42v42M76 49h7v22')+box(78,70,11,14);
+  else if (/반려/.test(name)) shape = box(24,30,52,50,12)+circle(50,55,16)+line('M33 28v-9l12 10m10 0 12-10v9');
+  else if (/튀김|정제/.test(name)) shape = box(22,38,56,42)+box(30,30,40,20)+line('M40 30V19h20M29 64h42')+circle(65,71,3);
+  else if (/사우나/.test(name)) shape = box(23,19,54,65)+box(31,27,38,30)+line('M35 63h30m-30 8h30');
+  else if (/상조/.test(name)) shape = box(24,24,52,58)+line('M40 24v-8h20v8M24 46h52M44 46v9h12v-9');
+  else if (/자동차/.test(name)) shape = line('M19 49 28 31h44l9 18')+box(14,48,72,28,9)+circle(28,77,7)+circle(73,77,7)+line('M24 58h12m28 0h12');
+  else shape = box(31,17,38,67,9)+box(37,25,26,23)+circle(50,63,7)+line('M39 77h22');
+  return `<svg viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="#8b99ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="50" cy="88" rx="29" ry="3" fill="#8b99ac" opacity=".12" stroke="none"/>${shape}</svg>`;
+}
