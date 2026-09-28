@@ -19,3 +19,8 @@ export function matchesPrice(product, label) {
   const price=Number(product.monthlyPrice);
   return !!range && Number.isFinite(price) && price>0 && price>=range.min && price<range.max;
 }
+
+export function brandPriority(value) {
+  const priority = {'LG전자':0,'SK':1,'SK매직':1,'코웨이':2,'쿠쿠':3,'현대':4,'현대큐밍':4,'현대유버스':4,'청호':5,'청호나이스':5};
+  return priority[brandName(value)] ?? 6;
+}
