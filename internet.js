@@ -17,7 +17,7 @@ export function internetQuote({provider='kt',speed=1,router=false,tvIncluded=tru
   return {internet,routerFee,tvFee,discount,total,discounted:total-discount,routerIncluded:provider==='lg'||router};
 }
 
-export function internetPage(){return `<main id="main" class="internet-page wrap"><a class="internet-back" href="./">‹ <span>인터넷</span></a><section class="internet-hero"><img src="./assets/internet-hero.png" alt="파스텔 블루 공간의 와이파이 공유기" width="2048" height="768"/><div><h1>우리 집에 딱 맞는<br><em>인터넷</em></h1><p>요금부터 결합 혜택까지,<br>한눈에 비교하세요.</p></div></section><div id="internet-configurator"></div></main>`;}
+export function internetPage(){return `<main id="main" class="internet-page wrap"><a class="internet-back" href="./">‹ <span>인터넷</span></a><section class="internet-hero"><img src="./assets/internet-hero.png" alt="파스텔 블루 공간의 와이파이 공유기" width="2048" height="768"/><div><h1>인터넷<br><em>가입</em></h1><p>요금부터 결합 혜택까지,<br>한눈에 비교하세요.</p></div></section><div id="internet-configurator"></div></main>`;}
 
 export function mountInternet({openOverlay,icon,business}){
   const root=document.querySelector('#internet-configurator');

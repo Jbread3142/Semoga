@@ -2,8 +2,8 @@ import { business } from './contact.js';
 import { isCommercialProduct } from './commercial.js';
 
 export const siteOrigin = 'https://semoga.kr';
-export const homeTitle = '세모가 | 가전·생활·업소용 렌탈 비교상담';
-export const homeDescription = '정수기·공기청정기·비데·안마의자·세탁기·에어컨부터 업소용 가전까지. 세모가에서 브랜드별 월 렌탈료와 약정·관리 조건을 비교하고 상담하세요.';
+export const homeTitle = '세모가렌탈 | 정수기·생활가전 렌탈·인터넷';
+export const homeDescription = '정수기 렌탈부터 공기청정기·비데·안마의자·세탁건조기·에어컨, 업소용 가전과 인터넷까지. 세모가렌탈에서 브랜드별 요금과 약정·관리 조건을 비교하고 상담하세요.';
 export const searchCategories = [
   ['정수기','water'], ['공기청정기','air'], ['비데','bidet'], ['안마의자','massage'],
   ['의류청정기','clothing'], ['인터넷','internet'], ['에어컨','aircon'],
@@ -41,12 +41,12 @@ export function searchMetadata(params, products) {
     description = `${product.brand} ${product.model} ${product.commercialType || product.category} 렌탈. 월 렌탈료와 약정기간·관리 조건을 확인하고 세모가에서 상담하세요.`;
     path = productPath(product.id);
   } else if (page === 'catalog' && !params.get('q') && categoryPath(category)) {
-    title = `${category} 렌탈 비교상담 | 세모가`;
+    title = category === '인터넷' ? '인터넷 가입 비교상담 | 세모가렌탈' : `${category === '업소용' ? '업소용 가전' : category} 렌탈 비교상담 | 세모가렌탈`;
     description = category === '업소용'
-      ? '업소용 냉장고·제빙기·식기세척기·조리기기·서빙로봇·청소로봇 렌탈. 세모가에서 종류와 브랜드별 월 렌탈료·약정 조건을 비교하고 상담하세요.'
+      ? '업소용 냉장고·제빙기·식기세척기·조리기기·서빙로봇·청소로봇 렌탈. 세모가렌탈에서 종류와 브랜드별 월 렌탈료·약정 조건을 비교하고 상담하세요.'
       : category === '인터넷'
-        ? '인터넷·IPTV 가입과 결합상품 상담. 세모가에서 통신사별 요금제와 결합 조건을 살펴보고 설치 환경에 맞게 상담하세요.'
-        : `${category} 렌탈을 세모가에서 비교하세요. 브랜드별 제품 사양, 월 렌탈료, 약정기간과 관리 조건을 확인하고 전화·카카오톡으로 상담하세요.`;
+        ? '인터넷·IPTV 가입과 결합상품 상담. 세모가렌탈에서 통신사별 요금제와 결합 조건을 살펴보고 설치 환경에 맞게 상담하세요.'
+        : `${category} 렌탈을 세모가렌탈에서 비교하세요. 브랜드별 제품 사양, 월 렌탈료, 약정기간과 관리 조건을 확인하고 전화·카카오톡으로 상담하세요.`;
     path = categoryPath(category);
   } else if (page) {
     indexable = false;
