@@ -1,6 +1,7 @@
 import { commercialTypes, isCommercialProduct, matchesCommercialType, commercialHref, normalizeCommercialProduct } from './commercial.js';
 import { searchRoute, applySearchMetadata } from './seo.js';
 import { categoryArt } from './category-art.js';
+import { categoryPhotos } from './category-photos.js';
 import { waterFilterGroups, matchesWaterFilter } from './water-filters.js';
 import { priceRanges, brandName, brandPriority, matchesPrice } from './catalog-filters.js';
 import { laundryTypes, isLaundryCategory, laundryType } from './laundry.js';
@@ -58,10 +59,20 @@ function openMenu(){menuOpen=true;openOverlay(`<div class="dialog-heading"><div>
 function menuCategoryButton(name, index=0, parent=''){
   const commercial=parent==='업소용';
   const primary=!commercial&&categories.find(c=>c.name===name);
-  const product=products.find(p=>(commercial?matchesCommercialType(p,name):p.category===name)&&(p.image||p.thumbnails?.[0]));
-  const image=primary?.image||product?.image||product?.thumbnails?.[0];
+  const selectedPhoto=commercial&&categoryPhotos[name];
+  const selectedProduct=selectedPhoto&&products.find(p=>p.id===selectedPhoto.id&&matchesCommercialType(p,name));
+  const product=selectedProduct||products.find(p=>(commercial?matchesCommercialType(p,name):p.category===name)&&(p.image||p.thumbnails?.[0]));
+  const photo=selectedProduct&&selectedPhoto;
+  const image=primary?.image||(photo?.field==='detail'?product.detailImage:photo?product.thumbnails?.[photo.index]:null)||product?.image||product?.thumbnails?.[0];
+  let art=image?`<img src="${esc(asset(image))}" alt="" loading="lazy"/>`:categoryArt(name);
+  if(photo&&image){
+    const [x,y,width,height]=photo.crop;
+    const clipId=`category-photo-${product.id}`;
+    const clip=photo.outline?`<path d="${esc(photo.outline)}"/>`:`<rect x="${x}" y="${y}" width="${width}" height="${height}"/>`;
+    art=`<svg class="category-product-photo" viewBox="${photo.crop.join(' ')}" aria-hidden="true" focusable="false"><defs><clipPath id="${esc(clipId)}" clipPathUnits="userSpaceOnUse">${clip}</clipPath></defs><image href="${esc(asset(image))}" width="${photo.size[0]}" height="${photo.size[1]}" clip-path="url(#${esc(clipId)})"/></svg>`;
+  }
   const colors=['#edf3ff','#edf7f3','#fff2e8','#f2eeff','#fceff4'];
-  return `<a class="category-item" href="${commercial?commercialHref(name):`?page=catalog&category=${encodeURIComponent(name)}`}"><span class="category-circle" style="--circle:${primary?.color||colors[index%colors.length]}">${image?`<img src="${esc(asset(image))}" alt="" loading="lazy"/>`:categoryArt(name)}</span><span>${esc(name)}</span></a>`;
+  return `<a class="category-item" href="${commercial?commercialHref(name):`?page=catalog&category=${encodeURIComponent(name)}`}"><span class="category-circle" style="--circle:${primary?.color||colors[index%colors.length]}">${art}</span><span>${esc(name)}</span></a>`;
 }
 function renderMenuContent(){
   const mainNames=new Set(categories.map(c=>c.name));
