@@ -59,7 +59,7 @@ function menuCategoryButton(name, index=0, parent=''){
   const commercial=parent==='업소용';
   const primary=!commercial&&categories.find(c=>c.name===name);
   const product=products.find(p=>(commercial?matchesCommercialType(p,name):p.category===name)&&(p.image||p.thumbnails?.[0]));
-  const image=!commercial&&(primary?.image||product?.image||product?.thumbnails?.[0]);
+  const image=primary?.image||product?.image||product?.thumbnails?.[0];
   const colors=['#edf3ff','#edf7f3','#fff2e8','#f2eeff','#fceff4'];
   return `<a class="category-item" href="${commercial?commercialHref(name):`?page=catalog&category=${encodeURIComponent(name)}`}"><span class="category-circle" style="--circle:${primary?.color||colors[index%colors.length]}">${image?`<img src="${esc(asset(image))}" alt="" loading="lazy"/>`:categoryArt(name)}</span><span>${esc(name)}</span></a>`;
 }
@@ -67,6 +67,8 @@ function renderMenuContent(){
   const mainNames=new Set(categories.map(c=>c.name));
   const omitted=new Set(['정수기','에어컨','냉난방기','인터넷','결합상품','상조가전']);
   const groups=Object.entries(categoryTree).filter(([name])=>!omitted.has(name)).map(([name,children])=>[name,children.filter(child=>name==='업소용'||!mainNames.has(child)&&!laundryTypes.includes(child)&&child!=='의류관리기')]).filter(([,children])=>children.length);
+  const commercialIndex=groups.findIndex(([name])=>name==='업소용');
+  if(commercialIndex>0)groups.unshift(groups.splice(commercialIndex,1)[0]);
   groups.push(['서비스',['상조가전']]);
   $('#category-menu-content').innerHTML=`<nav class="all-category-directory" aria-label="전체 카테고리"><section class="menu-main-categories" aria-label="메인 카테고리"><div class="menu-category-items">${categories.map((c,i)=>menuCategoryButton(c.name,i)).join('')}</div></section><div class="menu-category-groups">${groups.map(([name,children])=>`<section class="menu-category-row"><h3>${name==='업소용'?`<a href="${commercialHref()}">업소용 전체 ${icon('chevron',12)}</a>`:esc(name)}</h3><div class="menu-category-items">${children.map((child,i)=>menuCategoryButton(child,i,name)).join('')}</div></section>`).join('')}</div></nav>`;
 }
