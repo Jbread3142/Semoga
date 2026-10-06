@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이전 대분류 주소 안내 | 세모가</title>
+  <script id="legacy-category-redirect">(() => {
+  const targets={"043":"/categories/aircon/","075":"/categories/hvac/","008":"/","009":"/categories/laundry/","004":"/","029":"/","006":"/","080":"/categories/water/","001":"/","002":"/","005":"/categories/massage/","003":"/","010":"/","042":"/categories/commercial/","035":"/","078":"/"};
+  const pathname=location.pathname.replace(/\/$/,'');
+  const id=new URLSearchParams(location.search).get('ca_id');
+  // Only the listed exact IDs and this legacy pathname are migration redirects.
+  if(pathname!=="/model/list.php"||!Object.prototype.hasOwnProperty.call(targets,id)){
+    const robots=document.createElement('meta');
+    robots.name='robots';robots.content='noindex,follow';document.head.appendChild(robots);
+    return;
+  }
+  const target=new URL(targets[id],"https://semoga.kr").href;
+  const canonical=document.createElement('link');
+  canonical.rel='canonical';canonical.href=target;document.head.appendChild(canonical);
+  // This refresh also depends on JS, because a static host cannot read ca_id.
+  // Do not add a static homepage refresh/canonical: it would misroute other IDs.
+  const refresh=document.createElement('meta');
+  refresh.httpEquiv='refresh';refresh.content='0; url='+target;document.head.appendChild(refresh);
+  location.replace(target);
+})();</script>
+  <style>body{font-family:system-ui,sans-serif;max-width:48rem;margin:3rem auto;padding:0 1rem;line-height:1.7}a{color:#4436d9}</style>
+</head>
+<body><main><h1>세모가 대분류 주소가 변경되었습니다</h1>
+<p>등록된 이전 대분류 주소는 새 페이지로 자동 이동합니다.</p>
+<noscript><p>자동 이동에는 JavaScript가 필요합니다. 아래에서 해당 대분류를 선택해 주세요.</p></noscript>
+<p>이동하지 않는 경우 해당 대분류를 선택해 주세요. 목록에 없는 이전 주소는 자동 이동하지 않습니다.</p>
+<ul><li><a href="https://semoga.kr/categories/aircon/">에어컨</a> <small>(043)</small></li>
+<li><a href="https://semoga.kr/categories/hvac/">냉난방기</a> <small>(075)</small></li>
+<li><a href="https://semoga.kr/">TV / 디지털</a> <small>(008)</small></li>
+<li><a href="https://semoga.kr/categories/laundry/">세탁가전</a> <small>(009)</small></li>
+<li><a href="https://semoga.kr/">냉장가전</a> <small>(004)</small></li>
+<li><a href="https://semoga.kr/">결합상품</a> <small>(029)</small></li>
+<li><a href="https://semoga.kr/">주방가전</a> <small>(006)</small></li>
+<li><a href="https://semoga.kr/categories/water/">정수기</a> <small>(080)</small></li>
+<li><a href="https://semoga.kr/">생활가전</a> <small>(001)</small></li>
+<li><a href="https://semoga.kr/">계절 / 환경</a> <small>(002)</small></li>
+<li><a href="https://semoga.kr/categories/massage/">건강 / 뷰티</a> <small>(005)</small></li>
+<li><a href="https://semoga.kr/">가구 / 침대</a> <small>(003)</small></li>
+<li><a href="https://semoga.kr/">레저 / 자동차</a> <small>(010)</small></li>
+<li><a href="https://semoga.kr/categories/commercial/">업소용</a> <small>(042)</small></li>
+<li><a href="https://semoga.kr/">상조가전</a> <small>(035)</small></li>
+<li><a href="https://semoga.kr/">신차 장기렌트 &amp; 리스</a> <small>(078)</small></li></ul></main></body>
+</html>
