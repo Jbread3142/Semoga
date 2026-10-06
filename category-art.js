@@ -9,7 +9,7 @@ export function categoryArt(name) {
   else if (/커피/.test(name)) shape = box(25,20,50,62)+box(30,28,40,15)+line('M37 47h27M49 47v9M30 75h40')+box(40,57,20,15)+line('M60 60h7v8h-7');
   else if (/레인지|오븐|에어프라이어/.test(name)) shape = /전기|가스/.test(name)?box(17,34,66,43)+circle(35,47,9)+circle(65,61,9)+circle(66,44,5)+circle(33,64,5):box(18,30,64,48)+box(24,39,43,31)+circle(74,44,3)+circle(74,57,3);
   else if (/식기/.test(name)) shape = box(25,17,50,67)+line('M25 30h50M34 36h32')+circle(66,24,2)+box(32,43,36,32)+line('M39 47v24m11-24v24m11-24v24');
-  else if (/밥솥/.test(name)) shape = box(21,38,58,40,17)+line('M24 48h52M40 32h20')+box(40,53,20,12);
+  else if (/밥솥|취반기|국솥/.test(name)) shape = box(21,38,58,40,17)+line('M24 48h52M40 32h20')+box(40,53,20,12);
   else if (/블렌더/.test(name)) shape = box(37,61,28,21)+line('M33 22h35l-5 36H38ZM68 28h10v20H65M43 17h15')+circle(51,72,4);
   else if (/후드/.test(name)) shape = box(40,15,20,32)+line('M40 47 18 65h64L60 47Z')+box(18,65,64,9);
   else if (/냉장|냉동|숙성|쇼케이스|와인/.test(name)) shape = /테이블|반찬|서랍|김밥|토핑/.test(name)?box(12,39,76,40)+line('M10 36h80M37 43v32m26-32v32M21 51h7m16 0h10m16 0h10'):box(28,13,44,73)+line('M28 42h44M35 25v10m0 16v17')+(/쇼케이스|와인/.test(name)?box(40,49,25,28):'');
@@ -38,6 +38,14 @@ export function categoryArt(name) {
   else if (/매트/.test(name)) shape = box(17,27,59,48)+line('M26 30v42m10-42v42m10-42v42m10-42v42M76 49h7v22')+box(78,70,11,14);
   else if (/반려/.test(name)) shape = box(24,30,52,50,12)+circle(50,55,16)+line('M33 28v-9l12 10m10 0 12-10v9');
   else if (/튀김|정제/.test(name)) shape = box(22,38,56,42)+box(30,30,40,20)+line('M40 30V19h20M29 64h42')+circle(65,71,3);
+  else if (/인덕션|그리들|부침|구이/.test(name)) shape = box(14,37,72,39)+box(20,31,60,12)+line('M24 52h52M24 59h52M24 66h52')+circle(71,72,2);
+  else if (/로봇/.test(name)) shape = box(31,24,38,50,10)+box(23,47,54,8)+line('M36 31h28M23 62h54M36 20h28')+circle(36,80,6)+circle(64,80,6);
+  else if (/진공포장|절단|제과기계|라면/.test(name)) shape = box(18,41,64,36)+box(23,30,54,15)+line('M27 53h46M27 65h25')+circle(68,66,4);
+  else if (/단말기|테이블오더/.test(name)) shape = box(26,19,48,46)+box(32,25,36,33)+line('M50 66v15M34 83h32');
+  else if (/핸드드라이어|위생/.test(name)) shape = box(31,20,38,61,9)+box(38,51,24,21)+line('M39 30h22M44 41h12');
+  else if (/블라스트칠러|식기소독장|발효/.test(name)) shape = box(23,19,54,65)+box(31,33,38,41)+line('M31 44h38M31 55h38M31 66h38')+circle(66,26,2);
+  else if (/에어커튼/.test(name)) shape = box(12,29,76,23)+line('M19 45h62M28 61v18m22-18v18m22-18v18');
+  else if (/콤프레샤/.test(name)) shape = box(18,36,64,42)+box(26,23,26,13)+line('M60 47h13m-13 7h13m-13 7h13')+circle(29,80,5)+circle(70,80,5);
   else if (/사우나/.test(name)) shape = box(23,19,54,65)+box(31,27,38,30)+line('M35 63h30m-30 8h30');
   else if (/상조/.test(name)) shape = box(24,24,52,58)+line('M40 24v-8h20v8M24 46h52M44 46v9h12v-9');
   else if (/자동차/.test(name)) shape = line('M19 49 28 31h44l9 18')+box(14,48,72,28,9)+circle(28,77,7)+circle(73,77,7)+line('M24 58h12m28 0h12');
