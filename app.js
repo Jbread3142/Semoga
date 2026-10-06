@@ -98,6 +98,8 @@ for(const group of waterFilterGroups){if(group.values.includes(route().get(group
 if(route().get('brand'))filters.brand=brandName(route().get('brand'));
 if(priceRanges.some(r=>r.label===route().get('price')))filters.price=route().get('price');
 render();
+document.documentElement.classList.remove('route-pending');
+$('#app').dataset.ready='true';
 document.addEventListener('change',e=>{if(e.target.id==='care'){selectedCondition=e.target.value;updatePrice();}});
 if(route().get('page')==='product')updatePrice();
 if(document.modelContext?.registerTool&&currentProduct()){
