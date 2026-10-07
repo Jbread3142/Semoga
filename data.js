@@ -10,8 +10,11 @@ export const categories = [
   {name:'냉난방기', key:'hvac', image:'category-hvac.jpg', color:'#eaf4ff'},
   {name:'세탁·건조기', key:'laundry', image:'laundry.webp', color:'#edf6f2'},
   {name:'음식물처리기', key:'food', image:'food.jpg', color:'#f8eef1'},
-  {name:'TV', key:'tv', productModel:'98NU850BENB', image:'/assets/catalog/98nu850benb-156d1c7e-thumbnail-1-98bd4d00a7d21bb2b412.jpg', color:'#edf3ff'},
+  {name:'TV', key:'tv', productModel:'98NU850BENB', image:'https://semoga.speedgabia.com/semoga/catalog/98nu850benb-156d1c7e-thumbnail-1-98bd4d00a7d21bb2b412.jpg', color:'#edf3ff'},
+  {name:'로봇청소기', key:'robot-vacuum', productModel:'Q8', image:'https://semoga.speedgabia.com/semoga/catalog/q8-6fbba5df-thumbnail-1-3081a4eec85c5555fbfb.jpg', color:'#e9f7f5'},
+  {name:'무선청소기', key:'cordless-vacuum', productModel:'A520WC', image:'https://semoga.speedgabia.com/semoga/catalog/a520wc-7943c8d9-thumbnail-1-913ad48d931b0f42c73a.jpg', color:'#f0ecff'},
 ];
+export const navigationCategories = categories.filter(category=>!['TV','로봇청소기','무선청소기'].includes(category.name));
 export const categoryTree = {
   '정수기':['전체 정수기','코웨이','LG전자구독','쿠쿠','SK매직','청호나이스','삼성','세라젬','현대큐밍','현대유버스','교원웰스','세스코','루헨스','풀무원'],
   '주방가전':['음식물처리기','식기세척기/건조기','커피머신','전기레인지','오븐/전자레인지','가스레인지','정수기','밥솥','주방후드','에어프라이어','블렌더/주서기','기타'],

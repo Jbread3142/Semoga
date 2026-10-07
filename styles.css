@@ -75,6 +75,8 @@
 .tv-product-card .product-copy h3{line-height:1.5;letter-spacing:-.035em}
 .tv-product-card .product-copy,.tv-detail .rental-panel{text-align:left}
 .menu-main-categories .category-item[data-category="TV"],.category-section .category-item[data-category="TV"]{grid-column:1;grid-row:2}
+.menu-main-categories .category-item[data-category="로봇청소기"],.category-section .category-item[data-category="로봇청소기"]{grid-column:2;grid-row:2}
+.menu-main-categories .category-item[data-category="무선청소기"],.category-section .category-item[data-category="무선청소기"]{grid-column:3;grid-row:2}
 .tv-product-card .product-tagline{margin-top:6px;letter-spacing:.01em}
 .tv-product-card .feature-tags:empty,.tv-detail .detail-tags:empty{display:none}
 

@@ -8,7 +8,7 @@ export const normalizeCategory = name => /^tv(?:\/디지털)?$/i.test(String(nam
 export const searchCategories = [
   ['정수기','water'], ['공기청정기','air'], ['비데','bidet'], ['안마의자','massage'],
   ['의류청정기','clothing'], ['인터넷','internet'], ['에어컨','aircon'],
-  ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'], ['TV','tv'], ['로봇청소기','robot-vacuum'],
+  ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'], ['TV','tv'], ['로봇청소기','robot-vacuum'], ['무선청소기','cordless-vacuum'],
 ];
 export const productPath = id => `/products/${encodeURIComponent(id)}/`;
 export const categoryPath = name => {
