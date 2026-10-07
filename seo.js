@@ -4,18 +4,20 @@ import { isCommercialProduct } from './commercial.js';
 export const siteOrigin = 'https://semoga.kr';
 export const homeTitle = '세모가렌탈 | 정수기·생활가전 렌탈·인터넷';
 export const homeDescription = '정수기 렌탈부터 공기청정기·비데·안마의자·세탁건조기·에어컨, 업소용 가전과 인터넷까지. 세모가렌탈에서 브랜드별 요금과 약정·관리 조건을 비교하고 상담하세요.';
+export const normalizeCategory = name => /^tv(?:\/디지털)?$/i.test(String(name || '').replace(/\s+/g,'')) ? 'TV' : name;
 export const searchCategories = [
   ['정수기','water'], ['공기청정기','air'], ['비데','bidet'], ['안마의자','massage'],
   ['의류청정기','clothing'], ['인터넷','internet'], ['에어컨','aircon'],
-  ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'],
+  ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'], ['TV','tv'], ['로봇청소기','robot-vacuum'],
 ];
 export const productPath = id => `/products/${encodeURIComponent(id)}/`;
 export const categoryPath = name => {
-  const found = searchCategories.find(([category]) => category === name);
+  const found = searchCategories.find(([category]) => category === normalizeCategory(name));
   return found ? `/categories/${found[1]}/` : null;
 };
 export function searchRoute(location) {
   const params = new URLSearchParams(location.search);
+  if (params.has('category')) params.set('category',normalizeCategory(params.get('category')));
   if (params.has('page')) return params;
   const product = location.pathname.match(/^\/products\/([^/]+)(?:\/(?:index\.html)?)?$/);
   const category = location.pathname.match(/^\/categories\/([^/]+)(?:\/(?:index\.html)?)?$/);
@@ -27,12 +29,12 @@ export function searchRoute(location) {
   return params;
 }
 export function categoryProducts(category, products) {
-  return products.filter(product => category === '업소용' ? isCommercialProduct(product) : product.category === category);
+  return products.filter(product => category === '업소용' ? isCommercialProduct(product) : normalizeCategory(product.category) === normalizeCategory(category));
 }
 export function searchMetadata(params, products) {
   const page = params.get('page');
   const product = page === 'product' ? products.find(p => p.id === params.get('id')) : null;
-  const category = params.get('category') || '정수기';
+  const category = normalizeCategory(params.get('category') || '정수기');
   let title = homeTitle, description = homeDescription, path = '/', indexable = true;
   if (product) {
     const name = product.name.includes(product.model) ? product.name : `${product.name} ${product.model}`;
@@ -52,7 +54,8 @@ export function searchMetadata(params, products) {
     indexable = false;
     title = page === 'saved' ? '찜한 제품 | 세모가' : params.get('q') ? `${params.get('q')} 검색 결과 | 세모가` : '페이지 안내 | 세모가';
   }
-  return {title, description, url:siteOrigin+path, image:"https://semoga.mr-jbread.chatgpt.site/assets/social-share-20260930.png", indexable, product, category:page === 'catalog' ? category : null};
+  const keywords = product?.seoTags?.join(', ') || '';
+  return {title, description, keywords, url:siteOrigin+path, image:'https://semoga.mr-jbread.chatgpt.site/assets/social-share-20260930.png', indexable, product, category:page === 'catalog' ? category : null};
 }
 export function searchStructuredData(meta) {
   const organization = {
@@ -71,7 +74,8 @@ export function searchStructuredData(meta) {
     const images = (p.thumbnails || [p.image]).filter(Boolean).map(image => new URL(image,siteOrigin).href);
     graph.push({'@type':'Product', name:`${p.brand} ${p.name}`, model:p.model, sku:p.model,
       brand:{'@type':'Brand', name:p.brand}, category:p.commercialType || p.category,
-      image:images, description:meta.description, url:meta.url});
+      image:images, description:meta.description, url:meta.url,
+      ...(p.seoTags?.length ? {keywords:p.seoTags.join(', ')} : {})});
     graph.push({'@type':'BreadcrumbList', itemListElement:[
       {'@type':'ListItem', position:1, name:'세모가', item:siteOrigin+'/'},
       {'@type':'ListItem', position:2, name:p.category, item:siteOrigin+(categoryPath(p.category) || '/')},
@@ -92,6 +96,7 @@ export function applySearchMetadata(params, products, document) {
     element.setAttribute('content',value);
   };
   setMeta('name','description',meta.description);
+  setMeta('name','keywords',meta.keywords);
   setMeta('name','robots',meta.indexable ? 'index,follow,max-image-preview:large' : 'noindex,follow');
   for (const [key,value] of Object.entries({title:meta.title,description:meta.description,url:meta.url,image:meta.image})) setMeta('property','og:'+key,value);
   let canonical=document.head.querySelector('link[rel="canonical"]');

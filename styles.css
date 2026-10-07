@@ -69,3 +69,19 @@
 
 
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* TV size labels share one treatment in the catalog and product gallery. */
+.inch-badge,.product-badge.inch-badge{background:#fff;color:#4f49ba;border:1px solid #e4e4f6;border-radius:8px;font-size:13px;font-weight:750;letter-spacing:-.02em;padding:6px 11px;box-shadow:0 2px 8px #313a6210;line-height:1.3}
+.tv-product-card .product-copy h3{line-height:1.5;letter-spacing:-.035em}
+.tv-product-card .product-copy,.tv-detail .rental-panel{text-align:left}
+.menu-main-categories .category-item[data-category="TV"],.category-section .category-item[data-category="TV"]{grid-column:1;grid-row:2}
+.tv-product-card .product-tagline{margin-top:6px;letter-spacing:.01em}
+.tv-product-card .feature-tags:empty,.tv-detail .detail-tags:empty{display:none}
+
+
+
+
+.tv-detail .gallery-label.inch-badge{top:20px;left:20px}
+.tv-detail .option-row>span{white-space:nowrap}
+.tv-detail .price-note{line-height:1.7}
+@media(max-width:640px){.inch-badge,.product-badge.inch-badge{font-size:12px;left:12px;top:12px;padding:5px 9px}.tv-product-card .product-copy h3{font-size:15px;min-height:45px;margin-bottom:5px}.tv-detail .gallery-label.inch-badge{font-size:14px;padding:7px 12px}.tv-detail .rental-panel h1{font-size:25px}}
