@@ -142852,7 +142852,7 @@
     "thumbnails": [
       "https://semoga.speedgabia.com/semoga/catalog/amc-5501a-c147fae2-thumbnail-1-358f30afdd75086d3e3b.jpg"
     ],
-    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/amc-5501a-c147fae2-detail-8fd54e29ba414013307f.jpg",
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/amc-5501a-c147fae2-detail-1-7ee57460443a6a61becc.jpg",
     "monthlyPrice": 12800,
     "rentalPlans": [
       {
@@ -142877,7 +142877,26 @@
       "row": 4
     },
     "colors": [],
-    "sample": false
+    "sample": false,
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/amc-5501a-c147fae2-detail-1-7ee57460443a6a61becc.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/amc-5501a-c147fae2-detail-2-c5e6dbb8bb1dc0052354.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/amc-5501a-c147fae2-detail-3-3a905c331d592c1ff068.jpg"
+    ],
+    "detailImageDimensions": [
+      {
+        "width": 860,
+        "height": 57039
+      },
+      {
+        "width": 860,
+        "height": 56771
+      },
+      {
+        "width": 860,
+        "height": 39822
+      }
+    ]
   },
   {
     "id": "h12-pro-flexreach-555f82af",
