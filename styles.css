@@ -74,9 +74,16 @@
 .inch-badge,.product-badge.inch-badge{background:#fff;color:#4f49ba;border:1px solid #e4e4f6;border-radius:8px;font-size:13px;font-weight:750;letter-spacing:-.02em;padding:6px 11px;box-shadow:0 2px 8px #313a6210;line-height:1.3}
 .tv-product-card .product-copy h3{line-height:1.5;letter-spacing:-.035em}
 .tv-product-card .product-copy,.tv-detail .rental-panel{text-align:left}
-.menu-main-categories .category-item[data-category="TV"],.category-section .category-item[data-category="TV"]{grid-column:1;grid-row:2}
-.menu-main-categories .category-item[data-category="로봇청소기"],.category-section .category-item[data-category="로봇청소기"]{grid-column:2;grid-row:2}
-.menu-main-categories .category-item[data-category="무선청소기"],.category-section .category-item[data-category="무선청소기"]{grid-column:3;grid-row:2}
+@media(min-width:901px){
+  .category-section .category-item[data-category="TV"]{grid-column:1;grid-row:2}
+  .category-section .category-item[data-category="로봇청소기"]{grid-column:2;grid-row:2}
+  .category-section .category-item[data-category="무선청소기"]{grid-column:3;grid-row:2}
+}
+@media(min-width:1101px){
+  .menu-main-categories .category-item[data-category="TV"]{grid-column:1;grid-row:2}
+  .menu-main-categories .category-item[data-category="로봇청소기"]{grid-column:2;grid-row:2}
+  .menu-main-categories .category-item[data-category="무선청소기"]{grid-column:3;grid-row:2}
+}
 .tv-product-card .product-tagline{margin-top:6px;letter-spacing:.01em}
 .tv-product-card .feature-tags:empty,.tv-detail .detail-tags:empty{display:none}
 
