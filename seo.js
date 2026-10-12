@@ -4,11 +4,11 @@ import { isCommercialProduct } from './commercial.js';
 export const siteOrigin = 'https://semoga.kr';
 export const homeTitle = '세모가렌탈 | 정수기·생활가전 렌탈·인터넷';
 export const homeDescription = '정수기 렌탈부터 공기청정기·비데·안마의자·세탁건조기·에어컨, 업소용 가전과 인터넷까지. 세모가렌탈에서 브랜드별 요금과 약정·관리 조건을 비교하고 상담하세요.';
-export const normalizeCategory = name => /^tv(?:\/디지털)?$/i.test(String(name || '').replace(/\s+/g,'')) ? 'TV' : name;
+export const normalizeCategory = name => name === '식기세척기/건조기' ? '식기세척기' : /^tv(?:\/디지털)?$/i.test(String(name || '').replace(/\s+/g,'')) ? 'TV' : name;
 export const searchCategories = [
   ['정수기','water'], ['공기청정기','air'], ['비데','bidet'], ['안마의자','massage'],
   ['의류청정기','clothing'], ['인터넷','internet'], ['에어컨','aircon'],
-  ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'], ['TV','tv'], ['로봇청소기','robot-vacuum'], ['무선청소기','cordless-vacuum'],
+  ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'], ['TV','tv'], ['로봇청소기','robot-vacuum'], ['무선청소기','cordless-vacuum'], ['식기세척기','dishwasher'],
 ];
 export const productPath = id => `/products/${encodeURIComponent(id)}/`;
 export const categoryPath = name => {

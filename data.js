@@ -13,11 +13,12 @@ export const categories = [
   {name:'TV', key:'tv', productModel:'98NU850BENB', image:'https://semoga.speedgabia.com/semoga/catalog/98nu850benb-156d1c7e-thumbnail-1-98bd4d00a7d21bb2b412.jpg', color:'#edf3ff'},
   {name:'로봇청소기', key:'robot-vacuum', productModel:'Q8', image:'https://semoga.speedgabia.com/semoga/catalog/q8-6fbba5df-thumbnail-1-3081a4eec85c5555fbfb.jpg', color:'#e9f7f5'},
   {name:'무선청소기', key:'cordless-vacuum', productModel:'A520WC', image:'https://semoga.speedgabia.com/semoga/catalog/a520wc-7943c8d9-thumbnail-1-913ad48d931b0f42c73a.jpg', color:'#f0ecff'},
+  {name:'식기세척기', key:'dishwasher', productModel:'DW90F79F1U01T', image:'food.jpg', color:'#eef2ff'},
 ];
-export const navigationCategories = categories.filter(category=>!['TV','로봇청소기','무선청소기'].includes(category.name));
+export const navigationCategories = categories.filter(category=>!['TV','로봇청소기','무선청소기','식기세척기'].includes(category.name));
 export const categoryTree = {
   '정수기':['전체 정수기','코웨이','LG전자구독','쿠쿠','SK매직','청호나이스','삼성','세라젬','현대큐밍','현대유버스','교원웰스','세스코','루헨스','풀무원'],
-  '주방가전':['음식물처리기','식기세척기/건조기','커피머신','전기레인지','오븐/전자레인지','가스레인지','정수기','밥솥','주방후드','에어프라이어','블렌더/주서기','기타'],
+  '주방가전':['음식물처리기','식기세척기','커피머신','전기레인지','오븐/전자레인지','가스레인지','정수기','밥솥','주방후드','에어프라이어','블렌더/주서기','기타'],
   '생활가전':['무선청소기','로봇청소기','비데','반려동물용품','온수/전기매트','도어락','드라이기/헤어용품','미싱기','연수기'],
   '계절 / 환경':['공기청정기','공기살균기','환기가전','제습기','바이러스케어','향기컨설팅','가습기','집진기','서큘레이터'],
   '에어컨':['벽걸이','스탠드','2 in 1','창문형','천장형','이동형','산업용 에어컨'],

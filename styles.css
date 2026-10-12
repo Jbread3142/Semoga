@@ -94,3 +94,189 @@
 .tv-detail .option-row>span{white-space:nowrap}
 .tv-detail .price-note{line-height:1.7}
 @media(max-width:640px){.inch-badge,.product-badge.inch-badge{font-size:12px;left:12px;top:12px;padding:5px 9px}.tv-product-card .product-copy h3{font-size:15px;min-height:45px;margin-bottom:5px}.tv-detail .gallery-label.inch-badge{font-size:14px;padding:7px 12px}.tv-detail .rental-panel h1{font-size:25px}}
+.rental-comparison{grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:36px}
+.rental-comparison .rental-panel{min-width:0}
+.rental-comparison .rental-options{border:1px solid #edf0f7;border-radius:18px;padding:24px;box-shadow:0 4px 24px #34407606}
+.rental-comparison .option-heading{gap:14px;margin-bottom:26px}
+.rental-comparison .option-heading h2{font-size:21px;letter-spacing:-.045em}
+.rental-comparison .option-heading>span{max-width:210px;text-align:right;line-height:1.6}
+.rental-comparison .option-row>span{color:#424b60;font-weight:600}
+.rental-comparison .term-options{flex-wrap:wrap}
+.rental-comparison .term-options button{height:50px;min-width:62px}
+.company-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:25px 0 12px;font-size:14px}
+.company-heading>b{font-weight:600;color:#424b60;white-space:nowrap}
+.company-heading>span{font-size:12px;color:#9ba4bb;text-align:right}
+.company-first-row{display:flex;gap:8px;align-items:stretch}
+.company-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;flex:1;min-width:0}
+.rental-company{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:0;min-height:145px;padding:38px 7px 13px;border:1px solid #e6eaf3;border-radius:12px;background:#fff;color:#20293b;transition:border-color .18s,background .18s}
+.rental-company:hover{border-color:#a99aff;background:#faf9ff}
+.rental-company.selected{border-color:#7252ff;background:linear-gradient(145deg,#faf8ff,#f3f1ff);box-shadow:inset 0 0 0 1px #7252ff}
+.company-rank{position:absolute;top:9px;left:9px;border-radius:20px;padding:2px 9px;font-size:11px;line-height:20px;background:#edf0f6;color:#535f75;white-space:nowrap}
+.rank-1{background:linear-gradient(100deg,#ff542c,#ff8751);color:#fff;font-weight:600}
+.rank-2{background:#8fa2b8;color:#fff}.rank-3{background:#c68e56;color:#fff}
+.company-mark{display:flex;align-items:center;justify-content:center;min-height:33px;font-size:17px;font-weight:800;letter-spacing:-.05em;line-height:1.2;text-align:center;overflow-wrap:anywhere}
+.company-mark[data-company="이니렌탈"]{color:#5b119d;font-size:16px}
+.company-mark[data-company="BS ON"]{color:#008bc5;letter-spacing:-.02em;font-size:24px}
+.company-mark[data-company="현대유버스"]{color:#00539e;font-size:24px;letter-spacing:.01em}
+.company-mark[data-company="스마트렌탈"]{color:#006389;font-size:14px;letter-spacing:.01em}
+.company-mark[data-company="LG헬로렌탈"],.company-mark[data-company="LG전자구독"]{color:#a50034}
+.company-mark[data-company="KT가전구독"]{color:#202633;font-size:16px}
+.company-name{font-size:12px;font-weight:600;line-height:1.4;text-align:center}
+.company-price{font-size:12px;color:#8e98af;white-space:nowrap}.company-price small{font-size:10px;margin-left:2px}
+.rental-company.selected .company-price{color:#6b4ded}
+.companies-more{flex:0 0 42px;align-self:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-height:82px;padding:8px 3px;border:1px solid #e8eaf2;border-radius:10px;background:#fafbfe;color:#8790a6;font-size:11px;white-space:nowrap}
+.companies-more[aria-expanded="true"]{color:#7252ee;border-color:#bdb0fa;background:#f8f5ff}
+.companies-more small{font-size:10px;color:#a6adbe}
+.company-extra{margin-top:8px;margin-right:50px}
+.company-extra[hidden]{display:none}
+.rental-comparison #condition-control:not(:empty){margin-top:18px}
+.rental-comparison .rental-price-box{background:linear-gradient(110deg,#f4f0ff,#f5f3ff);padding:21px 24px}
+.rental-comparison .rental-price-box strong{font-size:39px;color:#6043ed}
+.rental-comparison .rental-price-box>p{color:#8992ae;text-align:left;margin-top:7px}
+.rental-comparison .apply-button{background:linear-gradient(100deg,#4964ff,#6633f3);border-radius:10px}
+@media(max-width:1150px) and (min-width:761px){.rental-comparison{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:24px}.rental-comparison .rental-options{padding:18px}.rental-comparison .option-heading{align-items:flex-start;flex-direction:column;gap:4px}.rental-comparison .option-heading>span{max-width:none;text-align:left}.company-heading>span{max-width:150px}.company-mark{font-size:14px}.company-mark[data-company="이니렌탈"]{font-size:13px}.rental-company{padding-left:4px;padding-right:4px}.company-name{font-size:11px}.company-price{font-size:11px}.company-rank{left:6px;padding:2px 7px}}
+@media(max-width:760px){.rental-comparison{grid-template-columns:1fr;gap:25px}.rental-comparison .rental-options{padding:20px 16px}.rental-comparison .option-heading{align-items:flex-start;flex-direction:column;gap:5px;margin-bottom:22px}.rental-comparison .option-heading>span{max-width:none;text-align:left}.rental-comparison .option-heading h2{font-size:20px}.rental-comparison .option-row{gap:10px}.rental-comparison .option-row>span{width:65px;font-size:13px}.company-heading{align-items:flex-start;flex-direction:column;gap:4px}.company-heading>span{text-align:left}.company-grid{gap:6px}.company-first-row{gap:6px}.rental-company{min-height:134px;padding:34px 4px 10px;gap:4px;border-radius:9px}.company-rank{top:7px;left:5px;padding:1px 6px;font-size:10px}.company-mark{font-size:13px;min-height:30px}.company-mark[data-company="이니렌탈"]{font-size:12px}.company-mark[data-company="BS ON"],.company-mark[data-company="현대유버스"]{font-size:19px}.company-mark[data-company="스마트렌탈"]{font-size:11px}.company-mark[data-company="KT가전구독"]{font-size:12px}.company-name{font-size:11px;overflow-wrap:anywhere}.company-price{font-size:11px}.company-price small{display:block;font-size:9px;margin:0}.companies-more{flex-basis:32px;font-size:10px;min-height:76px}.company-extra{margin-right:38px;margin-top:6px}.rental-comparison .rental-price-box{padding:18px}.rental-comparison .rental-price-box strong{font-size:33px}}
+:is(.home-product-grid){grid-template-columns:repeat(4,minmax(0,1fr));row-gap:38px}
+.home-product-pages{display:none}
+.home-internet{position:relative;display:flex;align-items:center;gap:28px;overflow:hidden;background:linear-gradient(112deg,#f0f4ff,#f2eeff);border:1px solid #e9e8fb;border-radius:22px;margin-top:32px;margin-bottom:44px;padding:32px 40px;min-height:234px}
+.home-internet-copy{position:relative;z-index:1;flex:1;min-width:0}
+.home-internet .eyebrow{font-size:11px;letter-spacing:.15em;margin-bottom:9px}
+.home-internet h2{font-size:28px;line-height:1.35;letter-spacing:-.05em}
+.home-internet p{font-size:14px;color:#7e829d;margin-top:9px}
+.home-internet-providers{display:flex;gap:8px;margin-top:15px}
+.home-internet-providers span{display:inline-flex;align-items:center;justify-content:center;border:1px solid #e3e2f5;background:#ffffffa6;border-radius:7px;min-width:47px;padding:3px 10px;font-size:12px;font-weight:750;letter-spacing:0}
+.home-internet-providers span:nth-child(1){color:#30323e}.home-internet-providers span:nth-child(2){color:#e74e44}.home-internet-providers span:nth-child(3){color:#d93783}
+.home-internet-art{flex:0 0 220px;width:220px}
+.home-internet-art svg{width:100%;height:auto}
+.home-internet-link{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:49px;background:#fff;border:1px solid #dddaf8;box-shadow:0 4px 12px #6552ce08;color:var(--purple);border-radius:10px;padding:0 21px;font-size:14px;font-weight:650;white-space:nowrap}
+.home-internet-link:hover{border-color:#aaa0f1;background:#fcfbff}
+@media(max-width:900px){.home-internet{padding:28px;gap:12px;flex-wrap:wrap}.home-internet-art{flex-basis:170px;width:170px}.home-internet-link{gap:18px}.home-internet h2{font-size:25px}}
+@media(max-width:640px){.home-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:26px}.home-product-grid[data-mobile-page="0"]>.product-card:nth-child(n+5),.home-product-grid[data-mobile-page="1"]>.product-card:nth-child(-n+4){display:none}.home-product-pages{display:flex;align-items:center;justify-content:center;gap:19px;margin-top:22px}.home-product-pages button{display:grid;place-items:center;width:38px;min-height:38px;border:1px solid #e9e7f4;border-radius:50%;color:var(--purple);background:#fff}.home-product-pages button:disabled{color:#bdc0cd;background:#fafaff;cursor:default}.home-product-pages span{font-size:13px;color:#818599;letter-spacing:.08em}.home-internet{padding:24px;margin-top:28px;margin-bottom:30px;min-height:0;gap:0;border-radius:17px}.home-internet .eyebrow{font-size:10px;margin-bottom:8px}.home-internet-copy{flex-basis:100%}.home-internet h2{font-size:23px;max-width:220px}.home-internet p{font-size:13px;max-width:230px;line-height:1.6;margin-top:10px}.home-internet-art{position:absolute;right:-14px;top:10px;width:122px;opacity:.75}.home-internet-providers{margin-top:14px;gap:6px}.home-internet-providers span{font-size:11px;min-width:41px;padding:2px 8px}.home-internet-link{width:100%;margin-top:20px;min-height:45px;justify-content:space-between;padding:0 16px;font-size:13px}.popular-toolbar .pill-tabs button{flex:1}.popular-toolbar .pill-tabs{max-width:370px}}
+.home-reviews{padding-top:22px;padding-bottom:22px;margin-bottom:22px}
+.home-reviews .section-heading{margin-bottom:28px;align-items:center;padding:0 10px}
+.home-reviews .section-heading h2{font-size:36px;font-weight:780;letter-spacing:-.05em}
+.home-reviews h2 em{font-style:normal;color:var(--purple)}
+.home-reviews .section-heading p{font-size:16px;color:#858a9c;margin-top:10px}
+.home-reviews .review-channel-more{color:var(--purple);font-weight:650;font-size:15px;gap:18px}
+.review-carousel{position:relative;padding:0 50px;outline-offset:6px}
+.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.review-card{min-width:0;border:1px solid #f1f2f9;border-radius:18px;background:#fff;padding:10px;box-shadow:0 8px 32px #55528c0b;animation:review-appear .2s ease-out}
+.review-thumbnail{position:relative;display:block;aspect-ratio:1.6;border-radius:12px;overflow:hidden;background:#f3f2f8}
+.review-thumbnail img{width:100%;height:100%;object-fit:cover;object-position:center 45%;transition:transform .3s ease}
+.review-thumbnail:hover img{transform:scale(1.04)}
+.review-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:56px;height:56px;border:3px solid #fff;background:#20232f38;border-radius:50%;color:#fff;box-shadow:0 3px 12px #0002}
+.review-play svg{fill:currentColor;stroke-width:1;margin-left:3px}
+.review-shorts{position:absolute;right:10px;bottom:10px;background:#22232abf;color:#fff;border-radius:7px;padding:2px 9px;font-size:11px;letter-spacing:.02em;font-weight:600}
+.review-card-copy{padding:14px 5px 6px}
+.review-title h3{font-size:17px;line-height:1.5;font-weight:700;min-height:51px;word-break:keep-all;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.review-title:hover{color:var(--purple)}
+.review-card-copy>p{font-size:13px;color:#9297a8;margin-top:7px;line-height:1.6}
+.review-meta{display:flex;align-items:center;gap:10px;margin-top:20px;min-width:0;font-size:12px;color:#8d91a5}
+.review-brand{background:#f2efff;border-radius:9px;padding:3px 9px;color:#6b55e4;font-weight:550;white-space:nowrap}
+.review-category{border-left:1px solid #e8e7f1;padding-left:10px;white-space:nowrap}
+.review-views{margin-left:auto;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.review-direction{position:absolute;top:28%;width:40px;min-height:40px;padding:0;border-radius:50%;background:#f0effc;color:#666b81;display:grid;place-items:center}
+.review-direction:hover{background:#e8e4ff;color:var(--purple)}
+.review-prev{left:0}.review-next{right:0}
+.review-navigation{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:24px;min-height:32px}
+.review-dots{display:flex;align-items:center}
+.review-dots button{width:22px;min-height:30px;padding:0;display:grid;place-items:center;border-radius:8px}
+.review-dots button:after{content:'';width:7px;height:7px;border-radius:50%;background:#e2e3ed;transition:background .2s}
+.review-dots button.active:after{background:#6650ef}
+#review-position{font-size:12px;letter-spacing:.08em;color:#9498aa;min-width:42px}
+.review-channel-banner{display:flex;align-items:center;gap:24px;margin-top:32px;padding:25px 30px;background:linear-gradient(105deg,#f4f2ff,#f8f7ff);border-radius:18px}
+.review-channel-icon{display:grid;place-items:center;width:66px;height:66px;flex-shrink:0;background:#ece7ff;border-radius:50%;color:#7049f8}
+.review-channel-copy{flex:1;min-width:0}
+.review-channel-copy .eyebrow{font-size:10px;letter-spacing:.1em;margin-bottom:7px}
+.review-channel-copy h3{font-size:18px;line-height:1.5;font-weight:700}
+.review-channel-banner>p{font-size:12px;line-height:1.7;color:#8f92a8;border-left:1px solid #ded9ff;padding-left:24px;max-width:265px}
+.review-channel-banner>.primary-button{font-size:13px;gap:18px;white-space:nowrap;box-shadow:none;min-height:48px}
+@keyframes review-appear{from{opacity:.4}to{opacity:1}}
+@media(max-width:1100px){.review-channel-banner{gap:18px;padding:24px}.review-channel-banner>p{display:none}.review-card-copy{padding-left:2px;padding-right:2px}.review-meta{gap:6px;font-size:11px}.review-category{padding-left:6px}.review-brand{padding:3px 7px}}
+@media(max-width:800px){.review-carousel{padding:0 40px}.review-grid{gap:12px}.review-card{padding:8px;border-radius:15px}.review-title h3{font-size:15px}.review-card-copy>p{font-size:12px}.review-play{width:45px;height:45px}.review-meta{flex-wrap:wrap;gap:6px}.review-views{margin-left:0}.review-direction{width:32px;min-height:32px}.home-reviews .section-heading h2{font-size:30px}.review-channel-copy h3{font-size:16px}}
+@media(max-width:640px){.home-reviews{padding-top:12px;margin-bottom:10px;padding-bottom:12px}.home-reviews .section-heading{padding:0;margin-bottom:20px;gap:12px}.home-reviews .section-heading h2{font-size:27px}.home-reviews .section-heading p{font-size:13px;margin-top:6px}.home-reviews .section-heading .eyebrow{font-size:10px}.home-reviews .review-channel-more{font-size:12px;gap:6px;white-space:nowrap;align-self:flex-start;margin-top:27px}.home-reviews .review-channel-more svg{width:16px;height:16px}.review-carousel{padding:0}.review-grid{grid-template-columns:minmax(0,1fr)}.review-card:nth-child(n+2){display:none}.review-card{padding:10px;border-radius:17px}.review-thumbnail{aspect-ratio:1.3}.review-play{width:54px;height:54px}.review-title h3{font-size:17px;min-height:51px}.review-card-copy{padding:13px 4px 7px}.review-card-copy>p{font-size:13px}.review-meta{margin-top:17px;font-size:12px;flex-wrap:nowrap;gap:10px}.review-views{margin-left:auto}.review-category{padding-left:10px}.review-brand{padding:3px 9px}.review-navigation{position:relative;margin-top:18px;gap:2px;flex-direction:column;min-height:57px}.review-direction{top:auto;bottom:-64px;width:36px;min-height:36px;z-index:1}.review-dots button{width:20px;min-height:28px}.review-dots button:after{width:6px;height:6px}#review-position{font-size:11px;text-align:center}.review-channel-banner{margin-top:26px;gap:13px;padding:22px 19px;flex-wrap:wrap;border-radius:16px}.review-channel-icon{width:47px;height:47px}.review-channel-icon svg{width:27px;height:23px}.review-channel-copy{flex-basis:calc(100% - 60px)}.review-channel-copy h3{font-size:15px}.review-channel-copy .eyebrow{font-size:9px;margin-bottom:5px}.review-channel-banner>.primary-button{width:100%;margin-top:5px;min-height:45px;font-size:13px;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){.review-card{animation:none}.review-thumbnail img{transition:none}}
+
+/* Homepage internet showcase: shared calculator rates, 500 Mbps + entry TV. */
+.internet-showcase{position:relative;overflow:hidden;padding:38px 36px 28px;margin-top:32px;margin-bottom:56px;border-radius:24px;background:#e5eaff url('./assets/internet-hero.png') center center/cover no-repeat;scroll-margin-top:140px}
+.internet-showcase-heading{position:relative;max-width:80%}
+.internet-showcase-heading .eyebrow{font-size:12px;letter-spacing:.15em;margin-bottom:10px}
+.internet-showcase-heading h2{font-size:44px;line-height:1.25;letter-spacing:-.055em;color:#111827}
+.internet-showcase-heading h2 em{font-style:normal;color:#6433ff}
+.internet-showcase-heading>p{font-size:17px;line-height:1.6;color:#63718e;margin-top:10px;word-break:keep-all}
+.internet-showcase-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:78%;margin-top:26px}
+.internet-showcase-card{min-width:0;border:1px solid #dae2ff;border-radius:18px;background:#fff;padding:17px 23px 20px;box-shadow:0 3px 12px #788fbc04}
+.internet-showcase-brand{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:52px}
+.internet-showcase-brand img{width:112px;height:62px;object-fit:contain;object-position:left center;margin-left:-8px}
+.internet-showcase-brand>span{align-self:flex-start;margin-top:1px;padding:5px 10px;background:#f1f1ff;color:#656580;border-radius:30px;font-size:11px;font-weight:650;white-space:nowrap}
+.internet-showcase-plan h3{font-size:21px;line-height:1.4;letter-spacing:-.055em;white-space:nowrap;margin-top:8px}
+.internet-showcase-plan p{font-size:14px;color:#7885a4;margin-top:4px}
+.internet-showcase-price{display:flex;align-items:baseline;gap:10px;border-top:1px solid #dde2f3;margin-top:17px;padding-top:14px;white-space:nowrap}
+.internet-showcase-price>span{font-size:17px}
+.internet-showcase-price strong{font-size:37px;line-height:1.2;color:#6530ff;font-weight:800;letter-spacing:-.045em}
+.internet-showcase-price small{font-size:21px;margin-left:2px}
+.internet-showcase-basis{font-size:11px;line-height:1.6;color:#65758d;margin-top:11px;word-break:keep-all}
+.internet-showcase-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px 18px 15px 24px;margin-top:18px;background:#ffffffc7;border-radius:17px}
+.internet-showcase-footer p{display:flex;align-items:center;gap:12px;font-size:13px;line-height:1.6;color:#6d7b99;word-break:keep-all}
+.internet-showcase-footer p>span{font-size:26px;line-height:1;color:#6944ff}
+.internet-showcase-footer a{display:flex;align-items:center;justify-content:center;gap:24px;flex-shrink:0;min-height:53px;padding:0 28px;border-radius:12px;background:linear-gradient(110deg,#2799ff,#7430ff);color:white;font-size:17px;font-weight:700;box-shadow:0 3px 8px #6448ff0d}
+.internet-showcase-footer a:hover{filter:brightness(1.06)}
+.internet-showcase-footer a:focus-visible{outline:3px solid #362687;outline-offset:4px}
+@media(max-width:1100px){.internet-showcase{padding:30px 25px}.internet-showcase-cards{width:86%}.internet-showcase-card{padding:14px 17px 18px}.internet-showcase-plan h3{font-size:18px}.internet-showcase-price strong{font-size:32px}.internet-showcase-brand img{width:95px;height:56px}.internet-showcase-brand>span{font-size:10px;padding:4px 7px}.internet-showcase-footer{gap:18px}.internet-showcase-footer a{font-size:15px;gap:16px;padding:0 20px}}
+@media(max-width:900px){.internet-showcase-heading{max-width:90%}.internet-showcase-heading h2{font-size:36px}.internet-showcase-heading>p{font-size:15px}.internet-showcase-cards{width:100%;gap:10px}.internet-showcase-card{padding:14px}.internet-showcase-brand>span{display:none}.internet-showcase-price{gap:7px}.internet-showcase-price strong{font-size:30px}.internet-showcase-price small{font-size:17px}.internet-showcase-footer{align-items:stretch;flex-direction:column;gap:12px}.internet-showcase-footer a{align-self:flex-end;min-height:48px}}
+@media(max-width:640px){.internet-showcase{padding:25px 18px 18px;margin-top:28px;margin-bottom:36px;border-radius:20px;background-position:68% top;background-size:auto 360px;background-color:#e8e7ff}.internet-showcase-heading{max-width:100%}.internet-showcase-heading .eyebrow{font-size:10px;margin-bottom:9px}.internet-showcase-heading h2{font-size:29px;max-width:230px;line-height:1.3}.internet-showcase-heading h2 em{display:block}.internet-showcase-heading>p{font-size:12px;max-width:235px;margin-top:9px}.internet-showcase-cards{grid-template-columns:1fr;gap:10px;margin-top:20px}.internet-showcase-card{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:6px;row-gap:3px;border-radius:13px;padding:10px 15px 13px}.internet-showcase-brand{grid-column:1/-1;min-height:29px}.internet-showcase-brand img{width:88px;height:36px;margin-left:-12px}.internet-showcase-brand>span{display:block;font-size:9px;padding:3px 7px}.internet-showcase-plan h3{font-size:16px;white-space:normal;margin-top:0}.internet-showcase-plan p{font-size:11px;margin-top:2px}.internet-showcase-price{align-self:center;border:0;margin:0;padding:0;gap:4px}.internet-showcase-price>span{font-size:11px}.internet-showcase-price strong{font-size:27px}.internet-showcase-price small{font-size:13px;margin-left:1px}.internet-showcase-basis{font-size:10px;margin-top:10px}.internet-showcase-footer{margin-top:14px;padding:14px;border-radius:13px;gap:13px}.internet-showcase-footer p{gap:8px;font-size:11px}.internet-showcase-footer p>span{font-size:22px}.internet-showcase-footer a{align-self:stretch;min-height:46px;padding:0 14px;justify-content:space-between;font-size:14px}}
+
+/* Entire benefit banner opens the promotional consultation dialog. */
+.benefit-banner .benefit-open{position:absolute;inset:0;width:100%;height:100%;z-index:3;border-radius:inherit}
+.benefit-banner .benefit-open:focus-visible{outline:3px solid var(--purple);outline-offset:-4px}
+.benefit-copy .benefit-cta{display:flex;align-items:center;gap:21px;font-size:13px;font-weight:650;padding-top:10px;color:#544838}
+.benefit-banner:has(.benefit-open:hover) .benefit-cta{color:#876025}
+.benefit-consult-overlay .overlay-backdrop{background:#e9ecfbbd;backdrop-filter:blur(5px)}
+.benefit-consult-overlay .dialog{max-width:700px;padding:28px 38px;border-radius:27px;box-shadow:0 18px 70px #525b9c26}
+.benefit-consult-overlay .dialog-heading{align-items:flex-start;margin-bottom:16px}
+.benefit-consult-overlay .dialog-heading .eyebrow{font-size:12px;letter-spacing:.17em;margin-bottom:6px}
+.benefit-consult-overlay .dialog-heading h2{font-size:29px;font-weight:750}
+.benefit-consult-overlay .dialog-heading .icon-button{margin-right:-8px}
+.benefit-consult-content{text-align:center}
+.benefit-consult-content .consult-symbol{width:76px;height:76px;border-radius:24px;margin:0 auto 16px;background:linear-gradient(135deg,#f2eeff,#f4f2ff)}
+.benefit-consult-logo{width:173px;height:auto;margin:0 auto 19px}
+.benefit-consult-content h3{font-size:33px;line-height:1.35;font-weight:800;letter-spacing:-.055em;word-break:keep-all}
+.benefit-consult-content h3>strong{display:block;font-size:41px;color:#6040ff;margin-top:3px;line-height:1.35;font-weight:850;letter-spacing:-.06em}
+.benefit-consult-description{font-size:16px;color:#82879a;margin-top:16px;word-break:keep-all}
+.benefit-consult-content .consult-contact{margin:20px 0;padding:18px;background:#f5f2ff;border-radius:18px}
+.benefit-consult-content .consult-phone span{font-size:13px;color:#87829c}
+.benefit-consult-content .consult-phone strong{font-size:38px;line-height:1.6;letter-spacing:-.04em}
+.benefit-consult-content .consult-contact p{font-size:13px;color:#88849b}
+.benefit-consult-content .kakao-button{display:flex;min-height:57px;gap:26px;border-radius:13px;font-size:18px;background:#fee500;color:#191919}
+.benefit-consult-content .kakao-button:hover{background:#f4dd00}
+.benefit-consult-content .consult-contact-note{font-size:12px;color:#9094a6;margin-top:12px}
+@media(max-height:780px) and (min-width:641px){.benefit-consult-overlay .dialog{padding:22px 34px}.benefit-consult-overlay .dialog-heading{margin-bottom:12px}.benefit-consult-overlay .dialog-heading h2{font-size:25px}.benefit-consult-content .consult-symbol{width:62px;height:62px;border-radius:20px;margin-bottom:12px}.benefit-consult-logo{width:150px;margin-bottom:13px}.benefit-consult-content h3{font-size:29px}.benefit-consult-content h3>strong{font-size:36px}.benefit-consult-description{margin-top:11px;font-size:14px}.benefit-consult-content .consult-contact{margin:15px 0;padding:13px}.benefit-consult-content .consult-phone strong{font-size:34px}.benefit-consult-content .kakao-button{min-height:51px;font-size:16px}}
+@media(max-width:640px){.benefit-consult-overlay{padding:16px}.benefit-consult-overlay .dialog{max-height:calc(100dvh - 32px);padding:24px 20px;border-radius:23px}.benefit-consult-overlay .dialog-heading{margin-bottom:22px}.benefit-consult-overlay .dialog-heading .eyebrow{font-size:10px;letter-spacing:.13em}.benefit-consult-overlay .dialog-heading h2{font-size:24px}.benefit-consult-content .consult-symbol{width:65px;height:65px;border-radius:21px;margin-bottom:16px}.benefit-consult-logo{width:144px;margin-bottom:19px}.benefit-consult-content h3{font-size:24px}.benefit-consult-content h3>strong{font-size:30px;margin-top:8px}.benefit-consult-content h3>strong span{white-space:nowrap}.benefit-consult-description{font-size:13px;line-height:1.7;margin-top:18px}.benefit-consult-content .consult-contact{padding:17px 10px;margin:20px 0;border-radius:15px}.benefit-consult-content .consult-phone span{font-size:12px}.benefit-consult-content .consult-phone strong{font-size:34px}.benefit-consult-content .consult-contact p{font-size:12px}.benefit-consult-content .kakao-button{font-size:16px;min-height:53px;gap:18px}.benefit-consult-content .consult-contact-note{font-size:11px;line-height:1.6;margin-top:12px}}
+
+.benefit-consult-logo .logo-image{width:100%}
+
+
+/* Reference banner: 2034 x 378 artwork bounds within the supplied image. */
+.benefit-promotion{display:block;container-type:inline-size;aspect-ratio:2034/378;min-height:0;padding:0;gap:0;position:relative;background:linear-gradient(105deg,#fffaf6,#fcfafc 56%,#ecebff);border:0;border-radius:1.4vw;box-shadow:0 7px 24px #655da006;isolation:isolate;scroll-margin-top:140px}
+.benefit-promotion-heading{position:absolute;left:3.2%;top:16.4%;width:27%;z-index:1}
+.benefit-promotion-heading .eyebrow{color:#bf945d;font-size:1.0cqw;line-height:1.4;letter-spacing:.14em;margin-bottom:1.05cqw}
+.benefit-promotion-heading h2{font-size:2.72cqw;line-height:1.29;letter-spacing:-.065em;font-weight:800;white-space:nowrap}
+.benefit-promotion-heading h2 em{font-style:normal;color:#6040f7}
+.benefit-promotion-heading>p{font-size:1.03cqw;color:#81838a;line-height:1.5;margin-top:1.12cqw;white-space:nowrap}
+.benefit-promotion-break{display:none}
+.benefit-promotion-details{display:contents}
+.benefit-perks{position:absolute;left:29.4%;top:17.8%;width:46.4%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));z-index:1}
+.benefit-perk{position:relative;display:flex;align-items:center;gap:1.25cqw;min-width:0;padding:0;border:0}
+.benefit-perk:not(:last-child):after{content:'';position:absolute;width:1px;height:4.2cqw;right:1.7cqw;top:.6cqw;background:#e9e5ea}
+.benefit-perk-icon{display:grid;place-items:center;flex-shrink:0;width:4.95cqw;height:4.95cqw;border-radius:50%;color:#6c43ff;background:#eeebff}
+.benefit-perk-icon svg{width:2.2cqw;height:2.2cqw}
+.benefit-perk-icon.present{background:#fff0f1}.benefit-perk-icon.kakao{background:#fff2a7}
+.benefit-perk h3{font-size:1.0cqw;line-height:1.4;font-weight:750;letter-spacing:-.05em;white-space:nowrap}
+.benefit-perk p{font-size:.96cqw;line-height:1.45;color:#84858d;margin-top:.5cqw;white-space:nowrap}
+.benefit-promotion-cta{position:absolute;left:38.8%;top:60.7%;width:21.8%;height:23.6%;min-height:0;max-width:none;margin:0;display:flex;align-items:center;justify-content:center;gap:1.9cqw;border-radius:1.55cqw;background:linear-gradient(110deg,#5959ff,#5b26f3);box-shadow:0 8px 17px #6244ed20;color:white;font-size:1.25cqw;font-weight:700;line-height:1.2;white-space:nowrap;z-index:1}
+.benefit-promotion-cta svg{width:1.6cqw;height:1.6cqw}
+.benefit-promotion-art{position:absolute;z-index:0;width:27%;height:100%;right:0;top:0;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%)}
+.benefit-promotion-art picture{display:contents}
+.benefit-promotion-art img{position:absolute;width:395.5%;height:auto;max-width:none;left:-284.57%;top:-46.03%;object-fit:initial;mix-blend-mode:normal;mask-image:none}
+.benefit-promotion:has(.benefit-open:hover) .benefit-promotion-cta{filter:brightness(1.07)}
+@media(max-width:640px){.benefit-promotion{display:grid;grid-template-columns:minmax(0,1fr);aspect-ratio:auto;padding:25px 20px 22px;gap:0;border-radius:20px}.benefit-promotion-heading{position:relative;left:auto;top:auto;width:100%;padding-bottom:24px}.benefit-promotion-heading .eyebrow{font-size:10px;letter-spacing:.13em;margin-bottom:9px}.benefit-promotion-heading h2{font-size:27px;line-height:1.36;white-space:normal}.benefit-promotion-heading>p{font-size:12px;max-width:190px;line-height:1.65;margin-top:11px;white-space:normal}.benefit-promotion-break{display:block}.benefit-promotion-details{position:relative;display:block;padding-top:19px;border-top:1px solid #e9e2ee;z-index:1}.benefit-perks{position:static;width:100%;gap:0}.benefit-perk{flex-direction:column;gap:8px;text-align:center;padding:0 7px;border-right:1px solid #e9e5ea}.benefit-perk:first-child{padding-left:0}.benefit-perk:last-child{border:0;padding-right:0}.benefit-perk:after{display:none}.benefit-perk-icon{width:46px;height:46px}.benefit-perk-icon svg{width:27px;height:27px}.benefit-perk h3{font-size:12px;line-height:1.45}.benefit-perk p{font-size:11px;line-height:1.6;margin-top:5px}.benefit-promotion-cta{position:relative;left:auto;top:auto;width:100%;height:auto;font-size:14px;margin-top:22px;min-height:47px;gap:21px;border-radius:14px}.benefit-promotion-cta svg{width:22px;height:22px}.benefit-promotion-art{width:140px;height:190px;top:0;right:-5px;mask-image:none}.benefit-promotion-art img{width:176px;height:176px;left:auto;top:auto;right:-10px;bottom:-3px;object-fit:contain;mix-blend-mode:multiply;mask-image:radial-gradient(ellipse 65% 65% at 55% 55%,#000 30%,transparent 83%)}}
