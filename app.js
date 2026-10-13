@@ -1,7 +1,7 @@
 import { homeBenefitBanner } from './home-benefit.js?v=20261012-benefit-reference';
 import { internetShowcase } from './home-internet.js?v=20261012-internet-showcase';
 import { reviewSection, reviewCards, reviewPosition, reviewVideos } from './review-videos.js?v=20261012-youtube-banner-removed';
-import { homeWaterTypes, homeWaterProducts, prioritizeWaterProducts } from './home-products.js?v=20261012-water-catalog-order';
+import { homeWaterTypes, homeWaterProducts, prioritizeWaterProducts } from './home-products.js?v=20261013-water-crawl';
 import { commercialTypes, isCommercialProduct, matchesCommercialType, commercialHref, normalizeCommercialProduct } from './commercial.js';
 import { searchRoute, applySearchMetadata, normalizeCategory } from './seo.js?v=20261007-cordless';
 import { categoryArt } from './category-art.js';
@@ -17,7 +17,7 @@ import { categories, navigationCategories, categoryTree, products as sampleProdu
 import { termKey, termLabel, conditionKey, careDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js';
 
 let products = sampleProducts;
-try { const response = await fetch('./catalog.json?v=635fde99fed0a56e', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
+try { const response = await fetch('./catalog.json?v=da667661b3bd4111', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const esc = (s='') => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

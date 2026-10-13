@@ -7,9 +7,9 @@ export const homeWaterTypes = ['냉온정수기','얼음정수기','정수전용
 // Curated from the models already imported into the catalog. No inferred launch
 // dates or NEW labels: replace a model here when newer crawl data is approved.
 const featuredModels = {
-  냉온정수기: ['WD524VCT','WPUMAC306SWH','CHP-7220N','CP-AMS100EWH','HQPD11CC0G','WHCD-96HN','WP-50C90621N','EWBD151'],
-  얼음정수기: ['WD724RE','WPUIAC606SN','CHPI-7430N','CP-AQS100EWH','HQPI73CG0E','WHCI-25HN','WI-37C90720N','EWDD951'],
-  정수전용: ['WD121MCB','WPUGBC102S','P-6320L','CP-AKS011GB','HQPM15C','WPD24HU','WP-43C60000M','EW-210'],
+  냉온정수기: ['WD524VCT','WPU-MAC306SWH','CHP-7220N','CP-AMS100EWH','HQPD11CC0G','WHCD-96HN','WP-50C90621N','EWBD151'],
+  얼음정수기: ['WD724RE','WPU-IAC606S','CHPI-7430N','CP-AQS100EWH','HQPI73CG0E','WHCI-25HN','WI-37C90720N','EWDD951'],
+  정수전용: ['WD121MCB','WPU-GBC102S','P-6320L','CP-AKS011GB','HQPM15C','WPD24HU','WP-43C60000M','EW-210'],
 };
 export function matchesHomeWaterType(product,type) {
   if(product.category !== '정수기')return false;
