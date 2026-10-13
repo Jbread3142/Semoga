@@ -24,3 +24,18 @@ export function brandPriority(value) {
   const priority = {'LG전자':0,'SK':1,'SK매직':1,'코웨이':2,'쿠쿠':3,'현대':4,'현대큐밍':4,'현대유버스':4,'청호':5,'청호나이스':5};
   return priority[brandName(value)] ?? 6;
 }
+
+// Alternate two products per brand, keeping each brand's crawl order intact.
+export function arrangeBrandPairs(list, brands) {
+  const groups=new Map(brands.map(brand=>[brand,[]]));
+  for(const product of list) {
+    const brand=brandName(product.brand);
+    if(!groups.has(brand))groups.set(brand,[]);
+    groups.get(brand).push(product);
+  }
+  const result=[];
+  for(let offset=0;result.length<list.length;offset+=2) {
+    for(const group of groups.values())result.push(...group.slice(offset,offset+2));
+  }
+  return result;
+}
