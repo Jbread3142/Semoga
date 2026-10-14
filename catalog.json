@@ -159816,5 +159816,3501 @@
     "colors": [],
     "sample": false,
     "detailImagesSource": "crawl"
+  },
+  {
+    "id": "cir-dp103fw-d0c35b9b",
+    "name": "미식컬렉션 셰프스틱 인덕션 1구",
+    "model": "CIR-DP103FW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "346 x 296 x 42 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "포터블",
+    "method": "",
+    "features": [
+      "인덕션",
+      "포터블",
+      "1구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "포터블",
+      "화구수:1구",
+      "소비전력:2000W",
+      "세라믹글라스",
+      "다이얼",
+      "프리존(플렉스존)",
+      "기능:터보모드",
+      "안전장치:잔열표시,버튼잠금,과열감지"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-dp103fw-d0c35b9b-thumbnail-1-aacc32b44bf484d47875.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-dp103fw-d0c35b9b-thumbnail-1-aacc32b44bf484d47875.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-dp103fw-d0c35b9b-detail-1-0ad5452a11ae082ff7ea.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-dp103fw-d0c35b9b-detail-1-0ad5452a11ae082ff7ea.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-dp103fw-d0c35b9b-detail-2-6943b81fca95721a57bd.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 6200,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 6200,
+        "sourceRow": 2,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 7400,
+        "sourceRow": 3,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 9300,
+        "sourceRow": 4,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 2
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-d103fw-9c575a53",
+    "name": "미식 컬렉션 포터블 1구 슬림핏 인덕션",
+    "model": "CIR-D103FW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "350 x 300 x 37 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "포터블",
+    "method": "",
+    "features": [
+      "인덕션",
+      "포터블",
+      "1구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "포터블",
+      "화구수:1구",
+      "소비전력:2000W",
+      "세라믹글라스",
+      "다이얼",
+      "기능:터보모드",
+      "안전장치:타이머",
+      "잔열표시",
+      "버튼잠금",
+      "과열감지",
+      "용기없음인식"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-d103fw-9c575a53-thumbnail-1-f800b341d2b6783a5cb6.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-d103fw-9c575a53-thumbnail-1-f800b341d2b6783a5cb6.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-d103fw-9c575a53-detail-c094c5a00ce59a97d957.jpg",
+    "monthlyPrice": 6400,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 6400,
+        "sourceRow": 5,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 7500,
+        "sourceRow": 6,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 9500,
+        "sourceRow": 7,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 3
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "nhp-31ke-0c8c1bb5",
+    "name": "프라임 하이브리드 인덕션 2구 + 하이라이트 1구",
+    "model": "NHP-31KE",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "580 x 510 x 58 mm",
+    "weight": null,
+    "function": "하이브리드",
+    "type": "",
+    "method": "",
+    "features": [
+      "하이브리드",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/nhp-31ke-0c8c1bb5-thumbnail-1-78b44d55fa261434a438.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/nhp-31ke-0c8c1bb5-thumbnail-1-78b44d55fa261434a438.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/nhp-31ke-0c8c1bb5-detail-1-b5e4d7f5e1b00bdf7fce.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/nhp-31ke-0c8c1bb5-detail-1-b5e4d7f5e1b00bdf7fce.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/nhp-31ke-0c8c1bb5-detail-2-6c72fb8d3dbfc073bb9a.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 12900,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "other",
+        "careLabel": "서비스프리",
+        "cycle": "",
+        "monthlyPrice": 12900,
+        "sourceRow": 8,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "other",
+        "careLabel": "스페셜체인지",
+        "cycle": "",
+        "monthlyPrice": 15900,
+        "sourceRow": 9,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "서비스프리",
+        "cycle": "",
+        "monthlyPrice": 14400,
+        "sourceRow": 10,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "스페셜체인지",
+        "cycle": "",
+        "monthlyPrice": 17400,
+        "sourceRow": 11,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "서비스프리",
+        "cycle": "",
+        "monthlyPrice": 16400,
+        "sourceRow": 12,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "스페셜체인지",
+        "cycle": "",
+        "monthlyPrice": 19400,
+        "sourceRow": 13,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 4
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "kr-s4800n-041db03d",
+    "name": "프리미엄 인덕션 3구",
+    "model": "KR-S4800N",
+    "brand": "웰치",
+    "category": "전기레인지",
+    "size": null,
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/kr-s4800n-041db03d-thumbnail-1-99dc26df29eb3774a168.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/kr-s4800n-041db03d-thumbnail-1-99dc26df29eb3774a168.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/kr-s4800n-041db03d-detail-8dc11c2daddf43adcd43.jpg",
+    "monthlyPrice": 13700,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 13700,
+        "sourceRow": 14,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 16300,
+        "sourceRow": 15,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 20800,
+        "sourceRow": 16,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 2,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 29900,
+        "sourceRow": 17,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 1,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 57500,
+        "sourceRow": 18,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 5
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "wei-w7700-593f0b73",
+    "name": "빌트인 브릿지 인덕션 3구",
+    "model": "WEI-W7700",
+    "brand": "웰치",
+    "category": "전기레인지",
+    "size": null,
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수: 3구",
+      "소비전력: 3500W",
+      "세라믹글라스상판",
+      "터치",
+      "프리존(플렉스존)",
+      "기능: 터보모드",
+      "안전장치: 타이머",
+      "잔열표시",
+      "버튼잠금",
+      "과열감지",
+      "일시정지",
+      "[부가] 타공치수(가로x세로): 560x70x480mm",
+      "크기(가로x세로): 590x510mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/wei-w7700-593f0b73-thumbnail-1-87e410a3584b98eb7c36.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/wei-w7700-593f0b73-thumbnail-1-87e410a3584b98eb7c36.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/wei-w7700-593f0b73-detail-bd04f51f19c69a0ccf4e.jpg",
+    "monthlyPrice": 13900,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 13900,
+        "sourceRow": 19,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 16500,
+        "sourceRow": 20,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21100,
+        "sourceRow": 21,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 2,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 30400,
+        "sourceRow": 22,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 1,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 58400,
+        "sourceRow": 23,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 6
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cer-04-f5c8e3ca",
+    "name": "프라임S 하이라이트 3구",
+    "model": "CER-04",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "580 x 510 x 58 mm",
+    "weight": null,
+    "function": "하이라이트",
+    "type": "",
+    "method": "",
+    "features": [
+      "하이라이트",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cer-04-f5c8e3ca-thumbnail-1-908078964f778cecad45.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cer-04-f5c8e3ca-thumbnail-1-908078964f778cecad45.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cer-04-f5c8e3ca-detail-1-94883a526eafeb3dbebb.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cer-04-f5c8e3ca-detail-1-94883a526eafeb3dbebb.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cer-04-f5c8e3ca-detail-2-a7dc205d7d746ce50741.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 14400,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 14400,
+        "sourceRow": 24,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 16400,
+        "sourceRow": 25,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 15900,
+        "sourceRow": 26,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 17900,
+        "sourceRow": 27,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 17900,
+        "sourceRow": 28,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 19900,
+        "sourceRow": 29,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 7
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "nz63t5601ak-2cbc71b2",
+    "name": "하이브리드 전기레인지 3구",
+    "model": "NZ63T5601AK",
+    "brand": "삼성",
+    "category": "전기레인지",
+    "size": "590*520*60 mm",
+    "weight": null,
+    "function": "하이브리드",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "하이브리드",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "하이브리드",
+      "빌트인",
+      "화구수:3구",
+      "[구성]인덕션:2구",
+      "하이라이트:1구",
+      "[출력]소비전력:3300W",
+      "화구출력(최대):2000W",
+      "1400W",
+      "[쿡탑]슬라이드터치",
+      "세라믹글라스상판",
+      "온도조절:9단계",
+      "[특징]터보모드",
+      "안전장치:타이머",
+      "잔열표시",
+      "버튼잠금",
+      "과열감지",
+      "일시정지",
+      "[부가]소음: 43dB이하",
+      "타공치수(가로x세로): 560x480mm",
+      "크기(가로x세로x깊이): 590x60x520mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/nz63t5601ak-2cbc71b2-thumbnail-1-16ba8506426a22be27e6.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/nz63t5601ak-2cbc71b2-thumbnail-1-16ba8506426a22be27e6.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/nz63t5601ak-2cbc71b2-thumbnail-2-16ba8506426a22be27e6.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/nz63t5601ak-2cbc71b2-thumbnail-3-53554adf49927b9deed2.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/nz63t5601ak-2cbc71b2-thumbnail-4-71420dc67cb93fadb115.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/nz63t5601ak-2cbc71b2-detail-0c51d5e05647bb066d9e.jpg",
+    "monthlyPrice": 15900,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 15900,
+        "sourceRow": 30,
+        "rentalCompany": "KT가전구독"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 19600,
+        "sourceRow": 31,
+        "rentalCompany": "KT가전구독"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 25900,
+        "sourceRow": 32,
+        "rentalCompany": "KT가전구독"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 15900,
+        "sourceRow": 33,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 18700,
+        "sourceRow": 34,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 23500,
+        "sourceRow": 35,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 16500,
+        "sourceRow": 36,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 19500,
+        "sourceRow": 37,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 24500,
+        "sourceRow": 38,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 22800,
+        "sourceRow": 39,
+        "rentalCompany": "LG헬로렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 26600,
+        "sourceRow": 40,
+        "rentalCompany": "LG헬로렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 34700,
+        "sourceRow": 41,
+        "rentalCompany": "LG헬로렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 8
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "nip-31ke-e8624e2f",
+    "name": "프라임 인덕션 3구",
+    "model": "NIP-31KE",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "580 x 510 x 55 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/nip-31ke-e8624e2f-thumbnail-1-17b23449b117087688b6.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/nip-31ke-e8624e2f-thumbnail-1-17b23449b117087688b6.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/nip-31ke-e8624e2f-detail-1-d94d3ebe5771ddfe9476.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/nip-31ke-e8624e2f-detail-1-d94d3ebe5771ddfe9476.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/nip-31ke-e8624e2f-detail-2-6adb8ca8093d1ba94353.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 16400,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "other",
+        "careLabel": "서비스프리",
+        "cycle": "",
+        "monthlyPrice": 16400,
+        "sourceRow": 42,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "other",
+        "careLabel": "스페셜체인지",
+        "cycle": "",
+        "monthlyPrice": 19400,
+        "sourceRow": 43,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "서비스프리",
+        "cycle": "",
+        "monthlyPrice": 17900,
+        "sourceRow": 44,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "스페셜체인지",
+        "cycle": "",
+        "monthlyPrice": 20900,
+        "sourceRow": 45,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "서비스프리",
+        "cycle": "",
+        "monthlyPrice": 19900,
+        "sourceRow": 46,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "스페셜체인지",
+        "cycle": "",
+        "monthlyPrice": 22900,
+        "sourceRow": 47,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 9
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "bei3qebloe-65a22343",
+    "name": "디오스 인덕션 3구",
+    "model": "BEI3QEBLOE",
+    "brand": "LG",
+    "category": "전기레인지",
+    "size": "575 x 59 x 515 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/bei3qebloe-65a22343-thumbnail-1-3b4c388317f42b00f5df.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/bei3qebloe-65a22343-thumbnail-1-3b4c388317f42b00f5df.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/bei3qebloe-65a22343-detail-1-921fbd4d2fe9bca7ef4d.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/bei3qebloe-65a22343-detail-1-921fbd4d2fe9bca7ef4d.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/bei3qebloe-65a22343-detail-2-b85a380981997fc28165.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 17200,
+    "rentalPlans": [
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 26000,
+        "sourceRow": 48,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 26000,
+        "sourceRow": 49,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 24200,
+        "sourceRow": 50,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(12개월 라이트플러스)",
+        "monthlyPrice": 21200,
+        "sourceRow": 51,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 18500,
+        "sourceRow": 52,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 18500,
+        "sourceRow": 53,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 6,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 17200,
+        "sourceRow": 54,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 29300,
+        "sourceRow": 55,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 29300,
+        "sourceRow": 56,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 27300,
+        "sourceRow": 57,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(12개월 라이트플러스)",
+        "monthlyPrice": 24300,
+        "sourceRow": 58,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 21800,
+        "sourceRow": 59,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 21800,
+        "sourceRow": 60,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 5,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 20300,
+        "sourceRow": 61,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 4,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 34400,
+        "sourceRow": 62,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 4,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 34400,
+        "sourceRow": 63,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 4,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 31900,
+        "sourceRow": 64,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 4,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(12개월 라이트플러스)",
+        "monthlyPrice": 28900,
+        "sourceRow": 65,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 4,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 26900,
+        "sourceRow": 66,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 4,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 26900,
+        "sourceRow": 67,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 4,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 24900,
+        "sourceRow": 68,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 3,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 42800,
+        "sourceRow": 69,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 3,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 42800,
+        "sourceRow": 70,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 3,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(6개월 라이트)",
+        "monthlyPrice": 39500,
+        "sourceRow": 71,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 3,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(12개월 라이트플러스)",
+        "monthlyPrice": 36500,
+        "sourceRow": 72,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 3,
+        "care": "other",
+        "careLabel": "B_8.5cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 35300,
+        "sourceRow": 73,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 3,
+        "care": "other",
+        "careLabel": "A_15cm 케이스",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 35300,
+        "sourceRow": 74,
+        "rentalCompany": "LG전자구독"
+      },
+      {
+        "term": 3,
+        "care": "other",
+        "careLabel": "빌트인",
+        "cycle": "방문관리(36개월 라이트)",
+        "monthlyPrice": 32500,
+        "sourceRow": 75,
+        "rentalCompany": "LG전자구독"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 10
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cihr-d303fb-10684e22",
+    "name": "하이브리드 전기레인지 3구",
+    "model": "CIHR-D303FB",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 68.5",
+    "weight": null,
+    "function": "하이브리드",
+    "type": "",
+    "method": "",
+    "features": [
+      "하이브리드",
+      "3구"
+    ],
+    "seoTags": [
+      "하이브리드",
+      "프리스탠딩",
+      "화구수:3구",
+      "[구성]인덕션:2구",
+      "하이라이트:1구",
+      "[쿡탑]터치",
+      "온도조절:8단계",
+      "[특징]프리존",
+      "[부가]크기(가로x세로x깊이): 588x68.5x508mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cihr-d303fb-10684e22-thumbnail-1-63c707c32f50a0e43d96.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cihr-d303fb-10684e22-thumbnail-1-63c707c32f50a0e43d96.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cihr-d303fb-10684e22-detail-9997a341f46efcb97577.jpg",
+    "monthlyPrice": 17700,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 17700,
+        "sourceRow": 76,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 20900,
+        "sourceRow": 77,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 26300,
+        "sourceRow": 78,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 11
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cihr-dl307fb-3c8adc60",
+    "name": "하이브리드 열원 인덕션2구+하이라이트1구",
+    "model": "CIHR-DL307FB",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": null,
+    "weight": null,
+    "function": "하이브리드",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "하이브리드",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "하이브리드",
+      "빌트인",
+      "화구수:3구",
+      "[구성]인덕션:2구",
+      "하이라이트:1구",
+      "소비전력:3400W",
+      "[쿡탑]슬라이드터치식",
+      "세라믹글라스상판",
+      "온도조절:10단계",
+      "[특징]프리존",
+      "인디케이터",
+      "터보부스터",
+      "음성안내",
+      "안전장치:잔열표시",
+      "버튼잠금",
+      "용기없음인식",
+      "[부가]크기(가로x세로x깊이): 588x68.5x508mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cihr-dl307fb-3c8adc60-thumbnail-1-370db5fab08e9f368273.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cihr-dl307fb-3c8adc60-thumbnail-1-370db5fab08e9f368273.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cihr-dl307fb-3c8adc60-detail-e9d93d154a5338cabf85.jpg",
+    "monthlyPrice": 18200,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 18200,
+        "sourceRow": 79,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21400,
+        "sourceRow": 80,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 27000,
+        "sourceRow": 81,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 12
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "chr-04-c0c1a02b",
+    "name": "프라임S 하이브리드 인덕션 2구 + 하이라이트 1구",
+    "model": "CHR-04",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "580 x 510 x 58 mm",
+    "weight": null,
+    "function": "하이브리드",
+    "type": "",
+    "method": "",
+    "features": [
+      "하이브리드",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/chr-04-c0c1a02b-thumbnail-1-379dbde0c65c2b72b45f.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/chr-04-c0c1a02b-thumbnail-1-379dbde0c65c2b72b45f.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/chr-04-c0c1a02b-detail-1-3615f4d779710fc4b70b.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/chr-04-c0c1a02b-detail-1-3615f4d779710fc4b70b.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/chr-04-c0c1a02b-detail-2-b5b6e68b0533aa8a546a.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 18900,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 18900,
+        "sourceRow": 82,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 21900,
+        "sourceRow": 83,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 20900,
+        "sourceRow": 84,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 23900,
+        "sourceRow": 85,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 23900,
+        "sourceRow": 86,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 26900,
+        "sourceRow": 87,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 13
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-e301fgp-fabb9473",
+    "name": "미식컬렉션 화이트 인덕션 3구",
+    "model": "CIR-E301FGP",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드",
+      "안전장치:타이머,잔열표시,버튼잠금,과열감지,일시정지"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-e301fgp-fabb9473-thumbnail-1-f4e47fdfe26a66a4bce0.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e301fgp-fabb9473-thumbnail-1-f4e47fdfe26a66a4bce0.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-e301fgp-fabb9473-detail-1-f1296ff31ea48183d1d8.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e301fgp-fabb9473-detail-1-f1296ff31ea48183d1d8.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e301fgp-fabb9473-detail-2-8ca668a6ad02374118d6.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 19900,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 19900,
+        "sourceRow": 88,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 23400,
+        "sourceRow": 89,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 29500,
+        "sourceRow": 90,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 14
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-e301faw-efccd1bf",
+    "name": "미식컬렉션 화이트 인덕션 3구",
+    "model": "CIR-E301FAW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드",
+      "안전장치:타이머,잔열표시,버튼잠금,과열감지,일시정지"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-e301faw-efccd1bf-thumbnail-1-3b4353e05158a2ae0113.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e301faw-efccd1bf-thumbnail-1-3b4353e05158a2ae0113.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-e301faw-efccd1bf-detail-1-6d7ee6ddb571607d8090.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e301faw-efccd1bf-detail-1-6d7ee6ddb571607d8090.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e301faw-efccd1bf-detail-2-02cb8a7442d6164b97d6.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 19900,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 19900,
+        "sourceRow": 91,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 23400,
+        "sourceRow": 92,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 29500,
+        "sourceRow": 93,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 15
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-e301fw-8a732bc7",
+    "name": "미식컬렉션 화이트 인덕션 3구",
+    "model": "CIR-E301FW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드",
+      "안전장치:타이머,잔열표시,버튼잠금,과열감지,일시정지"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-e301fw-8a732bc7-thumbnail-1-20f20fcc0cf7d3010baf.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e301fw-8a732bc7-thumbnail-1-20f20fcc0cf7d3010baf.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-e301fw-8a732bc7-detail-b8846e7f6388f785baa6.jpg",
+    "monthlyPrice": 19900,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 19900,
+        "sourceRow": 94,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 23400,
+        "sourceRow": 95,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 29500,
+        "sourceRow": 96,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 16
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-303-011ff9d0",
+    "name": "프라임S 인덕션 3구",
+    "model": "CIR-303",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "580 x 510 x 55 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-303-011ff9d0-thumbnail-1-c9cbe4f4b136fbb01abf.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-303-011ff9d0-thumbnail-1-c9cbe4f4b136fbb01abf.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-303-011ff9d0-detail-1-cdfaa42fe20726f9bfd3.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-303-011ff9d0-detail-1-cdfaa42fe20726f9bfd3.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-303-011ff9d0-detail-2-06868e3aa1f1360d5354.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 19900,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 19900,
+        "sourceRow": 97,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 22900,
+        "sourceRow": 98,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 22900,
+        "sourceRow": 99,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 25900,
+        "sourceRow": 100,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 26900,
+        "sourceRow": 101,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 29900,
+        "sourceRow": 102,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 17
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "nz63dg403efk-d772b74a",
+    "name": "비스포크 인덕션 3구",
+    "model": "NZ63DG403EFK",
+    "brand": "삼성",
+    "category": "전기레인지",
+    "size": "600 x 520 x 48 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "전기레인지",
+      "3구",
+      "비스포크"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/nz63dg403efk-d772b74a-thumbnail-1-3dcbc2c82e8ba308190b.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/nz63dg403efk-d772b74a-thumbnail-1-3dcbc2c82e8ba308190b.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/nz63dg403efk-d772b74a-detail-953bebcce4ccb618f87f.jpg",
+    "monthlyPrice": 20800,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 20800,
+        "sourceRow": 103,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 24500,
+        "sourceRow": 104,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 30800,
+        "sourceRow": 105,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21000,
+        "sourceRow": 106,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 25000,
+        "sourceRow": 107,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 32000,
+        "sourceRow": 108,
+        "rentalCompany": "BS ON"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 18
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cup-30ks-bdd0a75f",
+    "name": "S 인덕션 2구 + 스마트 하이브리드 1구",
+    "model": "CUP-30KS",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "595.5 x 513 x 64 mm",
+    "weight": null,
+    "function": "하이브리드",
+    "type": "",
+    "method": "",
+    "features": [
+      "하이브리드",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cup-30ks-bdd0a75f-thumbnail-1-3fd74979873a7d047acf.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cup-30ks-bdd0a75f-thumbnail-1-3fd74979873a7d047acf.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cup-30ks-bdd0a75f-detail-1-085a64327f6faec7c5ef.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cup-30ks-bdd0a75f-detail-1-085a64327f6faec7c5ef.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cup-30ks-bdd0a75f-detail-2-68e02b512cb9119d777b.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 20900,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 20900,
+        "sourceRow": 109,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 23900,
+        "sourceRow": 110,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 23900,
+        "sourceRow": 111,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 26900,
+        "sourceRow": 112,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 27900,
+        "sourceRow": 113,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 30900,
+        "sourceRow": 114,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 19
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-e347fbe-751d3b55",
+    "name": "미식 컬렉션 전기레인지 3구",
+    "model": "CIR-E347FBE",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드,용기위치감지",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,용기없음인식,인디케이터",
+      "[최대출력]3400W",
+      "프리존:3400W",
+      "타공치수(가로x세로x높이): 560x480x65mm",
+      "크기(가로x세로x높이): 588x508x57mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-e347fbe-751d3b55-thumbnail-1-b6e191fa8d21c48fb990.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347fbe-751d3b55-thumbnail-1-b6e191fa8d21c48fb990.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-e347fbe-751d3b55-detail-1-5b69f9b61969b13e45b2.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347fbe-751d3b55-detail-1-5b69f9b61969b13e45b2.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347fbe-751d3b55-detail-2-99aa981fa1c32cf106f7.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 21000,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21000,
+        "sourceRow": 115,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 24700,
+        "sourceRow": 116,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 31100,
+        "sourceRow": 117,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 20
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-e347fap-e32f6620",
+    "name": "미식 컬렉션 전기레인지 3구",
+    "model": "CIR-E347FAP",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드,용기위치감지",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,용기없음인식,인디케이터",
+      "[최대출력]3400W",
+      "프리존:3400W",
+      "타공치수(가로x세로x높이): 560x480x65mm",
+      "크기(가로x세로x높이): 588x508x57mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-e347fap-e32f6620-thumbnail-1-164ef06704e075b9d57f.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347fap-e32f6620-thumbnail-1-164ef06704e075b9d57f.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-e347fap-e32f6620-detail-1-4ec9a5ae661f512dbc5e.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347fap-e32f6620-detail-1-4ec9a5ae661f512dbc5e.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347fap-e32f6620-detail-2-fcd9e34bb42a4f51ee12.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 21000,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21000,
+        "sourceRow": 118,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 24700,
+        "sourceRow": 119,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 31100,
+        "sourceRow": 120,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 21
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-e347faw-b2cf6dc3",
+    "name": "미식 컬렉션 전기레인지 3구",
+    "model": "CIR-E347FAW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드,용기위치감지",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,용기없음인식,인디케이터",
+      "[최대출력]3400W",
+      "프리존:3400W",
+      "타공치수(가로x세로x높이): 560x480x65mm",
+      "크기(가로x세로x높이): 588x508x57mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-e347faw-b2cf6dc3-thumbnail-1-1b69dfbf1f2b29a7bab8.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347faw-b2cf6dc3-thumbnail-1-1b69dfbf1f2b29a7bab8.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-e347faw-b2cf6dc3-detail-1-9f82e09d2054cf487217.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347faw-b2cf6dc3-detail-1-9f82e09d2054cf487217.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-e347faw-b2cf6dc3-detail-2-992446e2f8268fa0f729.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 21000,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21000,
+        "sourceRow": 121,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 24700,
+        "sourceRow": 122,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 31100,
+        "sourceRow": 123,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 22
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-ep301faw-af9a3fa8",
+    "name": "미식컬렉션 셰프스틱 화이트 인덕션 3구",
+    "model": "CIR-EP301FAW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "프리스탠딩",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드",
+      "안전장치:타이머",
+      "잔열표시",
+      "버튼잠금",
+      "과열감지",
+      "일시정지",
+      "용기없음인식"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-ep301faw-af9a3fa8-thumbnail-1-3b4353e05158a2ae0113.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep301faw-af9a3fa8-thumbnail-1-3b4353e05158a2ae0113.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-ep301faw-af9a3fa8-detail-1-6d7ee6ddb571607d8090.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep301faw-af9a3fa8-detail-1-6d7ee6ddb571607d8090.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep301faw-af9a3fa8-detail-2-02cb8a7442d6164b97d6.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 21800,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21800,
+        "sourceRow": 124,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 25700,
+        "sourceRow": 125,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 32300,
+        "sourceRow": 126,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 35900,
+        "sourceRow": 127,
+        "rentalCompany": "LG헬로렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 23
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-ep301fw-8bd23986",
+    "name": "미식컬렉션 셰프스틱 화이트 인덕션 3구",
+    "model": "CIR-EP301FW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "프리스탠딩",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드",
+      "안전장치:타이머",
+      "잔열표시",
+      "버튼잠금",
+      "과열감지",
+      "일시정지",
+      "용기없음인식"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-ep301fw-8bd23986-thumbnail-1-b4f6812f93b21d4bfbab.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep301fw-8bd23986-thumbnail-1-b4f6812f93b21d4bfbab.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-ep301fw-8bd23986-detail-1-520ef6a0d5a818c3ff12.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep301fw-8bd23986-detail-1-520ef6a0d5a818c3ff12.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep301fw-8bd23986-detail-2-aac3f7930a342d2ea5b0.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 21800,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 21800,
+        "sourceRow": 128,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 25700,
+        "sourceRow": 129,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 32300,
+        "sourceRow": 130,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 24
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "rbe-ir3001a-9960d2f8",
+    "name": "하이브리드 전기레인지 3구",
+    "model": "RBE-IR3001A",
+    "brand": "린나이",
+    "category": "전기레인지",
+    "size": "591 x 506 x 73.5 mm",
+    "weight": null,
+    "function": "하이브리드",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "하이브리드",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "하이브리드",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3300W",
+      "쇼트 세라믹글라스",
+      "슬라이드터치",
+      "기능:터보모드",
+      "안전장치:타이머,잔열표시,버튼잠금,일시정지",
+      "[구성]",
+      "인덕션:2구",
+      "하이라이트:1구",
+      "[최대출력]",
+      "2000W,2000W,1500W",
+      "타공치수(가로x세로):560x480mm",
+      "크기(가로x세로x높이):591x506x73.5mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/rbe-ir3001a-9960d2f8-thumbnail-1-4b4df1856c4d62a8c086.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/rbe-ir3001a-9960d2f8-thumbnail-1-4b4df1856c4d62a8c086.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/rbe-ir3001a-9960d2f8-detail-5169a6746e6d85cdb391.jpg",
+    "monthlyPrice": 22000,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 22000,
+        "sourceRow": 131,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 25900,
+        "sourceRow": 132,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 32600,
+        "sourceRow": 133,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 25
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-clt301fg-59ae645d",
+    "name": "초고온 3구 인덕션 레인지",
+    "model": "CIR-CLT301FG",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": null,
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "[쿡탑]터치식",
+      "세라믹글라스상판",
+      "온도조절:9단계",
+      "[특징]프리존",
+      "인디케이터",
+      "터보부스터",
+      "음성안내",
+      "안전장치:타이머",
+      "잔열표시",
+      "버튼잠금",
+      "자동전원차단",
+      "일시정지",
+      "[부가]인피니티엣지",
+      "타공치수(가로x세로): 560x480mm",
+      "크기(가로x세로x깊이): 588x55.7x508mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-clt301fg-59ae645d-thumbnail-1-8f34b775c7aa9e5d3255.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-clt301fg-59ae645d-thumbnail-1-8f34b775c7aa9e5d3255.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-clt301fg-59ae645d-detail-6affb4dbe06bd1369d17.jpg",
+    "monthlyPrice": 23900,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 23900,
+        "sourceRow": 134,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 28100,
+        "sourceRow": 135,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 35400,
+        "sourceRow": 136,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 35900,
+        "sourceRow": 137,
+        "rentalCompany": "LG헬로렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 26
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cip-31w-e85c1464",
+    "name": "W 인덕션 프로 3구",
+    "model": "CIP-31W",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "595.5 x 513 x 54 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "3구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-thumbnail-1-d470b6f237ca9591398f.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-thumbnail-1-d470b6f237ca9591398f.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-thumbnail-2-9995f5d8c4e99980f3fd.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-thumbnail-3-06aee451810289c8a501.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-thumbnail-4-07c9a08271966b89785a.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-detail-1-bdce1d4ff1f1f196cfb9.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-detail-1-bdce1d4ff1f1f196cfb9.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-detail-2-48435157a86becc3ac9f.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cip-31w-e85c1464-detail-3-799bb46714c693d6a446.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 23900,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 23900,
+        "sourceRow": 138,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 28900,
+        "sourceRow": 139,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 26900,
+        "sourceRow": 140,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 31900,
+        "sourceRow": 141,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 30900,
+        "sourceRow": 142,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 35900,
+        "sourceRow": 143,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 27
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "rbi-s3600ab-9d09a294",
+    "name": "초고화력 듀오존 전기레인지 3구",
+    "model": "RBI-S3600AB",
+    "brand": "린나이",
+    "category": "전기레인지",
+    "size": "591 x 506 x 56 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "쇼트 세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "기능:터보모드",
+      "안전장치:타이머,잔열표시,버튼잠금,과열감지,일시정지",
+      "[최대출력]",
+      "2100(3000)W,1500(2000)W 2구",
+      "프리존:3400W",
+      "타공치수(가로x세로):560x480mm",
+      "크기(가로x세로x높이):591x506x56mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/rbi-s3600ab-9d09a294-thumbnail-1-7f7bea746d94fb684590.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/rbi-s3600ab-9d09a294-thumbnail-1-7f7bea746d94fb684590.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/rbi-s3600ab-9d09a294-detail-296ed3b5c9d57b0a2541.jpg",
+    "monthlyPrice": 24500,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 24500,
+        "sourceRow": 144,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 28800,
+        "sourceRow": 145,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 36300,
+        "sourceRow": 146,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 28
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "nz63b5056ak-6c9c1f08",
+    "name": "빌트인 인덕션 3구",
+    "model": "NZ63B5056AK",
+    "brand": "삼성",
+    "category": "전기레인지",
+    "size": "600 x 520 x 48 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수: 3구",
+      "소비전력: 3400W",
+      "[출력] 화구최대: 2400W",
+      "터보최대: 3400W",
+      "플렉스존: 3200W",
+      "3300W",
+      "확장형: 인덕션1구",
+      "[쿡탑] 슬라이드터치식",
+      "세라믹글라스상판",
+      "온도조절: 9단계",
+      "[특징] 플렉스존",
+      "확장형열판",
+      "터보부스터",
+      "스마트폰제어",
+      "안전장치: 타이머",
+      "잔열표시",
+      "버튼잠금",
+      "자동전원차단",
+      "일시정지",
+      "용기없음인식",
+      "[부가] 사운드ON",
+      "OFF",
+      "4면메탈프레임",
+      "색상: 블랙",
+      "타공치수(가로x세로): 560x480mm",
+      "크기(가로x세로x깊이): 600x48x522mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/nz63b5056ak-6c9c1f08-thumbnail-1-2c71a9a984f3c75e98ec.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/nz63b5056ak-6c9c1f08-thumbnail-1-2c71a9a984f3c75e98ec.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/nz63b5056ak-6c9c1f08-detail-ca416f8ca39140ff35e9.jpg",
+    "monthlyPrice": 28800,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 28800,
+        "sourceRow": 147,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 33800,
+        "sourceRow": 148,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 42600,
+        "sourceRow": 149,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 29000,
+        "sourceRow": 150,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 34000,
+        "sourceRow": 151,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 42500,
+        "sourceRow": 152,
+        "rentalCompany": "BS ON"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 29
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-ep340fgp-e954c5a2",
+    "name": "셰프스틱 전기레인지 3구",
+    "model": "CIR-EP340FGP",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "[쿡탑]터치",
+      "세라믹글라스상판",
+      "온도조절:9단계",
+      "[특징]프리존",
+      "쿠킹스틱",
+      "안전장치:타이머",
+      "잔열표시",
+      "버튼잠금",
+      "과열감지",
+      "일시정지",
+      "[규격]타공치수(가로x세로): 560x480mm",
+      "크기(가로x세로x깊이): 588x57x508mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-ep340fgp-e954c5a2-thumbnail-1-f4d90da64ea4580b82f9.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep340fgp-e954c5a2-thumbnail-1-f4d90da64ea4580b82f9.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-ep340fgp-e954c5a2-detail-1-e675a26a4cde8a303cf3.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep340fgp-e954c5a2-detail-1-e675a26a4cde8a303cf3.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep340fgp-e954c5a2-detail-2-6beb53d0e8baaa07ef61.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 31100,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 31100,
+        "sourceRow": 153,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 36600,
+        "sourceRow": 154,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 46000,
+        "sourceRow": 155,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 30
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-ep347fbe-7008f3c2",
+    "name": "미식 컬렉션 셰프스틱 전기레인지 3구",
+    "model": "CIR-EP347FBE",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "끓음감지",
+      "기능:터보모드,용기위치감지,셰프스틱",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,용기없음인식,인디케이터",
+      "[최대출력]3400W",
+      "프리존:3400W",
+      "타공치수(가로x세로x높이): 560x480x65mm",
+      "크기(가로x세로x높이): 588x508x57mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fbe-7008f3c2-thumbnail-1-5e4f834fac953365e3a7.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fbe-7008f3c2-thumbnail-1-5e4f834fac953365e3a7.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fbe-7008f3c2-detail-1-d355f28c1ecd3b2a7d06.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fbe-7008f3c2-detail-1-d355f28c1ecd3b2a7d06.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fbe-7008f3c2-detail-2-c91bc4ef008808330f0f.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 31100,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 31100,
+        "sourceRow": 156,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 36600,
+        "sourceRow": 157,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 46000,
+        "sourceRow": 158,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 31
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-ep347fap-6bb9a1a8",
+    "name": "미식 컬렉션 셰프스틱 전기레인지 3구",
+    "model": "CIR-EP347FAP",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "끓음감지",
+      "기능:터보모드,용기위치감지,셰프스틱",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,용기없음인식,인디케이터",
+      "[최대출력]3400W",
+      "프리존:3400W",
+      "타공치수(가로x세로x높이): 560x480x65mm",
+      "크기(가로x세로x높이): 588x508x57mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fap-6bb9a1a8-thumbnail-1-6f53ca1bb6587b1385da.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fap-6bb9a1a8-thumbnail-1-6f53ca1bb6587b1385da.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fap-6bb9a1a8-detail-1-e3256ebf8f7a0e6226ed.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fap-6bb9a1a8-detail-1-e3256ebf8f7a0e6226ed.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347fap-6bb9a1a8-detail-2-cf9ba51570fc2cc879a0.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 31100,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 31100,
+        "sourceRow": 159,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 36600,
+        "sourceRow": 160,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 46000,
+        "sourceRow": 161,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 32
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-ep347faw-2c0060d1",
+    "name": "미식 컬렉션 셰프스틱 전기레인지 3구",
+    "model": "CIR-EP347FAW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "끓음감지",
+      "기능:터보모드,용기위치감지,셰프스틱",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,용기없음인식,인디케이터",
+      "[최대출력]3400W",
+      "프리존:3400W",
+      "타공치수(가로x세로x높이): 560x480x65mm",
+      "크기(가로x세로x높이): 588x508x57mm"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-ep347faw-2c0060d1-thumbnail-1-d5a8d8e3b089cf02c690.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347faw-2c0060d1-thumbnail-1-d5a8d8e3b089cf02c690.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-ep347faw-2c0060d1-detail-1-3bc22707a4bb03af3bb0.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347faw-2c0060d1-detail-1-3bc22707a4bb03af3bb0.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-ep347faw-2c0060d1-detail-2-da26e58ff443e23f24ac.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 31100,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 31100,
+        "sourceRow": 162,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 36600,
+        "sourceRow": 163,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 46000,
+        "sourceRow": 164,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 33
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-g301fap-bc97556d",
+    "name": "미식컬렉션 프리존 화이트 인덕션 3구",
+    "model": "CIR-G301FAP",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "팬소음최소화",
+      "기능:확장화구,용기위치감지",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,인디케이터",
+      "소음:33.5dB",
+      "3400W,3400W",
+      "프리존:3400W",
+      "프레임리스"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-g301fap-bc97556d-thumbnail-1-d53b83fdce5e3a121c10.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-g301fap-bc97556d-thumbnail-1-d53b83fdce5e3a121c10.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-g301fap-bc97556d-detail-1-0031d6b89277e6ae1e88.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-g301fap-bc97556d-detail-1-0031d6b89277e6ae1e88.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-g301fap-bc97556d-detail-2-06aad33854642a0d71c1.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 32200,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 32200,
+        "sourceRow": 165,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 37900,
+        "sourceRow": 166,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 47700,
+        "sourceRow": 167,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 34
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-g301faw-832cbd5b",
+    "name": "미식컬렉션 프리존 화이트 인덕션 3구",
+    "model": "CIR-G301FAW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "팬소음최소화",
+      "기능:확장화구,용기위치감지",
+      "안전장치:타이머,버튼잠금,과열감지,일시정지,인디케이터",
+      "소음:33.5dB",
+      "3400W,3400W",
+      "프리존:3400W",
+      "프레임리스"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-g301faw-832cbd5b-thumbnail-1-4cfc5b1cfbd906d834f5.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-g301faw-832cbd5b-thumbnail-1-4cfc5b1cfbd906d834f5.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-g301faw-832cbd5b-detail-1-def963371ef8208ff992.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-g301faw-832cbd5b-detail-1-def963371ef8208ff992.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-g301faw-832cbd5b-detail-2-01d2cf4aaf55ac2bd331.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 32200,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 32200,
+        "sourceRow": 168,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 37900,
+        "sourceRow": 169,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 47700,
+        "sourceRow": 170,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 35
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-f41-b1625109",
+    "name": "노블 All-Free 인덕션 4구",
+    "model": "CIR-F41",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "580 x 516 x 60.8 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "4구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-thumbnail-1-825de9b2402a58a9d4c8.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-thumbnail-1-825de9b2402a58a9d4c8.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-thumbnail-2-7244195569a28cc1d10b.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-thumbnail-3-3497a7713201247d93f7.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-detail-1-2a04d51d3df34ba9df98.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-detail-1-2a04d51d3df34ba9df98.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-detail-2-3735c5f75eb2228c7d5e.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f41-b1625109-detail-3-ead4e47511285cf1d3a5.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 34900,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 34900,
+        "sourceRow": 171,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 39900,
+        "sourceRow": 172,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 39900,
+        "sourceRow": 173,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 44900,
+        "sourceRow": 174,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 44900,
+        "sourceRow": 175,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 49900,
+        "sourceRow": 176,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 36
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-gp301fap-8ccd2025",
+    "name": "미식컬렉션 셰프스틱 프리존 화이트 인덕션 3구",
+    "model": "CIR-GP301FAP",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "팬소음최소화",
+      "기능:확장화구",
+      "용기위치감지",
+      "안전장치:타이머",
+      "버튼잠금",
+      "과열감지",
+      "일시정지",
+      "인디케이터",
+      "3400W",
+      "프리존:3400W",
+      "프레임리스",
+      "소음: 33.5dB"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-gp301fap-8ccd2025-thumbnail-1-9e2d8e27fac8a36319e0.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-gp301fap-8ccd2025-thumbnail-1-9e2d8e27fac8a36319e0.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-gp301fap-8ccd2025-detail-1-0ada2bae1f244a91d512.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-gp301fap-8ccd2025-detail-1-0ada2bae1f244a91d512.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-gp301fap-8ccd2025-detail-2-49fbf9c8a0e7989236d1.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 40400,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 40400,
+        "sourceRow": 177,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 47500,
+        "sourceRow": 178,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 59700,
+        "sourceRow": 179,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 37
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-gp301faw-62310d43",
+    "name": "미식컬렉션 셰프스틱 프리존 화이트 인덕션 3구",
+    "model": "CIR-GP301FAW",
+    "brand": "쿠쿠",
+    "category": "전기레인지",
+    "size": "588 x 508 x 57 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "빌트인",
+    "method": "",
+    "features": [
+      "인덕션",
+      "빌트인",
+      "3구"
+    ],
+    "seoTags": [
+      "인덕션",
+      "빌트인",
+      "화구수:3구",
+      "소비전력:3400W",
+      "세라믹글라스",
+      "터치",
+      "프리존(플렉스존)",
+      "팬소음최소화",
+      "기능:확장화구",
+      "용기위치감지",
+      "안전장치:타이머",
+      "버튼잠금",
+      "과열감지",
+      "일시정지",
+      "인디케이터",
+      "3400W",
+      "프리존:3400W",
+      "프레임리스",
+      "소음: 33.5dB"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-gp301faw-62310d43-thumbnail-1-16dc01967799c88c4bcd.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-gp301faw-62310d43-thumbnail-1-16dc01967799c88c4bcd.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-gp301faw-62310d43-detail-1-ea3397c61fc052b55cfe.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-gp301faw-62310d43-detail-1-ea3397c61fc052b55cfe.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-gp301faw-62310d43-detail-2-bf287095d71b9daa7331.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 40400,
+    "rentalPlans": [
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 40400,
+        "sourceRow": 180,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 47500,
+        "sourceRow": 181,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 59700,
+        "sourceRow": 182,
+        "rentalCompany": "이니렌탈"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 38
+    },
+    "colors": [],
+    "sample": false
+  },
+  {
+    "id": "cir-f60-2de8e2a3",
+    "name": "노블 All-Free 와이드 인덕션 6구",
+    "model": "CIR-F60",
+    "brand": "코웨이",
+    "category": "전기레인지",
+    "size": "921 x 516 x 60.8 mm",
+    "weight": null,
+    "function": "인덕션",
+    "type": "",
+    "method": "",
+    "features": [
+      "인덕션",
+      "6구"
+    ],
+    "tagline": "",
+    "badge": "SEMOGA PICK",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/cir-f60-2de8e2a3-thumbnail-1-6df118899ca3881ef05c.jpg",
+    "thumbnails": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f60-2de8e2a3-thumbnail-1-6df118899ca3881ef05c.jpg"
+    ],
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/cir-f60-2de8e2a3-detail-1-8c3ccf9507de72bc2699.jpg",
+    "detailImages": [
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f60-2de8e2a3-detail-1-8c3ccf9507de72bc2699.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f60-2de8e2a3-detail-2-b43781452bf1f158575d.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/cir-f60-2de8e2a3-detail-3-4737d05047347803f7bb.jpg"
+    ],
+    "detailImagesSource": "crawl",
+    "monthlyPrice": 62900,
+    "rentalPlans": [
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 62900,
+        "sourceRow": 183,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 7,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 70900,
+        "sourceRow": 184,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 70900,
+        "sourceRow": 185,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 6,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 78900,
+        "sourceRow": 186,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "서비스프리",
+        "monthlyPrice": 78900,
+        "sourceRow": 187,
+        "rentalCompany": "코웨이"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "스페셜체인지",
+        "monthlyPrice": 86900,
+        "sourceRow": 188,
+        "rentalCompany": "코웨이"
+      }
+    ],
+    "source": {
+      "sheet": "상품",
+      "row": 39
+    },
+    "colors": [],
+    "sample": false
   }
 ]
