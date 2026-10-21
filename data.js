@@ -15,8 +15,12 @@ export const categories = [
   {name:'무선청소기', key:'cordless-vacuum', productModel:'A520WC', image:'https://semoga.speedgabia.com/semoga/catalog/a520wc-7943c8d9-thumbnail-1-913ad48d931b0f42c73a.jpg', color:'#f0ecff'},
   {name:'식기세척기', key:'dishwasher', productModel:'DW90F79F1U01T', image:'food.jpg', color:'#eef2ff'},
   {name:'전기레인지', key:'electric-range', productModel:'CIR-E301FW', image:'electric-range.svg', color:'#fff2e8'},
+  {name:'헬스', key:'fitness', productModel:'C-21', image:'https://semoga.speedgabia.com/semoga/catalog/c-21-32bc65a7-thumbnail-1-9a8441b4a2c27670ec5e.jpg', color:'#edf3ff'},
+  {name:'커피머신', key:'coffee-machine', productModel:'KRECAM290.31.SB', image:'https://semoga.speedgabia.com/semoga/catalog/krecam290-31-sb-5172b55c-thumbnail-1-3ff9748f342789dd624f.jpg', color:'#fff2e8'},
+  {name:'냉장고', key:'refrigerator', productModel:'RS84DB5002CW', image:'https://semoga.speedgabia.com/semoga/catalog/rs84db5002cw-d6efa6d7-thumbnail-1-9041cdb2069ce37dacd8.jpg', color:'#e9f7f5'},
+  {name:'김치냉장고', key:'kimchi-refrigerator', productModel:'Z330MEEF11', image:'https://semoga.speedgabia.com/semoga/catalog/z330meef11-48a7c3fe-thumbnail-1-b4b00fbf60499825fc8e.jpg', color:'#f0ecff'},
 ];
-export const navigationCategories = categories.filter(category=>!['TV','로봇청소기','무선청소기','식기세척기','전기레인지'].includes(category.name));
+export const navigationCategories = categories.filter(category=>!['TV','로봇청소기','무선청소기','식기세척기','전기레인지','헬스','커피머신','냉장고','김치냉장고'].includes(category.name));
 export const categoryTree = {
   '정수기':['전체 정수기','코웨이','LG전자구독','쿠쿠','SK매직','청호나이스','삼성','세라젬','현대큐밍','현대유버스','교원웰스','세스코','루헨스','풀무원'],
   '주방가전':['음식물처리기','식기세척기','커피머신','전기레인지','오븐/전자레인지','가스레인지','정수기','밥솥','주방후드','에어프라이어','블렌더/주서기','기타'],
