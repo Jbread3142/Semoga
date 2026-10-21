@@ -1,6 +1,7 @@
 import { business } from './contact.js';
 import { isCommercialProduct } from './commercial.js';
 
+export const pagePaths = {partner:'/partners/'};
 export const siteOrigin = 'https://semoga.kr';
 export const homeTitle = '세모가렌탈 | 정수기·생활가전 렌탈·인터넷';
 export const homeDescription = '정수기 렌탈부터 공기청정기·비데·안마의자·세탁건조기·에어컨, 업소용 가전과 인터넷까지. 세모가렌탈에서 브랜드별 요금과 약정·관리 조건을 비교하고 상담하세요.';
@@ -19,6 +20,9 @@ export function searchRoute(location) {
   const params = new URLSearchParams(location.search);
   if (params.has('category')) params.set('category',normalizeCategory(params.get('category')));
   if (params.has('page')) return params;
+  for (const [page,path] of Object.entries(pagePaths)) {
+    if (location.pathname===path || location.pathname===path+'index.html') params.set('page',page);
+  }
   const product = location.pathname.match(/^\/products\/([^/]+)(?:\/(?:index\.html)?)?$/);
   const category = location.pathname.match(/^\/categories\/([^/]+)(?:\/(?:index\.html)?)?$/);
   if (product) { params.set('page','product'); params.set('id',decodeURIComponent(product[1])); }
@@ -36,7 +40,11 @@ export function searchMetadata(params, products) {
   const product = page === 'product' ? products.find(p => p.id === params.get('id')) : null;
   const category = normalizeCategory(params.get('category') || '정수기');
   let title = homeTitle, description = homeDescription, path = '/', indexable = true;
-  if (product) {
+  if (page === 'partner') {
+    title = '렌탈파트너신청 | 세모가';
+    description = '가전 렌탈부터 인터넷·TV까지, 세모가와 함께 성장할 파트너를 모십니다. 쇼핑몰 운영자·직장인 N잡·예비 창업자를 위한 파트너 상담. 신청 문의 1661-6566.';
+    path = pagePaths.partner;
+  } else if (product) {
     const name = product.name.includes(product.model) ? product.name : `${product.name} ${product.model}`;
     title = `${product.brand} ${name} 렌탈 | 세모가`;
     if (title.length > 60) title = `${product.brand} ${product.model} 렌탈 | 세모가`;
@@ -55,7 +63,7 @@ export function searchMetadata(params, products) {
     title = page === 'saved' ? '찜한 제품 | 세모가' : params.get('q') ? `${params.get('q')} 검색 결과 | 세모가` : '페이지 안내 | 세모가';
   }
   const keywords = product?.seoTags?.join(', ') || '';
-  return {title, description, keywords, url:siteOrigin+path, image:'https://semoga.mr-jbread.chatgpt.site/assets/social-share-20260930.png', indexable, product, category:page === 'catalog' ? category : null};
+  return {page, title, description, keywords, url:siteOrigin+path, image:'https://semoga.mr-jbread.chatgpt.site/assets/social-share-20260930.png', indexable, product, category:page === 'catalog' ? category : null};
 }
 export function searchStructuredData(meta) {
   const organization = {
@@ -81,6 +89,8 @@ export function searchStructuredData(meta) {
       {'@type':'ListItem', position:2, name:p.category, item:siteOrigin+(categoryPath(p.category) || '/')},
       {'@type':'ListItem', position:3, name:p.name, item:meta.url},
     ]});
+  } else if (meta.page === 'partner') {
+    graph.push({'@type':'WebPage', name:meta.title, description:meta.description, url:meta.url, inLanguage:'ko-KR', isPartOf:{'@id':siteOrigin+'/#website'}});
   } else if (meta.category) {
     graph.push({'@type':'CollectionPage', name:meta.title, description:meta.description,
       url:meta.url, inLanguage:'ko-KR', isPartOf:{'@id':siteOrigin+'/#website'}});
@@ -115,9 +125,9 @@ export function applySearchMetadata(params, products, document) {
     const url=new URL(href,document.baseURI);
     if (url.origin !== new URL(document.baseURI).origin) continue;
     const target=url.searchParams.get('page');
-    const path=target === 'product' && products.some(p=>p.id===url.searchParams.get('id'))
+    const path=pagePaths[target] || (target === 'product' && products.some(p=>p.id===url.searchParams.get('id'))
       ? productPath(url.searchParams.get('id'))
-      : target === 'catalog' && !url.searchParams.has('q') ? categoryPath(url.searchParams.get('category')) : null;
+      : target === 'catalog' && !url.searchParams.has('q') ? categoryPath(url.searchParams.get('category')) : null);
     if (!path) continue;
     ['page','category','id'].forEach(key=>url.searchParams.delete(key));
     const query=url.searchParams.toString();
