@@ -1,5 +1,7 @@
 import { business } from './contact.js';
 import { isCommercialProduct } from './commercial.js';
+import { lowestPlan } from './rental.js';
+import { rentalDescription } from './tv.js';
 
 export const pagePaths = {partner:'/partners/'};
 export const siteOrigin = 'https://semoga.kr';
@@ -65,7 +67,31 @@ export function searchMetadata(params, products) {
   const keywords = product?.seoTags?.join(', ') || '';
   return {page, title, description, keywords, url:siteOrigin+path, image:'https://semoga.mr-jbread.chatgpt.site/assets/social-share-20260930.png', indexable, product, category:page === 'catalog' ? category : null};
 }
-export function searchStructuredData(meta) {
+// Describe the actual plan shown in the rental panel, never a sale price or a
+// synthetic sample plan. Unknown/quote-only prices must not become free offers.
+function rentalOffer(product, url, plan = lowestPlan(product)) {
+  if (product.sample || !product.rentalPlans?.includes(plan) ||
+      !Number.isFinite(plan?.monthlyPrice) || plan.monthlyPrice <= 0 ||
+      !Number.isInteger(plan.term) || plan.term <= 0 ||
+      (plan.termUnit != null && !['year','month'].includes(plan.termUnit))) return null;
+  const months = plan.termUnit === 'month' ? plan.term : plan.term * 12;
+  const conditions = rentalDescription(product, plan);
+  return {
+    '@type':'Offer', url,
+    name:`${product.brand} ${product.model} 월 렌탈 · ${conditions}`,
+    description:`월 렌탈료 ${plan.monthlyPrice.toLocaleString('ko-KR')}원 · ${conditions}. 실제 요금과 설치 가능 여부는 상담 시 확인해 주세요.`,
+    businessFunction:'http://purl.org/goodrelations/v1#LeaseOut',
+    // Google accepts priceSpecification.price for product snippets. Keep the
+    // price here so a bare offers.price cannot override its rental context.
+    priceSpecification:{
+      '@type':'UnitPriceSpecification', price:plan.monthlyPrice, priceCurrency:'KRW',
+      unitCode:'MON', unitText:'월', billingIncrement:1,
+      // Contractual billing duration, not the interval between monthly bills.
+      billingDuration:`P${months}M`,
+    },
+  };
+}
+export function searchStructuredData(meta, selectedPlan) {
   const organization = {
     '@type':'Organization', '@id':siteOrigin+'/#organization', name:'세모가', legalName:business.name,
     url:siteOrigin+'/', logo:siteOrigin+'/assets/semoga-logo-original.png',
@@ -79,11 +105,14 @@ export function searchStructuredData(meta) {
   }];
   if (meta.product) {
     const p = meta.product;
+    const offer = rentalOffer(p, meta.url, selectedPlan);
     const images = (p.thumbnails || [p.image]).filter(Boolean).map(image => new URL(image,siteOrigin).href);
-    graph.push({'@type':'Product', name:`${p.brand} ${p.name}`, model:p.model, sku:p.model,
+    if (offer) graph.push({'@type':'Product', '@id':meta.url+'#product', name:`${p.brand} ${p.name}`, model:p.model, sku:p.model,
       brand:{'@type':'Brand', name:p.brand}, category:p.commercialType || p.category,
-      image:images, description:meta.description, url:meta.url,
+      image:images, description:meta.description, url:meta.url, offers:offer,
       ...(p.seoTags?.length ? {keywords:p.seoTags.join(', ')} : {})});
+    else graph.push({'@type':'WebPage', name:meta.title, description:meta.description,
+      url:meta.url, inLanguage:'ko-KR', isPartOf:{'@id':siteOrigin+'/#website'}});
     graph.push({'@type':'BreadcrumbList', itemListElement:[
       {'@type':'ListItem', position:1, name:'세모가', item:siteOrigin+'/'},
       {'@type':'ListItem', position:2, name:p.category, item:siteOrigin+(categoryPath(p.category) || '/')},
@@ -97,7 +126,7 @@ export function searchStructuredData(meta) {
   }
   return {'@context':'https://schema.org', '@graph':graph};
 }
-export function applySearchMetadata(params, products, document) {
+export function applySearchMetadata(params, products, document, selectedPlan) {
   const meta = searchMetadata(params,products);
   document.title = meta.title;
   const setMeta = (kind,key,value) => {
@@ -114,7 +143,7 @@ export function applySearchMetadata(params, products, document) {
   canonical.setAttribute('href',meta.url);
   let data=document.getElementById('structured-data');
   if (!data) { data=document.createElement('script'); data.id='structured-data'; data.type='application/ld+json'; document.head.append(data); }
-  data.textContent=JSON.stringify(searchStructuredData(meta));
+  data.textContent=JSON.stringify(searchStructuredData(meta, selectedPlan));
   // Point normal navigation at pages whose metadata and content are present in initial HTML.
   for (const link of document.querySelectorAll('#app a[href]')) {
     const href=link.getAttribute('href');
