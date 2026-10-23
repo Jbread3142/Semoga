@@ -1,4 +1,4 @@
-import { commercialTypes } from './commercial.js';
+import { commercialTypes } from './commercial.js?v=bea2975be141240f';
 export const categories = [
   {name:'정수기', key:'water', image:'water', color:'#edf3ff'},
   {name:'공기청정기', key:'air', image:'air.webp', color:'#fff0e4'},

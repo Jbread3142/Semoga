@@ -1,4 +1,4 @@
-import { internetProviders, internetQuote } from './internet.js?v=20261006-seo-copy';
+import { internetProviders, internetQuote } from './internet.js?v=a6790f219ba494b1';
 
 export function internetShowcase(icon) {
   const cards = ['kt', 'sk', 'lg'].map(provider => {

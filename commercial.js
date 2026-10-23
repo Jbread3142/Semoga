@@ -1,4 +1,4 @@
-import { classifyCommercialName } from './commercial-rules.js';
+import { classifyCommercialName } from './commercial-rules.js?v=14ecd2f3081df633';
 // The spreadsheet's 제품유형 values and the commercial directory use these labels.
 export const commercialTypes = [
   '스탠드 냉장고', '테이블 냉장고', '반찬 냉장고', '김밥/토핑 냉장고',

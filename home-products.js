@@ -1,5 +1,5 @@
-import { brandName } from './catalog-filters.js';
-import { matchesWaterFilter } from './water-filters.js';
+import { brandName } from './catalog-filters.js?v=f061f20626e84f74';
+import { matchesWaterFilter } from './water-filters.js?v=bd681181a6ae7728';
 
 // Keep this display order independent of catalog import order and rental prices.
 export const homeWaterBrands = ['LG전자','SK매직','코웨이','쿠쿠','현대큐밍','현대유버스','청호나이스','세스코'];

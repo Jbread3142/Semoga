@@ -1,4 +1,4 @@
-import { reviewChannel, reviewVideos } from './review-videos-data.js';
+import { reviewChannel, reviewVideos } from './review-videos-data.js?v=e22422a51fd81678';
 export { reviewVideos };
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const reviewPosition=index=>((index%reviewVideos.length)+reviewVideos.length)%reviewVideos.length;

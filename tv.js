@@ -1,4 +1,4 @@
-import { productPlans, planDescription, termLabel, termKey } from './rental.js';
+import { productPlans, planDescription, termLabel, termKey } from './rental.js?v=ce82df1a70f6d827';
 
 export const isTV = product => product?.category === 'TV';
 export const screenInches = product => Number(product?.screenInches) || Number(product?.name?.match(/(\d+(?:\.\d+)?)\s*인치/)?.[1]) || null;

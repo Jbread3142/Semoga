@@ -1,4 +1,4 @@
-import { business } from './contact.js';
+import { business } from './contact.js?v=1495fb2b982c0aa5';
 
 const drawings = {
   shop:'<path d="M4 10h24l-2-6H6l-2 6Z"/><path d="M6 14v14h20V14M11 28v-9h10v9M4 10v2a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0v-2"/>',
