@@ -1,4 +1,4 @@
-// Curated existing product views for category buttons. Crops affect only the menu.
+// Existing commercial crops are independent of retail category photography.
 export const categoryPhotos = {
   "스탠드 냉장고": {
     "id": "c052ar-69adcb5e",
@@ -631,5 +631,182 @@ export const categoryPhotos = {
       408,
       450
     ]
+  }
+};
+export const catalogCategoryPhotos = {
+  "가스레인지": {
+    "id": "rbr-pf6001dn-11be5562",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "가습기": {
+    "id": "hw500das-d1553589",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "건강/의료기기": {
+    "id": "3-16cba265",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "게임기/오락기": {
+    "id": "rg2w-k-1143a4ce",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "공기살균기": {
+    "id": "day_-6d1f84ba",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "기타": {
+    "id": "sk-002-2146703a",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "노트북": {
+    "id": "15z95u-gs5wk-42f23bd3",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "도어락": {
+    "id": "hom10004-6606525e",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "드라이기/헤어용품": {
+    "id": "co-anda-2x_-48468211",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "모니터": {
+    "id": "32u700b-220972b0",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "미싱기": {
+    "id": "admire-1000-649f30fa",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "바이러스케어": {
+    "id": "vh-310-sbalck-5a8efadc",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "반려동물용품": {
+    "id": "vhpd-wha-s-1ef0b1b3",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "밥솥": {
+    "id": "crp-lhtr0610fgb-47f022fc",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "블렌더/주서기": {
+    "id": "5ksm195pswbm-2059742f",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "빔프로젝터": {
+    "id": "eb-l895u-06c84f94",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "사우나/반신욕기": {
+    "id": "_-aeda15c5",
+    "field": "thumbnail",
+    "index": 1
+  },
+  "사운드바": {
+    "id": "hkradiance24blkas-a73c4e94",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "서큘레이터": {
+    "id": "s9-ultra-w-_-d169ad9a",
+    "field": "thumbnail",
+    "index": 0,
+    "size": [
+      600,
+      600
+    ],
+    "crop": [
+      369,
+      115,
+      165,
+      440
+    ]
+  },
+  "에어프라이어": {
+    "id": "jk-af90-hv-8daae784",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "연수기": {
+    "id": "bb17-a-736da585",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "오븐/전자레인지": {
+    "id": "mlj32prs-4de49101",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "온수/전기매트": {
+    "id": "hld-222d-4e127f5d",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "전자칠판": {
+    "id": "ds-d5c75rb-a-94dc3abe",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "제습기": {
+    "id": "dc356skaa-4a6fa216",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "주방후드": {
+    "id": "rab552-09tcac-a2da56f1",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "집진기": {
+    "id": "was-500-02a45b12",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "컴퓨터": {
+    "id": "oa2-f0f4eaae",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "탈모치료기": {
+    "id": "hairgrow-cef94176",
+    "field": "thumbnail",
+    "index": 3
+  },
+  "프린터/복합기": {
+    "id": "l15160-7c00d261",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "피부미용기기": {
+    "id": "mq-m2134-1cf10af7",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "향기컨설팅": {
+    "id": "vs-310-black-46a114de",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "환기가전": {
+    "id": "hrd-ep250ibc-b868e8da",
+    "field": "thumbnail",
+    "index": 0
   }
 };

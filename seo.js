@@ -7,11 +7,12 @@ export const pagePaths = {partner:'/partners/'};
 export const siteOrigin = 'https://semoga.kr';
 export const homeTitle = '세모가렌탈 | 정수기·생활가전 렌탈·인터넷';
 export const homeDescription = '정수기 렌탈부터 공기청정기·비데·안마의자·세탁건조기·에어컨, 업소용 가전과 인터넷까지. 세모가렌탈에서 브랜드별 요금과 약정·관리 조건을 비교하고 상담하세요.';
-export const normalizeCategory = name => name === '식기세척기/건조기' ? '식기세척기' : /^tv(?:\/디지털)?$/i.test(String(name || '').replace(/\s+/g,'')) ? 'TV' : name;
+export const normalizeCategory = name => ({'피부/미용기기':'피부미용기기','빔프로젝트':'빔프로젝터'}[name]) || (name === '식기세척기/건조기' ? '식기세척기' : /^tv(?:\/디지털)?$/i.test(String(name || '').replace(/\s+/g,'')) ? 'TV' : name);
 export const searchCategories = [
   ['정수기','water'], ['공기청정기','air'], ['비데','bidet'], ['안마의자','massage'],
   ['의류청정기','clothing'], ['인터넷','internet'], ['에어컨','aircon'],
   ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'], ['TV','tv'], ['로봇청소기','robot-vacuum'], ['무선청소기','cordless-vacuum'], ['식기세척기','dishwasher'], ['전기레인지','electric-range'], ['헬스','fitness'], ['커피머신','coffee-machine'], ['냉장고','refrigerator'], ['김치냉장고','kimchi-refrigerator'],
+  ['가스레인지','gas-range'], ['가습기','humidifier'], ['건강/의료기기','health-medical'], ['게임기/오락기','gaming'], ['공기살균기','air-sterilizer'], ['기타','other-kitchen'], ['노트북','laptop'], ['도어락','door-lock'], ['드라이기/헤어용품','hair-care'], ['모니터','monitor'], ['미싱기','sewing-machine'], ['바이러스케어','virus-care'], ['반려동물용품','pet-care'], ['밥솥','rice-cooker'], ['블렌더/주서기','blender-juicer'], ['빔프로젝터','projector'], ['사우나/반신욕기','sauna'], ['사운드바','soundbar'], ['서큘레이터','circulator'], ['에어프라이어','air-fryer'], ['연수기','water-softener'], ['오븐/전자레인지','oven-microwave'], ['온수/전기매트','heated-mat'], ['전자칠판','interactive-display'], ['제습기','dehumidifier'], ['주방후드','kitchen-hood'], ['집진기','dust-collector'], ['컴퓨터','computer'], ['탈모치료기','scalp-care'], ['프린터/복합기','printer'], ['피부미용기기','beauty'], ['향기컨설팅','fragrance'], ['환기가전','ventilation'],
 ];
 export const productPath = id => `/products/${encodeURIComponent(id)}/`;
 export const categoryPath = name => {
@@ -34,8 +35,12 @@ export function searchRoute(location) {
   }
   return params;
 }
+export function matchesProductCategory(product, category) {
+  const normalized=normalizeCategory(category);
+  return normalizeCategory(product.category)===normalized || (product.additionalCategories||[]).some(name=>normalizeCategory(name)===normalized);
+}
 export function categoryProducts(category, products) {
-  return products.filter(product => category === '업소용' ? isCommercialProduct(product) : normalizeCategory(product.category) === normalizeCategory(category));
+  return products.filter(product => category === '업소용' ? isCommercialProduct(product) : matchesProductCategory(product,category));
 }
 export function searchMetadata(params, products) {
   const page = params.get('page');

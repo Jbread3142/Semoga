@@ -19,8 +19,9 @@ export const categories = [
   {name:'커피머신', key:'coffee-machine', productModel:'KRECAM290.31.SB', image:'https://semoga.speedgabia.com/semoga/catalog/krecam290-31-sb-5172b55c-thumbnail-1-3ff9748f342789dd624f.jpg', color:'#fff2e8'},
   {name:'냉장고', key:'refrigerator', productModel:'RS84DB5002CW', image:'https://semoga.speedgabia.com/semoga/catalog/rs84db5002cw-d6efa6d7-thumbnail-1-9041cdb2069ce37dacd8.jpg', color:'#e9f7f5'},
   {name:'김치냉장고', key:'kimchi-refrigerator', productModel:'Z330MEEF11', image:'https://semoga.speedgabia.com/semoga/catalog/z330meef11-48a7c3fe-thumbnail-1-b4b00fbf60499825fc8e.jpg', color:'#f0ecff'},
+  {name:'피부미용기기', key:'beauty', productModel:'MQ-M2134', image:'https://semoga.speedgabia.com/semoga/catalog/mq-m2134-1cf10af7-thumbnail-1-cde0bd2bc99b459d7155.jpg', color:'#fceff4'},
 ];
-export const navigationCategories = categories.filter(category=>!['TV','로봇청소기','무선청소기','식기세척기','전기레인지','헬스','커피머신','냉장고','김치냉장고'].includes(category.name));
+export const navigationCategories = categories.filter(category=>!['TV','로봇청소기','무선청소기','식기세척기','전기레인지','헬스','커피머신','냉장고','김치냉장고','피부미용기기'].includes(category.name));
 export const categoryTree = {
   '정수기':['전체 정수기','코웨이','LG전자구독','쿠쿠','SK매직','청호나이스','삼성','세라젬','현대큐밍','현대유버스','교원웰스','세스코','루헨스','풀무원'],
   '주방가전':['음식물처리기','식기세척기','커피머신','전기레인지','오븐/전자레인지','가스레인지','정수기','밥솥','주방후드','에어프라이어','블렌더/주서기','기타'],
@@ -28,7 +29,7 @@ export const categoryTree = {
   '계절 / 환경':['공기청정기','공기살균기','환기가전','제습기','바이러스케어','향기컨설팅','가습기','집진기','서큘레이터'],
   '에어컨':['벽걸이','스탠드','2 in 1','창문형','천장형','이동형','산업용 에어컨'],
   '냉난방기':['벽걸이','스탠드','천장형','이동형'],
-  '건강 / 뷰티':['헬스','안마의자','피부/미용기기','사우나/반신욕기','건강/의료기기','탈모치료기'],
+  '건강 / 뷰티':['헬스','안마의자','피부미용기기','사우나/반신욕기','건강/의료기기','탈모치료기'],
   '디지털':['전자칠판','노트북','컴퓨터','모니터','빔프로젝터','게임기/오락기','사운드바','프린터/복합기','액션캠'],
   '세탁가전':['세탁기','건조기','세탁기+건조기','의류관리기','신발관리기','다리미'],
   '냉장가전':['냉장고','김치냉장고','와인셀러','제빙기'],
