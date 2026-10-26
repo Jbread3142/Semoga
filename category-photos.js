@@ -1,4 +1,4 @@
-// Existing commercial crops are independent of retail category photography.
+// Product photos for category buttons; retail and commercial selections stay separate.
 export const categoryPhotos = {
   "스탠드 냉장고": {
     "id": "c052ar-69adcb5e",
@@ -806,6 +806,91 @@ export const catalogCategoryPhotos = {
   },
   "환기가전": {
     "id": "hrd-ep250ibc-b868e8da",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "건강침대": {
+    "id": "q-bs-dc764d2b",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "다리미": {
+    "id": "lift-4a13fbe8",
+    "field": "thumbnail",
+    "index": 1
+  },
+  "매트리스": {
+    "id": "crm-a10lk-513c17fc",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "모션베드": {
+    "id": "ss_----hr_-bf7ad39c",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "소파": {
+    "id": "3-41780502",
+    "field": "thumbnail",
+    "index": 1
+  },
+  "수납가구": {
+    "id": "product-64521a29",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "식탁/테이블": {
+    "id": "1500----set-71848b5a",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "신발관리기": {
+    "id": "ss4rws60e-efd9168a",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "액션캠": {
+    "id": "osmoaction5pro_sc-041a1eed",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "자동차용품": {
+    "id": "dr-6000_-cd9c4004",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "전기스쿠터": {
+    "id": "a9----15ah-4cd04ac7",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "전기자전거": {
+    "id": "xt-----fs--48v-10ah-dee53cf3",
+    "field": "thumbnail",
+    "index": 1
+  },
+  "책상/의자": {
+    "id": "posture-t-7f3f0e0b",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "침대": {
+    "id": "s-bs-e28314c4",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "침대프레임": {
+    "id": "crf-c01tmpblk-681a6225",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "캠핑용품": {
+    "id": "skycamp-r-ee12afa5",
+    "field": "thumbnail",
+    "index": 0
+  },
+  "피아노/전자드럼": {
+    "id": "md2w_sr-a9fa1b76",
     "field": "thumbnail",
     "index": 0
   }

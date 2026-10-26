@@ -4,9 +4,9 @@ import { internetShowcase } from './home-internet.js?v=370eb5bdcb72d92a';
 import { reviewSection, reviewCards, reviewPosition, reviewVideos } from './review-videos.js?v=fa0913c784639b07';
 import { homeWaterTypes, homeWaterProducts, prioritizeWaterProducts } from './home-products.js?v=6e4ffaa694b99c15';
 import { commercialTypes, isCommercialProduct, matchesCommercialType, commercialHref, normalizeCommercialProduct } from './commercial.js?v=bea2975be141240f';
-import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=33983baa74d22516';
+import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=1093a68fbcf18700';
 import { categoryArt } from './category-art.js?v=14f8cb705f576963';
-import { categoryPhotos, catalogCategoryPhotos } from './category-photos.js?v=909f66a2cc3bbf9a';
+import { categoryPhotos, catalogCategoryPhotos } from './category-photos.js?v=f653140c97ccae2f';
 import { waterFilterGroups, matchesWaterFilter } from './water-filters.js?v=bd681181a6ae7728';
 import { priceRanges, brandName, brandPriority, matchesPrice, arrangeBrandPairs } from './catalog-filters.js?v=f061f20626e84f74';
 import { laundryTypes, isLaundryCategory, laundryType } from './laundry.js?v=bd87874bcd638514';
@@ -18,7 +18,7 @@ import { categories, navigationCategories, categoryTree, products as sampleProdu
 import { termKey, termLabel, conditionKey, careDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js?v=ce82df1a70f6d827';
 
 let products = sampleProducts;
-try { const response = await fetch('./catalog.json?v=aad30049b18aaec5', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
+try { const response = await fetch('./catalog.json?v=a91ddec51b0fbbe8', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const esc = (s='') => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
