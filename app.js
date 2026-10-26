@@ -45,7 +45,102 @@ function homeWaterSelection(type=homeWaterTypes[0]) {
 function homeInternetBanner() { return internetShowcase(icon); }
 let reviewIndex=0;
 function setReviewIndex(index){reviewIndex=reviewPosition(index);$('#review-cards').innerHTML=reviewCards(icon,reviewIndex);$$('[data-action="review-jump"]').forEach(button=>{const active=Number(button.dataset.value)===reviewIndex;button.classList.toggle('active',active);button.setAttribute('aria-pressed',active);});$('#review-position').textContent=`${reviewIndex+1} / ${reviewVideos.length}`;}
-function home(){reviewIndex=0;slide=0;return `<main id="main"><h1 class="visually-hidden">정수기부터 생활가전·인터넷까지</h1><section class="hero wrap hero-reference-banner" aria-label="렌탈 가전 소개"><button type="button" class="hero-uploaded-banner" data-action="benefit" aria-label="세모가 렌탈 상담 신청하기, 최대 지원금 150만원"><picture><source media="(max-width:640px)" srcset="./assets/semoga-main-banner-mobile-20261023.webp" type="image/webp" width="1122" height="1402"/><img src="./assets/semoga-main-banner-20261014.png" alt="세모가 렌탈, 최대 지원금 150만원. 최저가로 렌탈하고 최대 지원금 받자! 렌탈 상담 신청하기. 24시간 상담 가능. 대표번호 1661-6566." width="2070" height="760" fetchpriority="high"/></picture></button><div class="hero-copy"><span class="eyebrow">RENTAL, A BETTER TOMORROW</span><h2 class="hero-banner-title">좋은 가전이 만드는<br><em>더 나은 일상</em></h2><p>필요한 가전을, 부담은 가볍게.<br>나에게 맞는 렌탈을 시작하세요.</p><a class="primary-button" href="?page=catalog&category=정수기">나에게 맞는 가전 찾기 ${icon('arrow',20)}</a></div><div class="hero-image"><img src="./assets/hero.png" alt="파스텔 블루 공간에 놓인 냉장고, 세탁기와 공기청정기" loading="lazy"/></div><div class="hero-side-note">매일의 일상이<br>조금 더 좋아지도록.</div><div class="hero-controls"><button data-action="slide-prev" aria-label="이전 배너">${icon('back',15)}</button><span><b id="slide-number">01</b> <i>/</i> 03</span><button data-action="slide-next" aria-label="다음 배너">${icon('chevron',15)}</button><span class="control-divider"></span><button data-action="slide-pause" aria-label="배너 자동 재생 일시정지">${icon('pause',15)}</button></div></section><section class="category-section wrap" aria-label="대표 카테고리">${categories.map(c=>`<a class="category-item" data-category="${esc(c.name)}" href="?page=catalog&category=${encodeURIComponent(c.name)}"><span class="category-circle" style="--circle:${c.color}"><img src="${asset(categoryImage(c))}" alt=""/></span><span>${c.name}</span></a>`).join('')}</section>${homeBenefitBanner(icon)}<section class="popular-section wrap" id="popular"><div class="section-heading"><div><span class="eyebrow">MONTHLY BEST</span><h2>이번 달, 가장 사랑받는 정수기<span class="heading-dot">.</span></h2><p>매일 마시는 물이니까, 우리 집에 꼭 맞게.</p></div><a href="?page=catalog&category=정수기">정수기 전체보기 ${icon('arrow',18)}</a></div><div class="popular-toolbar"><div class="pill-tabs" role="group" aria-label="인기 정수기 유형">${homeWaterTypes.map((x,i)=>`<button class="${i===0?'active':''}" data-action="home-filter" data-value="${x}" aria-pressed="${i===0}" aria-controls="home-selection">${x}</button>`).join('')}</div><span>브랜드별로 하나씩, 세모가 추천</span></div><div id="home-selection" aria-live="polite">${homeWaterSelection()}</div><p class="sample-caption">${homeWaterProducts(products).some(p=>p.sample)?'※ 상품 구성과 렌탈료는 디자인 확인용 예시이며, 실제 계약 조건은 상담 시 확인해 주세요.':''}</p></section>${homeInternetBanner()}${reviewSection(icon)}</main>`;}
+const homeBanners = [
+  {
+    "id": "benefit",
+    "name": "최대 지원금 150만원",
+    "action": "benefit",
+    "pc": "./assets/semoga-home-benefit-pc-20261026.webp",
+    "mobile": "./assets/semoga-home-benefit-mobile-20261026.webp",
+    "alt": "세모가 렌탈, 최대 지원금 150만원. 최저가로 렌탈하고 최대 지원금 받자! 렌탈 상담 신청하기. 대표번호 1661-6566.",
+    "pcSize": [
+      2070,
+      760
+    ],
+    "mobileSize": [
+      1122,
+      1402
+    ]
+  },
+  {
+    "id": "commercial",
+    "name": "업소용 가전",
+    "href": "/categories/commercial/",
+    "pc": "./assets/semoga-home-commercial-pc-20261026.webp",
+    "mobile": "./assets/semoga-home-commercial-mobile-20261026.webp",
+    "alt": "사업의 시작부터 성장까지, 렌탈로 완성! 업소용 가전 렌탈. 초기 비용 절감, 다양한 제품, 합리적인 렌탈료, 전문 케어 서비스. 상담문의 1661-6566.",
+    "pcSize": [
+      2069,
+      760
+    ],
+    "mobileSize": [
+      1122,
+      1402
+    ]
+  },
+  {
+    "id": "hvac",
+    "name": "냉난방기",
+    "href": "/categories/hvac/",
+    "pc": "./assets/semoga-home-hvac-pc-20261026.webp",
+    "mobile": "./assets/semoga-home-hvac-mobile-20261026.webp",
+    "alt": "여름엔 시원하게, 겨울엔 따뜻하게. 냉난방기도 렌탈이 정답입니다! 천장형, 투인원, 상업용 스탠드. 상담문의 1661-6566.",
+    "pcSize": [
+      2068,
+      760
+    ],
+    "mobileSize": [
+      1122,
+      1402
+    ]
+  },
+  {
+    "id": "laundry",
+    "name": "세탁·건조기",
+    "href": "/categories/laundry/",
+    "pc": "./assets/semoga-home-laundry-pc-20261026.webp",
+    "mobile": "./assets/semoga-home-laundry-mobile-20261026.webp",
+    "alt": "세탁기·건조기도 이제 렌탈로 스마트하게! 베이지색 병렬형 세트와 타워형 세트. 공간은 깔끔하게, 생활은 편리하게. 상담문의 1661-6566.",
+    "pcSize": [
+      2069,
+      760
+    ],
+    "mobileSize": [
+      1122,
+      1402
+    ]
+  },
+  {
+    "id": "all-in-one",
+    "name": "제품 종합",
+    "action": "consult",
+    "pc": "./assets/semoga-home-all-in-one-pc-20261026.webp",
+    "mobile": "./assets/semoga-home-all-in-one-mobile-20261026.webp",
+    "alt": "믿을 수 있는 렌탈, 한 곳에서 완벽하게. 프리미엄 안마의자부터 생활가전까지 다양한 브랜드 제품을 합리적인 렌탈료로! 상담문의 1661-6566.",
+    "pcSize": [
+      2068,
+      760
+    ],
+    "mobileSize": [
+      1063,
+      1480
+    ]
+  }
+];
+
+function homeHero() {
+  return `<section class="hero wrap hero-reference-banner hero-carousel" aria-label="메인 프로모션 배너" aria-roledescription="캐러셀"><div class="hero-slides">${homeBanners.map((banner,index)=>{
+    const picture=`<picture><source media="(max-width:640px)" srcset="${banner.mobile}" type="image/webp" width="${banner.mobileSize[0]}" height="${banner.mobileSize[1]}"/><img src="${banner.pc}" alt="${esc(banner.alt)}" width="${banner.pcSize[0]}" height="${banner.pcSize[1]}" fetchpriority="${index===0?'high':'low'}" decoding="async"/></picture>`;
+    const label=esc(banner.name+(banner.href?' 상품 보기':' 렌탈 상담하기'));
+    return `<div class="hero-slide" data-banner="${banner.id}" data-slide-index="${index}" role="group" aria-roledescription="슬라이드" aria-label="${index+1} / ${homeBanners.length}: ${esc(banner.name)}"${index?' hidden':''}>${banner.href?`<a class="hero-uploaded-banner" href="${banner.href}" aria-label="${label}">${picture}</a>`:`<button type="button" class="hero-uploaded-banner" data-action="${banner.action}" aria-label="${label}">${picture}</button>`}</div>`;
+  }).join('')}</div><div class="hero-controls"><button type="button" data-action="slide-prev" aria-label="이전 배너">${icon('back',15)}</button><span><b id="slide-number">01</b> <i>/</i> <span id="slide-total">${String(homeBanners.length).padStart(2,'0')}</span></span><button type="button" data-action="slide-next" aria-label="다음 배너">${icon('chevron',15)}</button><span class="control-divider"></span><button type="button" data-action="slide-pause" aria-label="${paused?'배너 자동 재생':'배너 자동 재생 일시정지'}">${icon(paused?'play':'pause',15)}</button></div></section>`;
+}
+function syncSlideTimer() {
+  clearInterval(slideTimer);
+  if($('.hero-carousel')&&!paused)slideTimer=setInterval(()=>changeSlide(1),7000);
+}
+
+function home(){reviewIndex=0;slide=0;return `<main id="main"><h1 class="visually-hidden">정수기부터 생활가전·인터넷까지</h1>${homeHero()}<section class="category-section wrap" aria-label="대표 카테고리">${categories.map(c=>`<a class="category-item" data-category="${esc(c.name)}" href="?page=catalog&category=${encodeURIComponent(c.name)}"><span class="category-circle" style="--circle:${c.color}"><img src="${asset(categoryImage(c))}" alt=""/></span><span>${c.name}</span></a>`).join('')}</section>${homeBenefitBanner(icon)}<section class="popular-section wrap" id="popular"><div class="section-heading"><div><span class="eyebrow">MONTHLY BEST</span><h2>이번 달, 가장 사랑받는 정수기<span class="heading-dot">.</span></h2><p>매일 마시는 물이니까, 우리 집에 꼭 맞게.</p></div><a href="?page=catalog&category=정수기">정수기 전체보기 ${icon('arrow',18)}</a></div><div class="popular-toolbar"><div class="pill-tabs" role="group" aria-label="인기 정수기 유형">${homeWaterTypes.map((x,i)=>`<button class="${i===0?'active':''}" data-action="home-filter" data-value="${x}" aria-pressed="${i===0}" aria-controls="home-selection">${x}</button>`).join('')}</div><span>브랜드별로 하나씩, 세모가 추천</span></div><div id="home-selection" aria-live="polite">${homeWaterSelection()}</div><p class="sample-caption">${homeWaterProducts(products).some(p=>p.sample)?'※ 상품 구성과 렌탈료는 디자인 확인용 예시이며, 실제 계약 조건은 상담 시 확인해 주세요.':''}</p></section>${homeInternetBanner()}${reviewSection(icon)}</main>`;}
 
 function commercialDirectory(selected='전체') {
   return `<div class="filter-panel catalog-filters commercial-kind-filters"><div><b>종류</b><div class="filter-options" role="group" aria-label="업소용 종류">${['전체',...commercialTypes.filter(type=>type!=='냉/온장 쇼케이스')].map(type=>`<button type="button" class="${selected===type?'selected':''}" data-action="type-filter" data-value="${esc(type)}" aria-pressed="${selected===type}">${esc(type)}</button>`).join('')}</div></div></div>`;
@@ -62,10 +157,16 @@ function mobileCategoryNav(){
 }
 function breadcrumb(text){return `<div class="breadcrumb wrap"><a href="./">홈</a>${icon('chevron',12)}<a href="?page=catalog&category=정수기">렌탈 가전</a>${icon('chevron',12)}<span>${esc(text)}</span></div>`;}
 function catalog(){const requestedCategory=route().get('category')||'정수기', cat=isLaundryCategory(requestedCategory)?'세탁·건조기':requestedCategory, selectedLaundryType=laundryTypes.includes(route().get('type'))?route().get('type'):laundryTypes.includes(requestedCategory)?requestedCategory:'세탁기', q=route().get('q')||'', isSaved=route().get('page')==='saved'; let list=products.filter(p=>isSaved?saved.includes(p.id):q?[p.name,p.brand,p.model,isTV(p)?screenLabel(p):'',...p.features||[]].join(' ').toLowerCase().includes(q.toLowerCase()):(isAirconCategory(cat)?matchesAirconCategory(p,cat):isLaundryCategory(cat)?isLaundryCategory(p.category):cat==='업소용'?isCommercialProduct(p):matchesProductCategory(p,cat)));const selectedCommercialType=commercialTypes.includes(route().get('type'))?route().get('type'):'전체';const categoryProducts=list;const brandCounts=new Map();for(const product of categoryProducts){const name=brandName(product.brand);if(name)brandCounts.set(name,(brandCounts.get(name)||0)+1);}const brands=[...brandCounts.keys()].sort((a,b)=>(['TV','로봇청소기','무선청소기','식기세척기'].includes(cat)?0:brandPriority(a)-brandPriority(b))||brandCounts.get(b)-brandCounts.get(a)||a.localeCompare(b,'ko'));const tvCatalog=!isSaved&&!q&&cat==='TV';const availableTypes=airconTypes.filter(type=>(cat==='에어컨-냉난방기'||type!=='냉난방기')&&(cat!=='냉난방기'||list.some(p=>matchesAirconType(p,type))));if(!isSaved&&!q&&cat==='냉난방기'&&filters.type!=='전체'&&!availableTypes.includes(filters.type)){filters.type='전체';const url=new URL(location.href);url.searchParams.delete('type');history.replaceState(null,'',url);}if(!isSaved&&!q&&isAirconCategory(cat))list=list.filter(p=>matchesAirconType(p,filters.type));if(!isSaved&&!q&&isLaundryCategory(cat))list=list.filter(p=>laundryType(p)===selectedLaundryType);if(!isSaved&&!q&&cat==='업소용')list=list.filter(p=>matchesCommercialType(p,selectedCommercialType));if(filters.brand!=='전체')list=list.filter(p=>brandName(p.brand)===brandName(filters.brand));list=list.filter(p=>matchesPrice(p,filters.price));if(!isSaved&&!q&&cat==='정수기')list=list.filter(p=>waterFilterGroups.every(group=>matchesWaterFilter(p,group.key,filters[group.key])));if(tvCatalog)list=list.filter(p=>matchesInches(p,filters.inches)&&matchesInstallation(p,filters.installation));if(!isSaved&&!q&&cat==='정수기'&&filters.sort==='popular')list=prioritizeWaterProducts(list,products,filters.feature);if(!isSaved&&!q&&cat==='식기세척기'&&filters.sort==='popular')list=arrangeBrandPairs(list,brands);if(filters.sort==='low')list.sort((a,b)=>(a.monthlyPrice||Infinity)-(b.monthlyPrice||Infinity));if(filters.sort==='high')list.sort((a,b)=>(b.monthlyPrice||0)-(a.monthlyPrice||0));const title=isSaved?'찜한 제품':q?`“${q}” 검색 결과`:cat==='업소용'&&selectedCommercialType!=='전체'?`업소용 ${selectedCommercialType}`:cat;return `<main id="main">${breadcrumb(title)}<section class="catalog wrap ${tvCatalog?'tv-catalog':''}"><div class="catalog-title"><span class="eyebrow">${isSaved?'YOUR FAVORITES':'FIND YOUR EVERYDAY'}</span><h1>${esc(isSaved||q?title:cat==='업소용'&&selectedCommercialType==='전체'?'업소용 가전 렌탈':title+' 렌탈')}${isSaved||q?'<span class="heading-dot">.</span>':''}</h1><p>${isSaved?'마음에 드는 가전을 한곳에 모아보세요.':q?'원하는 상품을 확인해보세요.':cat==='업소용'?'매장과 주방에 필요한 제품을 유형별로 찾아보세요.':'우리 집에 어울리는 가전, 나에게 맞는 조건으로.'}</p></div>${!isSaved&&!q&&cat==='업소용'?commercialDirectory(selectedCommercialType):''}${`<div class="filter-panel catalog-filters"><div><b>브랜드</b><div class="filter-options" role="group" aria-label="브랜드 필터">${['전체',...brands].map(b=>`<button class="${brandName(filters.brand)===b?'selected':''}" data-action="brand-filter" data-value="${esc(b)}" aria-pressed="${brandName(filters.brand)===b}">${esc(b)}</button>`).join('')}</div></div><div><b>월 렌탈료</b><div class="filter-options" role="group" aria-label="월 렌탈료 필터">${priceRanges.map(r=>`<button class="${filters.price===r.label?'selected':''}" data-action="price-filter" data-value="${r.label}" aria-pressed="${filters.price===r.label}">${r.label}</button>`).join('')}</div></div></div>`}${tvCatalog?tvFilterPanel(categoryProducts):''}${!isSaved&&!q&&isLaundryCategory(cat)?`<div class="filter-panel catalog-filters laundry-type-filters"><div><b>제품 종류</b><div class="filter-options" role="group" aria-label="세탁·건조기 제품 종류">${laundryTypes.map(type=>`<button type="button" data-action="type-filter" data-value="${type}" class="${selectedLaundryType===type?'selected':''}" aria-pressed="${selectedLaundryType===type}">${type}</button>`).join('')}</div></div></div>`:''}${!isSaved&&!q&&cat==='정수기'?`<div class="filter-panel catalog-filters water-filters">${waterFilterGroups.map(group=>`<div><b>${group.label}</b><div class="filter-options" role="group" aria-label="정수기 ${group.label} 필터">${['전체',...group.values].map(value=>`<button class="${filters[group.key]===value?'selected':''}" data-action="water-filter" data-key="${group.key}" data-value="${value}" aria-pressed="${filters[group.key]===value}">${value}</button>`).join('')}</div></div>`).join('')}</div>`:''}${!isSaved&&!q&&isAirconCategory(cat)?`<div class="filter-panel"><div><b>제품 종류</b><div class="filter-options">${['전체',...availableTypes].map(type=>`<button class="${filters.type===type?'selected':''}" data-action="type-filter" data-value="${type}" aria-pressed="${filters.type===type}">${type}</button>`).join('')}</div></div></div>`:''}<div class="catalog-toolbar"><p>전체 <strong>${list.length}</strong>개</p><select id="sort" aria-label="상품 정렬"><option value="popular" ${filters.sort==='popular'?'selected':''}>추천순</option><option value="low" ${filters.sort==='low'?'selected':''}>낮은 렌탈료순</option><option value="high" ${filters.sort==='high'?'selected':''}>높은 렌탈료순</option></select></div>${list.length?`<div class="product-grid">${list.map(card).join('')}</div>`:`<div class="empty-state">${icon(isSaved?'heart':'search',38)}<h2>${categoryProducts.length?'선택한 조건에 맞는 상품이 없어요':isSaved?'아직 찜한 제품이 없어요':q?'검색 결과가 없어요':'상품을 준비하고 있어요'}</h2><p>${categoryProducts.length?'선택한 필터 조건을 변경해 보세요.':isSaved?'상품의 하트를 눌러 마음에 드는 가전을 담아보세요.':q?'브랜드명이나 모델명으로 다시 검색해보세요.':'먼저 준비된 인기 정수기를 둘러보세요.'}</p>${categoryProducts.length?`<button class="primary-button" data-action="reset-catalog-filters">필터 초기화 ${icon('arrow',18)}</button>`:`<a class="primary-button" href="?page=catalog&category=정수기">정수기 둘러보기 ${icon('arrow',18)}</a>`}</div>`}</section></main>`;}
-function render(){clearInterval(slideTimer);const page=route().get('page');$('#app').innerHTML=header()+mobileCategoryNav()+(page==='partner'?partnerPage(icon):page==='product'?detail():page==='catalog'&&route().get('category')==='인터넷'&&!route().get('q')?internetPage():page?catalog():home())+footer();applySearchMetadata(route(),products,document);bind();if(!page&&!paused)slideTimer=setInterval(()=>changeSlide(1),7000);}
+function render(){clearInterval(slideTimer);const page=route().get('page');$('#app').innerHTML=header()+mobileCategoryNav()+(page==='partner'?partnerPage(icon):page==='product'?detail():page==='catalog'&&route().get('category')==='인터넷'&&!route().get('q')?internetPage():page?catalog():home())+footer();applySearchMetadata(route(),products,document);bind();if(!page)syncSlideTimer();}
 function bind(){$('.review-carousel')?.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();setReviewIndex(event.key==='Home'?0:event.key==='End'?reviewVideos.length-1:reviewIndex+(event.key==='ArrowRight'?1:-1));});const categoryList=$('.mobile-main-category-list'),selectedCategory=$('.mobile-main-category-list .active');if(categoryList&&selectedCategory&&categoryList.clientWidth){categoryList.scrollLeft=selectedCategory.offsetLeft-categoryList.offsetLeft-(categoryList.clientWidth-selectedCategory.offsetWidth)/2;}mountInternet({openOverlay,icon,business});document.onclick=handleClick;$('.search-form')?.addEventListener('submit',e=>{e.preventDefault();let q=new FormData(e.currentTarget).get('q').trim();if(q)location.href=`?page=catalog&q=${encodeURIComponent(q)}`;});$('#sort')?.addEventListener('change',e=>{filters.sort=e.target.value;render();});}
 function toast(message){$('#toast').textContent=message;$('#toast').classList.add('show');clearTimeout(window.toastTimeout);window.toastTimeout=setTimeout(()=>$('#toast').classList.remove('show'),2600);}
-function changeSlide(direction){slide=(slide+direction+3)%3;$('.hero')?.classList.toggle('hero-reference-banner',slide===0);const uploaded=$('.hero-uploaded-banner');if(uploaded)uploaded.hidden=slide!==0;const content=[['좋은 가전이 만드는','더 나은 일상','필요한 가전을, 부담은 가볍게.<br>나에게 맞는 렌탈을 시작하세요.'],['매일 마시는 물을','조금 더 특별하게','우리 집에 꼭 맞는 정수기.<br>마음에 드는 디자인부터 골라보세요.'],['나에게 맞는 가전','나다운 생활의 시작','생활을 편하게 만드는 선택.<br>세모가에서 함께 찾아보세요.']][slide];if($('.hero-banner-title')){$('.hero-banner-title').innerHTML=`${content[0]}<br><em>${content[1]}</em>`;$('.hero-copy p').innerHTML=content[2];$('#slide-number').textContent=`0${slide+1}`;}}
+function changeSlide(direction,manual=false){
+  if(!$('.hero-carousel'))return;
+  slide=(slide+direction+homeBanners.length)%homeBanners.length;
+  $$('.hero-slide').forEach((item,index)=>{item.hidden=index!==slide;});
+  $('#slide-number').textContent=String(slide+1).padStart(2,'0');
+  if(manual)syncSlideTimer();
+}
 function handleClick(e){const el=e.target.closest('[data-action]');if(!el)return;const action=el.dataset.action;if(action==='favorite'){const id=el.dataset.id;saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];try{localStorage.setItem('semoga-favorites',JSON.stringify(saved));}catch{}$$(`[data-action="favorite"][data-id="${CSS.escape(id)}"]`).forEach(b=>{b.classList.toggle('is-saved',saved.includes(id));b.setAttribute('aria-pressed',saved.includes(id));});$$('.saved-count').forEach(n=>n.textContent=saved.length);toast(saved.includes(id)?'찜한 제품에 담았어요.':'찜한 제품에서 삭제했어요.');if(route().get('page')==='saved')render();}
 else if(action==='commercial-menu-more'){
   const section=el.closest('.menu-commercial-row');
@@ -74,7 +175,7 @@ else if(action==='commercial-menu-more'){
   el.setAttribute('aria-expanded',String(expanded));
   el.innerHTML=`<span>${expanded?'접기':'더보기'}</span>${icon('chevron',14)}`;
   if(!expanded)section.scrollIntoView({block:'start'});
-}else if(action==='menu')openMenu();else if(action==='close')closeOverlay();else if(action==='menu-category'){activeCategory=el.dataset.value;renderMenuContent();}else if(action==='consult')openConsult();else if(action==='benefit')openBenefit();else if(action==='search'){$('.search-form').classList.toggle('mobile-open');$('.search-form input').focus();}else if(action==='slide-prev')changeSlide(-1);else if(action==='slide-next')changeSlide(1);else if(action==='slide-pause'){paused=!paused;clearInterval(slideTimer);if(!paused)slideTimer=setInterval(()=>changeSlide(1),7000);el.innerHTML=icon(paused?'play':'pause',15);el.setAttribute('aria-label',paused?'배너 자동 재생':'배너 자동 재생 일시정지');}
+}else if(action==='menu')openMenu();else if(action==='close')closeOverlay();else if(action==='menu-category'){activeCategory=el.dataset.value;renderMenuContent();}else if(action==='consult')openConsult();else if(action==='benefit')openBenefit();else if(action==='search'){$('.search-form').classList.toggle('mobile-open');$('.search-form input').focus();}else if(action==='slide-prev')changeSlide(-1,true);else if(action==='slide-next')changeSlide(1,true);else if(action==='slide-pause'){paused=!paused;syncSlideTimer();el.innerHTML=icon(paused?'play':'pause',15);el.setAttribute('aria-label',paused?'배너 자동 재생':'배너 자동 재생 일시정지');}
 else if(action==='review-step')setReviewIndex(reviewIndex+Number(el.dataset.value));else if(action==='review-jump')setReviewIndex(Number(el.dataset.value));
 else if(action==='home-filter'){const value=el.dataset.value;if(!homeWaterTypes.includes(value))return;$$('[data-action="home-filter"]').forEach(b=>{b.classList.toggle('active',b===el);b.setAttribute('aria-pressed',b===el);});$('#home-selection').innerHTML=homeWaterSelection(value);}
 else if(action==='home-products-page'){const page=el.dataset.value==='1'?1:0;$('#home-products').dataset.mobilePage=String(page);$('#home-products-page').textContent=`${page+1} / 2`;$$('[data-action="home-products-page"]').forEach(b=>b.disabled=Number(b.dataset.value)===page);$$('[data-action="home-products-page"]').find(b=>!b.disabled)?.focus({preventScroll:true});$('#popular').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}

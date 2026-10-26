@@ -62,6 +62,20 @@
   .hero-reference-banner .hero-uploaded-banner img{object-fit:contain}
 }
 .hero-uploaded-banner:focus-visible{outline-offset:-4px}
+/* Keep every promotion fully visible, with controls outside the artwork. */
+.hero.hero-carousel{height:auto;aspect-ratio:auto;padding-bottom:44px;background:#edf2ff}
+.hero-carousel .hero-slides{position:relative;aspect-ratio:2070/760}
+.hero-carousel .hero-slide{position:absolute;inset:0}
+.hero-carousel .hero-slide[hidden]{display:none}
+.hero-carousel .hero-uploaded-banner{border-radius:0}
+.hero-carousel .hero-uploaded-banner img{object-fit:contain}
+.hero-carousel .hero-controls{right:14px;bottom:6px;height:32px;gap:4px;padding:0 6px}
+.hero-carousel .hero-controls button{min-height:30px;min-width:26px}
+@media(max-width:640px){
+  .hero-carousel .hero-slides{aspect-ratio:1063/1480}
+  .hero-carousel .hero-controls{right:10px;bottom:6px}
+}
+
 .menu-category-row h3{font-size:14px;font-weight:700;padding-top:30px}
 .all-category-directory .category-item{font-size:12px;white-space:normal;text-align:center;line-height:1.45;gap:10px}
 .all-category-directory .category-circle{width:76px;height:76px}
