@@ -66,8 +66,8 @@ const homeBanners = [
     "id": "commercial",
     "name": "업소용 가전",
     "href": "/categories/commercial/",
-    "pc": "./assets/semoga-home-commercial-pc-20261026.webp",
-    "mobile": "./assets/semoga-home-commercial-mobile-20261026.webp",
+    "pc": "./assets/semoga-home-commercial-pc-logo-fixed-20261026.webp",
+    "mobile": "./assets/semoga-home-commercial-mobile-logo-fixed-20261026.webp",
     "alt": "사업의 시작부터 성장까지, 렌탈로 완성! 업소용 가전 렌탈. 초기 비용 절감, 다양한 제품, 합리적인 렌탈료, 전문 케어 서비스. 상담문의 1661-6566.",
     "pcSize": [
       2069,
@@ -82,8 +82,8 @@ const homeBanners = [
     "id": "hvac",
     "name": "냉난방기",
     "href": "/categories/hvac/",
-    "pc": "./assets/semoga-home-hvac-pc-20261026.webp",
-    "mobile": "./assets/semoga-home-hvac-mobile-20261026.webp",
+    "pc": "./assets/semoga-home-hvac-pc-logo-fixed-20261026.webp",
+    "mobile": "./assets/semoga-home-hvac-mobile-logo-fixed-20261026.webp",
     "alt": "여름엔 시원하게, 겨울엔 따뜻하게. 냉난방기도 렌탈이 정답입니다! 천장형, 투인원, 상업용 스탠드. 상담문의 1661-6566.",
     "pcSize": [
       2068,
@@ -98,8 +98,8 @@ const homeBanners = [
     "id": "laundry",
     "name": "세탁·건조기",
     "href": "/categories/laundry/",
-    "pc": "./assets/semoga-home-laundry-pc-20261026.webp",
-    "mobile": "./assets/semoga-home-laundry-mobile-20261026.webp",
+    "pc": "./assets/semoga-home-laundry-pc-logo-fixed-20261026.webp",
+    "mobile": "./assets/semoga-home-laundry-mobile-logo-fixed-20261026.webp",
     "alt": "세탁기·건조기도 이제 렌탈로 스마트하게! 베이지색 병렬형 세트와 타워형 세트. 공간은 깔끔하게, 생활은 편리하게. 상담문의 1661-6566.",
     "pcSize": [
       2069,
@@ -114,8 +114,8 @@ const homeBanners = [
     "id": "all-in-one",
     "name": "제품 종합",
     "action": "consult",
-    "pc": "./assets/semoga-home-all-in-one-pc-20261026.webp",
-    "mobile": "./assets/semoga-home-all-in-one-mobile-20261026.webp",
+    "pc": "./assets/semoga-home-all-in-one-pc-logo-fixed-20261026.webp",
+    "mobile": "./assets/semoga-home-all-in-one-mobile-logo-fixed-20261026.webp",
     "alt": "믿을 수 있는 렌탈, 한 곳에서 완벽하게. 프리미엄 안마의자부터 생활가전까지 다양한 브랜드 제품을 합리적인 렌탈료로! 상담문의 1661-6566.",
     "pcSize": [
       2068,
