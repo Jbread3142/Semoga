@@ -1,5 +1,5 @@
 import { business } from './contact.js?v=1495fb2b982c0aa5';
-import { isCommercialProduct } from './commercial.js?v=bea2975be141240f';
+import { isCommercialProduct } from './commercial.js?v=4a2a860e2aeb6419';
 import { lowestPlan } from './rental.js?v=ce82df1a70f6d827';
 import { rentalDescription } from './tv.js?v=e2f495faa5ff9342';
 
@@ -13,7 +13,7 @@ export const searchCategories = [
   ['의류청정기','clothing'], ['인터넷','internet'], ['에어컨','aircon'],
   ['냉난방기','hvac'], ['세탁·건조기','laundry'], ['음식물처리기','food'], ['업소용','commercial'], ['TV','tv'], ['로봇청소기','robot-vacuum'], ['무선청소기','cordless-vacuum'], ['식기세척기','dishwasher'], ['전기레인지','electric-range'], ['헬스','fitness'], ['커피머신','coffee-machine'], ['냉장고','refrigerator'], ['김치냉장고','kimchi-refrigerator'],
   ['가스레인지','gas-range'], ['가습기','humidifier'], ['건강/의료기기','health-medical'], ['게임기/오락기','gaming'], ['공기살균기','air-sterilizer'], ['기타','other-kitchen'], ['노트북','laptop'], ['도어락','door-lock'], ['드라이기/헤어용품','hair-care'], ['모니터','monitor'], ['미싱기','sewing-machine'], ['바이러스케어','virus-care'], ['반려동물용품','pet-care'], ['밥솥','rice-cooker'], ['블렌더/주서기','blender-juicer'], ['빔프로젝터','projector'], ['사우나/반신욕기','sauna'], ['사운드바','soundbar'], ['서큘레이터','circulator'], ['에어프라이어','air-fryer'], ['연수기','water-softener'], ['오븐/전자레인지','oven-microwave'], ['온수/전기매트','heated-mat'], ['전자칠판','interactive-display'], ['제습기','dehumidifier'], ['주방후드','kitchen-hood'], ['집진기','dust-collector'], ['컴퓨터','computer'], ['탈모치료기','scalp-care'], ['프린터/복합기','printer'], ['피부미용기기','beauty'], ['향기컨설팅','fragrance'], ['환기가전','ventilation'],
-  ['건강침대','health-bed'], ['다리미','iron'], ['매트리스','mattress'], ['모션베드','adjustable-bed'], ['소파','sofa'], ['수납가구','storage-furniture'], ['식탁/테이블','dining-table'], ['신발관리기','shoe-care'], ['액션캠','action-camera'], ['자동차용품','car-accessories'], ['전기스쿠터','electric-scooter'], ['전기자전거','electric-bicycle'], ['책상/의자','desk-chair'], ['침대','bed'], ['침대프레임','bed-frame'], ['캠핑용품','camping'], ['피아노/전자드럼','piano-drums'],
+  ['건강침대','health-bed'], ['다리미','iron'], ['매트리스','mattress'], ['모션베드','adjustable-bed'], ['소파','sofa'], ['수납가구','storage-furniture'], ['식탁/테이블','dining-table'], ['신발관리기','shoe-care'], ['액션캠','action-camera'], ['자동차용품','car-accessories'], ['전기스쿠터','electric-scooter'], ['전기자전거','electric-bicycle'], ['책상/의자','desk-chair'], ['침대','bed'], ['침대프레임','bed-frame'], ['캠핑용품','camping'], ['피아노/전자드럼','piano-drums'], ['와인셀러','wine-cellar'],
 ];
 export const productPath = id => `/products/${encodeURIComponent(id)}/`;
 export const categoryPath = name => {

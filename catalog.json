@@ -107116,21 +107116,33 @@
     "name": "디오스 와인셀러 8병",
     "model": "W087B",
     "brand": "LG",
-    "category": "업소용",
-    "commercialType": "와인셀러",
+    "category": "와인셀러",
     "size": "282x497x534 mm",
-    "weight": "12 kg",
+    "weight": null,
     "function": "",
     "type": "",
     "method": "",
     "features": [],
+    "seoTags": [
+      "와인냉장고",
+      "1도어(일반)",
+      "와인수납: 8병",
+      "반도체냉각",
+      "온도조절",
+      "자외선차단",
+      "온도범위: 8℃~16℃",
+      "2중글라스도어",
+      "오프너수납공간",
+      "고내등",
+      "크기(가로x세로x깊이): 282x497x534mm"
+    ],
     "tagline": "",
     "badge": "SEMOGA PICK",
-    "image": "https://semoga.speedgabia.com/semoga/catalog/w087b-0335d250-thumbnail-1.jpg",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/w087b-0335d250-thumbnail-1-b915cca24ebc85d75c7f.jpg",
     "thumbnails": [
-      "https://semoga.speedgabia.com/semoga/catalog/w087b-0335d250-thumbnail-1.jpg"
+      "https://semoga.speedgabia.com/semoga/catalog/w087b-0335d250-thumbnail-1-b915cca24ebc85d75c7f.jpg"
     ],
-    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w087b-0335d250-detail.jpg",
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w087b-0335d250-detail-ebf2888c2479a7d96bce.jpg",
     "monthlyPrice": 11900,
     "rentalPlans": [
       {
@@ -107139,7 +107151,8 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 11900,
-        "sourceRow": 1551
+        "sourceRow": 2,
+        "rentalCompany": "스마트렌탈"
       },
       {
         "term": 4,
@@ -107147,7 +107160,8 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 13900,
-        "sourceRow": 1552
+        "sourceRow": 3,
+        "rentalCompany": "스마트렌탈"
       },
       {
         "term": 3,
@@ -107155,36 +107169,114 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 17900,
-        "sourceRow": 1553
+        "sourceRow": 4,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 11900,
+        "sourceRow": 5,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 14000,
+        "sourceRow": 6,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 17600,
+        "sourceRow": 7,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 12300,
+        "sourceRow": 8,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 14400,
+        "sourceRow": 9,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 18000,
+        "sourceRow": 10,
+        "rentalCompany": "BS ON"
       }
     ],
     "source": {
       "sheet": "상품",
-      "row": 330
+      "row": 2
     },
     "colors": [],
-    "sample": false
+    "sample": false,
+    "commercialType": "와인셀러"
   },
   {
     "id": "w0082gtb-a9352a9a",
     "name": "디오스 오브제컬렉션 와인셀러 8병",
     "model": "W0082GTB",
     "brand": "LG",
-    "category": "업소용",
-    "commercialType": "와인셀러",
+    "category": "와인셀러",
     "size": "282x497x534 mm",
-    "weight": "12.5 kg",
+    "weight": null,
     "function": "",
     "type": "",
     "method": "",
     "features": [],
+    "seoTags": [
+      "와인냉장고",
+      "1도어",
+      "[디자인]색상:전체도어크리스탈클레이민트",
+      "재질:무광글라스",
+      "[특징]미니",
+      "반도체냉각",
+      "와인수납:8병",
+      "[기능]전문보관:와인",
+      "자외선차단",
+      "온도조절",
+      "와인라벨인식",
+      "8℃~16℃",
+      "[선반]서랍식선반",
+      "선반:사출소재",
+      "[부가]터치LED디스플레이",
+      "WiFi",
+      "소음:32dB",
+      "다중글라스도어",
+      "와인큐레이터",
+      "포켓핸들",
+      "크기(가로x세로x깊이):282x497x534mm"
+    ],
     "tagline": "",
     "badge": "SEMOGA PICK",
-    "image": "https://semoga.speedgabia.com/semoga/catalog/w0082gtb-a9352a9a-thumbnail-1.jpg",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/w0082gtb-a9352a9a-thumbnail-1-fa097b08a9914d7198b8.jpg",
     "thumbnails": [
-      "https://semoga.speedgabia.com/semoga/catalog/w0082gtb-a9352a9a-thumbnail-1.jpg"
+      "https://semoga.speedgabia.com/semoga/catalog/w0082gtb-a9352a9a-thumbnail-1-fa097b08a9914d7198b8.jpg"
     ],
-    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w0082gtb-a9352a9a-detail.jpg",
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w0082gtb-a9352a9a-detail-2a02d97b8c26017579ac.jpg",
     "monthlyPrice": 13800,
     "rentalPlans": [
       {
@@ -107193,7 +107285,8 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 13800,
-        "sourceRow": 1554
+        "sourceRow": 11,
+        "rentalCompany": "이니렌탈"
       },
       {
         "term": 4,
@@ -107201,7 +107294,8 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 16200,
-        "sourceRow": 1555
+        "sourceRow": 12,
+        "rentalCompany": "이니렌탈"
       },
       {
         "term": 3,
@@ -107209,36 +107303,114 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 20400,
-        "sourceRow": 1556
+        "sourceRow": 13,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 13900,
+        "sourceRow": 14,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 16500,
+        "sourceRow": 15,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 20500,
+        "sourceRow": 16,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 13900,
+        "sourceRow": 17,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 16200,
+        "sourceRow": 18,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 20300,
+        "sourceRow": 19,
+        "rentalCompany": "BS ON"
       }
     ],
     "source": {
       "sheet": "상품",
-      "row": 331
+      "row": 3
     },
     "colors": [],
-    "sample": false
+    "sample": false,
+    "commercialType": "와인셀러"
   },
   {
     "id": "w0082gcb-76db9b23",
     "name": "디오스 오브제컬렉션 와인셀러 8병",
     "model": "W0082GCB",
     "brand": "LG",
-    "category": "업소용",
-    "commercialType": "와인셀러",
+    "category": "와인셀러",
     "size": "282x497x534 mm",
-    "weight": "12.5 kg",
+    "weight": null,
     "function": "",
     "type": "",
     "method": "",
     "features": [],
+    "seoTags": [
+      "와인냉장고",
+      "1도어",
+      "[디자인] 색상: 전체도어 크리스탈클레이브라운",
+      "재질: 무광글라스",
+      "[특징] 미니",
+      "반도체냉각",
+      "와인수납: 8병",
+      "[기능] 전문보관: 와인",
+      "자외선차단",
+      "온도조절",
+      "와인라벨인식",
+      "8℃~16℃",
+      "[선반] 서랍식선반",
+      "선반: 사출소재",
+      "[부가] 터치LED디스플레이",
+      "WiFi",
+      "소음: 32dB",
+      "다중글라스도어",
+      "와인큐레이터",
+      "포켓핸들",
+      "크기(가로x세로x깊이): 282x497x534mm"
+    ],
     "tagline": "",
     "badge": "SEMOGA PICK",
-    "image": "https://semoga.speedgabia.com/semoga/catalog/w0082gcb-76db9b23-thumbnail-1.jpg",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/w0082gcb-76db9b23-thumbnail-1-778eca3bcd2a24692fc9.jpg",
     "thumbnails": [
-      "https://semoga.speedgabia.com/semoga/catalog/w0082gcb-76db9b23-thumbnail-1.jpg"
+      "https://semoga.speedgabia.com/semoga/catalog/w0082gcb-76db9b23-thumbnail-1-778eca3bcd2a24692fc9.jpg"
     ],
-    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w0082gcb-76db9b23-detail.jpg",
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w0082gcb-76db9b23-detail-de8911743c656621709c.jpg",
     "monthlyPrice": 13800,
     "rentalPlans": [
       {
@@ -107247,7 +107419,8 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 13800,
-        "sourceRow": 1557
+        "sourceRow": 20,
+        "rentalCompany": "이니렌탈"
       },
       {
         "term": 4,
@@ -107255,7 +107428,8 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 16200,
-        "sourceRow": 1558
+        "sourceRow": 21,
+        "rentalCompany": "이니렌탈"
       },
       {
         "term": 3,
@@ -107263,46 +107437,129 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 20400,
-        "sourceRow": 1559
+        "sourceRow": 22,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 13900,
+        "sourceRow": 23,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 16500,
+        "sourceRow": 24,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 20500,
+        "sourceRow": 25,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 13900,
+        "sourceRow": 26,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 16200,
+        "sourceRow": 27,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 20300,
+        "sourceRow": 28,
+        "rentalCompany": "BS ON"
       }
     ],
     "source": {
       "sheet": "상품",
-      "row": 332
+      "row": 4
     },
     "colors": [],
-    "sample": false
+    "sample": false,
+    "commercialType": "와인셀러"
   },
   {
     "id": "w0772gb-9e7cffa7",
     "name": "디오스 오브제컬렉션 와인셀러 77병",
     "model": "W0772GB",
     "brand": "LG",
-    "category": "업소용",
-    "commercialType": "와인셀러",
+    "category": "와인셀러",
     "size": "595 x 1,198 x 585 mm",
-    "weight": "61 kg",
+    "weight": null,
     "function": "",
     "type": "",
     "method": "",
     "features": [],
     "tagline": "",
     "badge": "SEMOGA PICK",
-    "image": "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-thumbnail-1.jpg",
+    "image": "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-thumbnail-1-b460a63cfadc86f21156.jpg",
     "thumbnails": [
-      "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-thumbnail-1.jpg",
-      "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-thumbnail-2.jpg"
+      "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-thumbnail-1-b460a63cfadc86f21156.jpg",
+      "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-thumbnail-2-3fb77827530df1620499.jpg"
     ],
-    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-detail.jpg",
-    "monthlyPrice": 60600,
+    "detailImage": "https://semoga.speedgabia.com/semoga/catalog/w0772gb-9e7cffa7-detail-983de97f3e66e14501e9.jpg",
+    "monthlyPrice": 54100,
     "rentalPlans": [
       {
         "term": 5,
         "care": "unspecified",
         "careLabel": "",
         "cycle": "",
+        "monthlyPrice": 54100,
+        "sourceRow": 29,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 63300,
+        "sourceRow": 30,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 79100,
+        "sourceRow": 31,
+        "rentalCompany": "BS ON"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
         "monthlyPrice": 60600,
-        "sourceRow": 1560
+        "sourceRow": 32,
+        "rentalCompany": "이니렌탈"
       },
       {
         "term": 4,
@@ -107310,7 +107567,8 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 71200,
-        "sourceRow": 1561
+        "sourceRow": 33,
+        "rentalCompany": "이니렌탈"
       },
       {
         "term": 3,
@@ -107318,15 +107576,44 @@
         "careLabel": "",
         "cycle": "",
         "monthlyPrice": 89600,
-        "sourceRow": 1562
+        "sourceRow": 34,
+        "rentalCompany": "이니렌탈"
+      },
+      {
+        "term": 5,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 62000,
+        "sourceRow": 35,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 4,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 72000,
+        "sourceRow": 36,
+        "rentalCompany": "스마트렌탈"
+      },
+      {
+        "term": 3,
+        "care": "unspecified",
+        "careLabel": "",
+        "cycle": "",
+        "monthlyPrice": 88000,
+        "sourceRow": 37,
+        "rentalCompany": "스마트렌탈"
       }
     ],
     "source": {
       "sheet": "상품",
-      "row": 333
+      "row": 5
     },
     "colors": [],
-    "sample": false
+    "sample": false,
+    "commercialType": "와인셀러"
   },
   {
     "id": "xeft-04hs-etdp-k-144ae3c7",

@@ -893,5 +893,20 @@ export const catalogCategoryPhotos = {
     "id": "md2w_sr-a9fa1b76",
     "field": "thumbnail",
     "index": 0
+  },
+  "와인셀러": {
+    "id": "w087b-0335d250",
+    "field": "thumbnail",
+    "index": 0,
+    "size": [
+      800,
+      600
+    ],
+    "crop": [
+      277,
+      87,
+      247,
+      443
+    ]
   }
 };

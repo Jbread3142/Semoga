@@ -3,10 +3,10 @@ import { homeBenefitBanner } from './home-benefit.js?v=c70d3114d49e064f';
 import { internetShowcase } from './home-internet.js?v=370eb5bdcb72d92a';
 import { reviewSection, reviewCards, reviewPosition, reviewVideos } from './review-videos.js?v=fa0913c784639b07';
 import { homeWaterTypes, homeWaterProducts, prioritizeWaterProducts } from './home-products.js?v=6e4ffaa694b99c15';
-import { commercialTypes, isCommercialProduct, matchesCommercialType, commercialHref, normalizeCommercialProduct } from './commercial.js?v=bea2975be141240f';
-import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=1093a68fbcf18700';
+import { commercialTypes, isCommercialProduct, matchesCommercialType, commercialHref, normalizeCommercialProduct } from './commercial.js?v=4a2a860e2aeb6419';
+import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=8a59daba8565f3a5';
 import { categoryArt } from './category-art.js?v=14f8cb705f576963';
-import { categoryPhotos, catalogCategoryPhotos } from './category-photos.js?v=f653140c97ccae2f';
+import { categoryPhotos, catalogCategoryPhotos } from './category-photos.js?v=5db60fc14ab96cc6';
 import { waterFilterGroups, matchesWaterFilter } from './water-filters.js?v=bd681181a6ae7728';
 import { priceRanges, brandName, brandPriority, matchesPrice, arrangeBrandPairs } from './catalog-filters.js?v=f061f20626e84f74';
 import { laundryTypes, isLaundryCategory, laundryType } from './laundry.js?v=bd87874bcd638514';
@@ -14,11 +14,11 @@ import { internetPage, mountInternet } from './internet.js?v=a6790f219ba494b1';
 import { airconTypes, isAirconCategory, matchesAirconCategory, matchesAirconType } from './aircon.js?v=242116c5b4404c40';
 import { business } from './contact.js?v=1495fb2b982c0aa5';
 import { isTV, screenLabel, tvName, installationTypes, inchRanges, inchRangeLabel, matchesInches, matchesInstallation, rentalDescription } from './tv.js?v=e2f495faa5ff9342';
-import { categories, navigationCategories, categoryTree, products as sampleProducts } from './data.js?v=5cd1f4e8f023d1e6';
+import { categories, navigationCategories, categoryTree, products as sampleProducts } from './data.js?v=17fde49c7f2eb6bb';
 import { termKey, termLabel, conditionKey, careDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js?v=ce82df1a70f6d827';
 
 let products = sampleProducts;
-try { const response = await fetch('./catalog.json?v=a91ddec51b0fbbe8', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
+try { const response = await fetch('./catalog.json?v=75e105fe0f2db5a7', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const esc = (s='') => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -209,7 +209,6 @@ function renderMenuContent(){
   const groups=Object.entries(categoryTree).filter(([name])=>!omitted.has(name)).map(([name,children])=>[name,children.filter(child=>name==='업소용'?child!=='냉/온장 쇼케이스':!mainNames.has(child)&&!laundryTypes.includes(child)&&child!=='의류관리기')]).filter(([,children])=>children.length);
   const commercialIndex=groups.findIndex(([name])=>name==='업소용');
   if(commercialIndex>0)groups.unshift(groups.splice(commercialIndex,1)[0]);
-  groups.push(['서비스',['상조가전']]);
   $('#category-menu-content').innerHTML=`<nav class="all-category-directory" aria-label="전체 카테고리"><section class="menu-main-categories" aria-label="메인 카테고리"><div class="menu-category-items">${categories.map((c,i)=>menuCategoryButton(c.name,i)).join('')}</div></section><div class="menu-category-groups">${groups.map(([name,children])=>`<section class="menu-category-row${name==='업소용'?' menu-commercial-row is-collapsed':''}"><h3>${name==='업소용'?`<a href="${commercialHref()}">업소용 전체 ${icon('chevron',12)}</a>`:esc(name)}</h3>${name==='업소용'?`<div class="menu-commercial-content"><div class="menu-category-items" id="commercial-menu-items">${children.map((child,i)=>menuCategoryButton(child,i,name)).join('')}</div><button type="button" class="menu-commercial-toggle" data-action="commercial-menu-more" aria-expanded="false" aria-controls="commercial-menu-items"><span>더보기</span>${icon('chevron',14)}</button></div>`:`<div class="menu-category-items">${children.map((child,i)=>menuCategoryButton(child,i,name)).join('')}</div>`}</section>`).join('')}</div></nav>`;
 }
 function openBenefit(){openOverlay(`<div class="dialog-heading"><div><span class="eyebrow">RENTAL CONSULTATION</span><h2 id="dialog-title">렌탈 상담하기</h2></div><button class="icon-button" data-action="close" aria-label="닫기">${icon('close',28)}</button></div><div class="benefit-consult-content"><div class="consult-symbol">${icon('headphones',38)}</div><div class="benefit-consult-logo">${logo}</div><h3>가전 + 인터넷-티비 가입시<strong>최대 지원금 <span>150만원</span></strong></h3><p class="benefit-consult-description">전화 또는 카카오톡으로 편하게 문의해 주세요.</p><div class="consult-contact"><a class="consult-phone" href="${business.phoneHref}"><span>대표번호 · 전화 상담</span><strong>${business.phone}</strong></a><p>상담시간 ${business.hours}</p></div><a class="kakao-button full" href="${business.kakaoUrl}" target="_blank" rel="noopener noreferrer">카카오톡 상담하기 ${icon('arrow',22)}</a><p class="consult-contact-note">카카오톡 채널이 새 창에서 열립니다.</p></div>`,'benefit-consult-overlay');}

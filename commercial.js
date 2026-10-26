@@ -2,7 +2,7 @@ import { classifyCommercialName } from './commercial-rules.js?v=14ecd2f3081df633
 // The spreadsheet's 제품유형 values and the commercial directory use these labels.
 export const commercialTypes = [
   '스탠드 냉장고', '테이블 냉장고', '반찬 냉장고', '김밥/토핑 냉장고',
-  '서랍식 냉장고', '우유서랍 냉장고', '육수/슬러시 냉장고', '제빙기',
+  '서랍식 냉장고', '우유서랍 냉장고', '육수/슬러시 냉장고',
   '고기 숙성고', '김치 냉장고', '참치 냉동고', '튀김기', '기름정제기',
   '냉동 쇼케이스', '냉/온장 쇼케이스', '음식물처리기',
   '음료 쇼케이스', '제과/마카롱 쇼케이스', '블라스트칠러', '와인셀러',
