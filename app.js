@@ -18,7 +18,7 @@ import { categories, navigationCategories, categoryTree, products as sampleProdu
 import { termKey, termLabel, conditionKey, careDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js?v=ce82df1a70f6d827';
 
 let products = sampleProducts;
-try { const response = await fetch('./catalog.json?v=cabb02c413f35533', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
+try { const response = await fetch('./catalog.json?v=6edfa921c25afc01', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const esc = (s='') => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
