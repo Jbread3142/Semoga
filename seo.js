@@ -1,7 +1,7 @@
 import { business } from './contact.js?v=1495fb2b982c0aa5';
 import { isCommercialProduct } from './commercial.js?v=4a2a860e2aeb6419';
-import { lowestPlan } from './rental.js?v=ce82df1a70f6d827';
-import { rentalDescription } from './tv.js?v=e2f495faa5ff9342';
+import { lowestPlan } from './rental.js?v=1eededd11435db16';
+import { rentalDescription } from './tv.js?v=af127d2dd1f7016f';
 
 export const pagePaths = {partner:'/partners/'};
 export const siteOrigin = 'https://semoga.kr';

@@ -435,21 +435,7 @@ export const categoryPhotos = {
       460
     ]
   },
-  "김밥기계/절단기": {
-    "id": "lcr-700_belt-32c32792",
-    "field": "detail",
-    "index": 0,
-    "size": [
-      860,
-      3955
-    ],
-    "crop": [
-      546,
-      996,
-      228,
-      310
-    ]
-  },
+  "김밥기계/절단기": {"id": "lcr-700_belt-32c32792", "field": "thumbnail", "index": 0},
   "제과기계": {
     "id": "wnr-450l-57ed7a9a",
     "field": "thumbnail",

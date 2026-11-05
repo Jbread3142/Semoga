@@ -1,6 +1,10 @@
 // Prices and available choices are derived only from the product's supplied plans.
 export const conditionKey = plan => JSON.stringify([plan.care, plan.cycle || '', plan.care === 'other' ? plan.careLabel : '', ...(plan.installationType ? [plan.installationType] : []), ...(plan.rentalCompany ? [plan.rentalCompany] : [])]);
 export const careDescription = plan => [plan.careLabel, plan.cycle ? `관리주기 ${plan.cycle}` : ''].filter(Boolean).join(' · ') || '관리 조건 상담 시 확인';
+export const conditionDescription = plan => [
+  plan.installationType,
+  plan.careLabel || plan.cycle || (!plan.installationType && !plan.rentalCompany) ? careDescription(plan) : '',
+].filter(Boolean).join(' · ');
 // Whole years display in years; durations such as 39 months retain months.
 export const termKey = plan => plan.termUnit === 'month' ? `month:${plan.term}` : plan.term;
 export const termLabel = key => {
@@ -9,13 +13,22 @@ export const termLabel = key => {
   return months>0 && months%12===0 ? `${months/12}년` : `${key.slice(6)}개월`;
 };
 const termMonths = key => typeof key === 'string' ? Number(key.slice(6)) : key * 12;
-export const planDescription = plan => plan ? [termLabel(termKey(plan))+' 약정', plan.rentalCompany, plan.installationType || (!plan.rentalCompany || plan.careLabel || plan.cycle ? careDescription(plan) : '')].filter(Boolean).join(' · ') : '렌탈 조건 상담 시 확인';
+export const planDescription = (plan, commercial = false) => plan ? [
+  termLabel(termKey(plan))+' 약정', plan.rentalCompany,
+  commercial ? conditionDescription(plan) : plan.installationType || (!plan.rentalCompany || plan.careLabel || plan.cycle ? careDescription(plan) : ''),
+].filter(Boolean).join(' · ') : '렌탈 조건 상담 시 확인';
 export function productPlans(product) {
   if (!product?.sample) return product?.rentalPlans || [];
   return [3, 5, 6, 7].flatMap(term => ['visit', 'self'].map(care => ({term, care, careLabel:care === 'visit' ? '방문관리' : '자가관리', cycle:care === 'visit' ? '4개월' : '6개월', monthlyPrice:Math.max(0, product.monthlyPrice + ({3:7000,5:2000,6:0,7:-2000}[term]) - (care === 'self' ? 2000 : 0))})));
 }
 export const availableTerms = product => [...new Set(productPlans(product).map(termKey))].sort((a,b) => termMonths(a)-termMonths(b));
-export const hasConditionChoices = (product, term) => productPlans(product).some(plan => termKey(plan) === term && (product.category === 'TV' ? String(plan.installationType || '').trim() : String(plan.careLabel || '').trim() || String(plan.cycle || '').trim() || ['visit','self'].includes(plan.care)));
+export const hasConditionChoices = (product, term) => productPlans(product).some(plan => {
+  if (termKey(plan) !== term) return false;
+  const installation = String(plan.installationType || '').trim();
+  if (product.category === 'TV') return Boolean(installation);
+  return Boolean((product.commercialType && installation) || String(plan.careLabel || '').trim() ||
+    String(plan.cycle || '').trim() || ['visit','self'].includes(plan.care));
+});
 export const lowestPlan = product => productPlans(product).reduce((best, plan) => !best || plan.monthlyPrice < best.monthlyPrice ? plan : best, null);
 export function choosePlan(product, term, preferredKey) {
   const plans = productPlans(product).filter(p => termKey(p) === term);
