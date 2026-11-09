@@ -25,9 +25,9 @@ export const availableTerms = product => [...new Set(productPlans(product).map(t
 export const hasConditionChoices = (product, term) => productPlans(product).some(plan => {
   if (termKey(plan) !== term) return false;
   const installation = String(plan.installationType || '').trim();
-  if (product.category === 'TV') return Boolean(installation);
-  return Boolean((product.commercialType && installation) || String(plan.careLabel || '').trim() ||
-    String(plan.cycle || '').trim() || ['visit','self'].includes(plan.care));
+  const care = String(plan.careLabel || '').trim() || String(plan.cycle || '').trim() || ['visit','self'].includes(plan.care);
+  if (product.category === 'TV') return Boolean(installation || (plan.rentalCompany && care));
+  return Boolean(((product.commercialType || plan.rentalCompany) && installation) || care);
 });
 export const lowestPlan = product => productPlans(product).reduce((best, plan) => !best || plan.monthlyPrice < best.monthlyPrice ? plan : best, null);
 export function choosePlan(product, term, preferredKey) {

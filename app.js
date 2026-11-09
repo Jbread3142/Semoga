@@ -2,9 +2,9 @@ import { partnerPage } from './partner.js?v=e59433a83a9c687a';
 import { homeBenefitBanner } from './home-benefit.js?v=c70d3114d49e064f';
 import { internetShowcase } from './home-internet.js?v=370eb5bdcb72d92a';
 import { reviewSection, reviewCards, reviewPosition, reviewVideos } from './review-videos.js?v=fa0913c784639b07';
-import { homeWaterTypes, homeWaterProducts, prioritizeWaterProducts } from './home-products.js?v=e5482f3957a9eee2';
+import { homeWaterTypes, homeWaterProducts, prioritizeWaterProducts } from './home-products.js?v=f8dce4ae18ff15f4';
 import { commercialTypes, isCommercialProduct, matchesCommercialType, commercialHref, normalizeCommercialProduct } from './commercial.js?v=4a2a860e2aeb6419';
-import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=c018e8ebe81d647c';
+import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=c3a080f3dcdbd976';
 import { categoryArt } from './category-art.js?v=14f8cb705f576963';
 import { categoryPhotos, catalogCategoryPhotos } from './category-photos.js?v=d7b2d5dce72c9513';
 import { waterFilterGroups, matchesWaterFilter } from './water-filters.js?v=bd681181a6ae7728';
@@ -13,12 +13,12 @@ import { laundryTypes, isLaundryCategory, laundryType } from './laundry.js?v=bd8
 import { internetPage, mountInternet } from './internet.js?v=a6790f219ba494b1';
 import { airconTypes, isAirconCategory, matchesAirconCategory, matchesAirconType } from './aircon.js?v=242116c5b4404c40';
 import { business } from './contact.js?v=1495fb2b982c0aa5';
-import { isTV, screenLabel, tvName, installationTypes, inchRanges, inchRangeLabel, matchesInches, matchesInstallation, rentalDescription } from './tv.js?v=af127d2dd1f7016f';
+import { isTV, screenLabel, tvName, installationTypes, inchRanges, inchRangeLabel, matchesInches, matchesInstallation, rentalDescription } from './tv.js?v=186047e1329a5dfa';
 import { categories, navigationCategories, categoryTree, products as sampleProducts } from './data.js?v=17fde49c7f2eb6bb';
-import { termKey, termLabel, conditionKey, careDescription, conditionDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js?v=1eededd11435db16';
+import { termKey, termLabel, conditionKey, careDescription, conditionDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js?v=9b1fab6768bbe5eb';
 
 let products = sampleProducts;
-try { const response = await fetch('./catalog.json?v=e6114629b336cb29', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
+try { const response = await fetch('./catalog.json?v=e72036c19289551e', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const esc = (s='') => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -216,8 +216,24 @@ function openConsult(p){if(p)p={...p,name:tvName(p)};const selected=p?`<div clas
 
 let selectedTerm=6, selectedCondition='';
 let companiesExpanded=false;
-function careOptions(p){const company=resolvePlan(p,selectedTerm,selectedCondition)?.rentalCompany;return productPlans(p).filter(plan=>termKey(plan)===selectedTerm&&(!company||plan.rentalCompany===company)).map(plan=>`<option value="${esc(conditionKey(plan))}" ${conditionKey(plan)===selectedCondition?'selected':''}>${esc(isTV(p)?plan.installationType||'설치방식 상담 시 확인':(p.commercialType&&conditionDescription(plan))||careDescription(plan))}</option>`).join('')||`<option value="">${isTV(p)?'설치방식':'관리 조건'} 상담 시 확인</option>`;}
-function conditionControl(p){const company=resolvePlan(p,selectedTerm,selectedCondition)?.rentalCompany;const scoped=company?{...p,rentalPlans:productPlans(p).filter(plan=>plan.rentalCompany===company)}:p;return hasConditionChoices(scoped,selectedTerm)?`<label class="option-row"><span>${isTV(p)?'설치방식':'관리 조건'}</span><select id="care">${careOptions(p)}</select></label>`:'';}
+function careOptions(p){
+  const company=resolvePlan(p,selectedTerm,selectedCondition)?.rentalCompany;
+  return productPlans(p).filter(plan=>termKey(plan)===selectedTerm&&(!company||plan.rentalCompany===company)).map(plan=>{
+    const supplied=plan.rentalCompany||p.commercialType?conditionDescription(plan):isTV(p)?plan.installationType:careDescription(plan);
+    const description=supplied||(isTV(p)?'설치방식 상담 시 확인':careDescription(plan));
+    return `<option value="${esc(conditionKey(plan))}" ${conditionKey(plan)===selectedCondition?'selected':''}>${esc(description)}</option>`;
+  }).join('');
+}
+function conditionControl(p){
+  const company=resolvePlan(p,selectedTerm,selectedCondition)?.rentalCompany;
+  const scoped=company?{...p,rentalPlans:productPlans(p).filter(plan=>plan.rentalCompany===company)}:p;
+  if(!hasConditionChoices(scoped,selectedTerm))return '';
+  const termPlans=productPlans(scoped).filter(plan=>termKey(plan)===selectedTerm);
+  const hasInstallation=termPlans.some(plan=>plan.installationType);
+  const hasCare=termPlans.some(plan=>plan.careLabel||plan.cycle);
+  const label=hasInstallation?(hasCare?'설치·관리 조건':'설치방식'):'관리 조건';
+  return `<label class="option-row"><span>${label}</span><select id="care">${careOptions(p)}</select></label>`;
+}
 function companyCard(plan,index,selected){const company=plan.rentalCompany;const mark={'이니렌탈':'KG 이니렌탈','현대유버스':'UBUS','스마트렌탈':'SMART RENTAL','LG헬로렌탈':'LG Hello','LG전자구독':'LG전자 구독','KT가전구독':'KT 가전구독'}[company]||company;return `<button type="button" class="rental-company ${company===selected?'selected':''}" data-action="rental-company" data-key="${esc(conditionKey(plan))}" aria-pressed="${company===selected}" aria-label="${esc(company)} ${index+1}위 월 ${money(plan.monthlyPrice)}원"><span class="company-rank rank-${index+1}">${index===0?'가장 저렴':`${index+1}위`}</span><strong class="company-mark" data-company="${esc(company)}">${esc(mark)}</strong><span class="company-name">${esc(company)}</span><span class="company-price">${money(plan.monthlyPrice)}<small>원/월</small></span></button>`;}
 function rentalCompanyControl(p){const plans=rankedCompanyPlans(p,selectedTerm);const selected=resolvePlan(p,selectedTerm,selectedCondition)?.rentalCompany;return `<div class="company-heading"><b>렌탈사 선택</b><span>약정기간별 최저가 순으로 보여드려요.</span></div><div class="company-first-row"><div class="company-grid" role="group" aria-label="렌탈사 1위부터 4위">${plans.slice(0,4).map((plan,i)=>companyCard(plan,i,selected)).join('')}</div>${plans.length>4?`<button type="button" class="companies-more" data-action="companies-more" aria-expanded="${companiesExpanded}" aria-controls="additional-companies"><span>${companiesExpanded?'접기':'더보기'}</span>${icon(companiesExpanded?'back':'chevron',14)}<small>+${plans.length-4}</small></button>`:''}</div>${plans.length>4?`<div id="additional-companies" class="company-grid company-extra" role="group" aria-label="추가 렌탈사" ${companiesExpanded?'':'hidden'}>${plans.slice(4).map((plan,i)=>companyCard(plan,i+4,selected)).join('')}</div>`:''}`;}
 function rentalControls(p){const terms=availableTerms(p),compare=hasRentalCompanies(p);return `<div class="option-row"><span>렌탈 기간</span><div class="term-options">${terms.length?terms.map(n=>`<button data-action="term" data-value="${n}" class="${n===selectedTerm?'selected':''}" aria-pressed="${n===selectedTerm}">${termLabel(n)}</button>`).join(''):'상담 시 확인'}</div></div>${compare?`<div id="rental-company-control">${rentalCompanyControl(p)}</div>`:''}<div id="condition-control">${conditionControl(p)}</div>`;}
