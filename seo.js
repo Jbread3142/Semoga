@@ -71,7 +71,7 @@ export function searchMetadata(params, products) {
     title = page === 'saved' ? '찜한 제품 | 세모가' : params.get('q') ? `${params.get('q')} 검색 결과 | 세모가` : '페이지 안내 | 세모가';
   }
   const keywords = product?.seoTags?.join(', ') || '';
-  return {page, title, description, keywords, url:siteOrigin+path, image:'https://semoga.mr-jbread.chatgpt.site/assets/social-share-20260930.png', indexable, product, category:page === 'catalog' ? category : null};
+  return {page, title, description, keywords, url:siteOrigin+path, image:siteOrigin+'/assets/social-share-20260930.png', indexable, product, category:page === 'catalog' ? category : null};
 }
 // Describe the actual plan shown in the rental panel, never a sale price or a
 // synthetic sample plan. Unknown/quote-only prices must not become free offers.

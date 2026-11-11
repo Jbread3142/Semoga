@@ -4,7 +4,7 @@ import { internetShowcase } from './home-internet.js?v=370eb5bdcb72d92a';
 import { reviewSection, reviewCards, reviewPosition, reviewVideos } from './review-videos.js?v=fa0913c784639b07';
 import { homeWaterTypes, homeWaterProducts, prioritizeWaterProducts } from './home-products.js?v=f8dce4ae18ff15f4';
 import { commercialTypes, isCommercialProduct, matchesCommercialType, commercialHref, normalizeCommercialProduct } from './commercial.js?v=4a2a860e2aeb6419';
-import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=c3a080f3dcdbd976';
+import { searchRoute, applySearchMetadata, normalizeCategory, matchesProductCategory } from './seo.js?v=7faafc83f5ad3c5c';
 import { categoryArt } from './category-art.js?v=14f8cb705f576963';
 import { categoryPhotos, catalogCategoryPhotos } from './category-photos.js?v=d7b2d5dce72c9513';
 import { waterFilterGroups, matchesWaterFilter } from './water-filters.js?v=bd681181a6ae7728';
@@ -18,7 +18,7 @@ import { categories, navigationCategories, categoryTree, products as sampleProdu
 import { termKey, termLabel, conditionKey, careDescription, conditionDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js?v=9b1fab6768bbe5eb';
 
 let products = sampleProducts;
-try { const response = await fetch('./catalog.json?v=e72036c19289551e', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
+try { const response = await fetch('./catalog.json?v=ccd7fad9720d8994', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 const esc = (s='') => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
