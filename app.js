@@ -17,6 +17,32 @@ import { isTV, screenLabel, tvName, installationTypes, inchRanges, inchRangeLabe
 import { categories, navigationCategories, categoryTree, products as sampleProducts } from './data.js?v=17fde49c7f2eb6bb';
 import { termKey, termLabel, conditionKey, careDescription, conditionDescription, planDescription, productPlans, availableTerms, hasConditionChoices, lowestPlan, choosePlan, resolvePlan, hasRentalCompanies, rankedCompanyPlans } from './rental.js?v=9b1fab6768bbe5eb';
 
+const googleAdsTag = 'AW-18212277225';
+const phoneClickConversion = googleAdsTag + '/LFFYCJfo67sdEOmXpexD';
+const kakaoClickConversion = googleAdsTag + '/0le2CJro67sdEOmXpexD';
+
+if (['semoga.kr', 'www.semoga.kr'].includes(location.hostname) && typeof window.gtag === 'function') {
+  const kakaoChannel = new URL(business.kakaoUrl);
+  const kakaoChannelPath = kakaoChannel.pathname.replace(/\/$/, '');
+  window.gtag('config', googleAdsTag, { allow_ad_personalization_signals: false });
+
+  document.addEventListener('click', event => {
+    if (!(event.target instanceof Element)) return;
+    const link = event.target.closest('a[href]');
+    if (!link) return;
+
+    if (link.href === business.phoneHref) {
+      window.gtag('event', 'conversion', { send_to: phoneClickConversion });
+    } else if (
+      (link.protocol === 'http:' || link.protocol === 'https:') &&
+      link.hostname === kakaoChannel.hostname &&
+      link.pathname.replace(/\/$/, '') === kakaoChannelPath
+    ) {
+      window.gtag('event', 'conversion', { send_to: kakaoClickConversion });
+    }
+  }, { capture: true });
+}
+
 let products = sampleProducts;
 try { const response = await fetch('./catalog.json?v=ccd7fad9720d8994', {cache:'no-store'}); if (response.ok) { const catalog = await response.json(); if (Array.isArray(catalog) && catalog.length) products = catalog.map(p => normalizeCommercialProduct({...p, category:normalizeCategory(p.category)})); } } catch {}
 const $ = (s, el=document) => el.querySelector(s);
